@@ -1,0 +1,389 @@
+<title>Banco LIA</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: night-sky observatory console — sticky header, tabbed views, a detail drawer on the right. */
+:root {
+  --sky: #090b14; --panel: #10142a; --panel-2: #161b36; --line: #262d52;
+  --ink: #e6e8f4; --muted: #9aa1c2; --faint: #6b7397;
+  --gold: #e8b339; --green: #7fb069; --accent: #9b7ede;
+  --display: "Unbounded", "Avenir Next", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--sky); color: var(--ink); font: 14px/1.55 var(--body); margin: 0; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--sky); }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 1440px; margin: 0 auto; }
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--sky) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+.head { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-block: 14px 10px; }
+h1 { font: 700 20px/1.1 var(--display); letter-spacing: .01em; margin: 0; }
+h1 small { display: block; font: 400 12px var(--body); color: var(--muted); letter-spacing: 0; margin-top: 4px; }
+.stats { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-left: auto; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.stats b { color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; }
+nav { display: flex; gap: 4px; overflow-x: auto; padding-block: 0 8px; }
+nav button { font: 500 13px var(--body); color: var(--muted); background: none; border: 1px solid transparent; border-radius: 999px; padding: 6px 14px; cursor: pointer; white-space: nowrap; }
+nav button[aria-selected="true"] { color: var(--sky); background: var(--ink); }
+nav button:hover:not([aria-selected="true"]) { border-color: var(--line); color: var(--ink); }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+main { padding-block: 18px 48px; }
+.view[hidden] { display: none !important; }
+.lede { color: var(--muted); max-width: 72ch; margin: 0 0 14px; }
+.lede b { color: var(--ink); font-weight: 500; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 10px; font-size: 13px; color: var(--muted); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { background: none; color: var(--muted); border: 0; padding: 5px 12px; font: 500 12px var(--body); cursor: pointer; }
+.seg button.on { background: var(--panel-2); color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; }
+.legend i { display: inline-block; width: 10px; height: 10px; margin-right: 6px; vertical-align: -1px; }
+.legend .art { border-radius: 50%; background: var(--gold); }
+.legend .proj { background: var(--green); transform: rotate(45deg); }
+.stage { position: relative; background: radial-gradient(ellipse at 50% 40%, #121735 0%, var(--sky) 70%); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+#orrery { display: block; width: 100%; height: min(78vh, 820px); min-height: 460px; cursor: grab; }
+#orrery:active { cursor: grabbing; }
+.planet-label { font: 500 11px var(--display); fill: var(--ink); pointer-events: none; paint-order: stroke; stroke: var(--sky); stroke-width: 4px; }
+.planet-count { font: 400 10px var(--mono); fill: var(--muted); pointer-events: none; paint-order: stroke; stroke: var(--sky); stroke-width: 3px; }
+.node { cursor: pointer; }
+.dim { opacity: .12; }
+#tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 12px; max-width: 320px; display: none; z-index: 3; }
+#tip b { font-family: var(--mono); font-weight: 500; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
+.chip { font: 500 12px var(--body); border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 3px 10px 3px 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.chip .sw { width: 9px; height: 9px; border-radius: 50%; }
+.chip.on { border-color: var(--ink); background: var(--panel-2); }
+.chip .n { font-family: var(--mono); color: var(--muted); font-size: 11px; }
+.frame3d { width: 100%; height: min(82vh, 900px); min-height: 480px; border: 1px solid var(--line); border-radius: 12px; background: #0a0a10; display: block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 14px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.card h3 { font: 500 15px/1.25 var(--display); margin: 0; display: flex; gap: 10px; align-items: baseline; text-wrap: balance; }
+.card h3 .cid { font: 500 11px var(--mono); color: var(--muted); }
+.meta { font: 12px var(--mono); color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.terms { display: flex; flex-wrap: wrap; gap: 4px; }
+.terms span { font-size: 11px; background: var(--panel-2); border-radius: 4px; padding: 1px 7px; color: var(--muted); }
+.bar { display: flex; height: 6px; border-radius: 3px; overflow: hidden; background: var(--panel-2); }
+.card h4 { font: 600 11px var(--body); text-transform: uppercase; letter-spacing: .08em; color: var(--faint); margin: 4px 0 0; }
+.card ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.card li { color: var(--ink); }
+.card li a, .link { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--faint); cursor: pointer; }
+.card li .src { font: 11px var(--mono); color: var(--faint); }
+.btn { align-self: flex-start; font: 500 12px var(--body); color: var(--ink); background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+.btn:hover { border-color: var(--muted); }
+.filters { display: grid; grid-template-columns: minmax(0, 2fr) repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px; }
+@media (max-width: 760px) { .filters { grid-template-columns: 1fr 1fr; } .filters input { grid-column: 1 / -1; } }
+input, select { width: 100%; font: 13px var(--body); color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+#count { font: 12px var(--mono); color: var(--muted); margin-bottom: 8px; }
+.list { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+.row { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 12px; padding: 10px 4px; border-bottom: 1px solid var(--line); cursor: pointer; align-items: baseline; }
+.row:hover { background: var(--panel); }
+.row .id { font: 12px var(--mono); color: var(--muted); }
+.row .t { min-width: 0; }
+.row .t small { display: block; color: var(--muted); font-size: 12px; }
+.row .y { font: 12px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.kind { display: inline-block; width: 8px; height: 8px; margin-right: 6px; vertical-align: 1px; }
+.kind.articulo { border-radius: 50%; background: var(--gold); }
+.kind.proyecto { background: var(--green); transform: rotate(45deg); }
+#timeline { width: 100%; height: auto; display: block; }
+.axis text { font: 10px var(--mono); fill: var(--muted); }
+.axis line, .axis path { stroke: var(--line); }
+aside { position: fixed; top: 0; right: 0; bottom: 0; width: min(560px, 100%); background: var(--panel); border-left: 1px solid var(--line); z-index: 20; overflow-y: auto; padding: calc(18px + env(safe-area-inset-top, 0px)) max(20px, env(safe-area-inset-right, 0px)) calc(28px + env(safe-area-inset-bottom, 0px)) 22px; box-shadow: -20px 0 60px rgba(0,0,0,.5); }
+aside h2 { font: 500 17px/1.3 var(--display); margin: 6px 0 10px; text-wrap: balance; }
+aside .close { position: sticky; top: 0; float: right; }
+aside section { margin-top: 14px; }
+aside h5 { font: 600 11px var(--body); text-transform: uppercase; letter-spacing: .08em; color: var(--faint); margin: 0 0 4px; }
+aside p { margin: 0; max-width: 65ch; }
+aside .pill { display: inline-block; font: 11px var(--mono); border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; margin: 0 4px 4px 0; color: var(--muted); }
+aside .warn { color: #e6a35a; font-size: 12px; }
+aside a { color: var(--ink); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="head">
+      <h1>Banco LIA<small>Artículos y proyectos de investigación · GCPDS / LIA, Universidad Nacional de Colombia, sede Manizales</small></h1>
+      <div class="stats" id="stats"></div>
+    </div>
+    <nav role="tablist" aria-label="Vistas">
+      <button role="tab" data-view="sistema" aria-selected="true">Sistema temático</button>
+      <button role="tab" data-view="constelacion" aria-selected="false">Constelación 3D</button>
+      <button role="tab" data-view="ideas" aria-selected="false">Clústeres e ideas</button>
+      <button role="tab" data-view="explorar" aria-selected="false">Explorar</button>
+      <button role="tab" data-view="tiempo" aria-selected="false">Línea de tiempo</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="view" id="v-sistema">
+    <p class="lede">Cada <b>planeta</b> es un tema de la taxonomía (T01–T14), con tamaño proporcional a su producción. A su alrededor orbitan los <b>artículos</b> (círculos) y <b>proyectos</b> (rombos), coloreados por el clúster semántico que les asignó el agrupamiento. Cambie a «Agrupar por clúster» para ver cada grupo como un sistema propio. Arrastre para mover, use la rueda para acercar y haga clic en un punto para leer su ficha.</p>
+    <div class="toolbar">
+      <span>Agrupar por</span>
+      <div class="seg" id="groupby"><button class="on" data-g="tema">Tema</button><button data-g="cluster">Clúster</button></div>
+      <span>Mostrar</span>
+      <div class="seg" id="kindsel"><button class="on" data-k="all">Todo</button><button data-k="articulo">Artículos</button><button data-k="proyecto">Proyectos</button></div>
+      <div class="legend"><span><i class="art"></i>Artículo</span><span><i class="proj"></i>Proyecto</span><span>Línea tenue: proyecto → artículo relacionado</span></div>
+    </div>
+    <div class="stage"><svg id="orrery" role="img" aria-label="Sistema de temas con artículos y proyectos"></svg><div id="tip"></div></div>
+    <div class="chips" id="clusterchips" aria-label="Filtrar por clúster"></div>
+  </section>
+
+  <section class="view" id="v-constelacion" hidden>
+    <p class="lede">Visor 3D de <b>papersmith-ai</b> (SOTA constellation). Cada sistema es un artículo (sol dorado) o un proyecto (sol verde), y sus planetas son aplicación, problema, propuesta, resultados, conclusiones, temas y clúster. Los arcos unen proyectos con los artículos que produjeron y cada artículo con su antecesor más cercano. El botón «Disposición de grupos» reúne los sistemas por clúster. <a class="link" href="constelacion.html" target="_blank" rel="noopener">Abrir en pantalla completa</a></p>
+    <iframe class="frame3d" id="frame3d" title="Constelación 3D" loading="lazy"></iframe>
+  </section>
+
+  <section class="view" id="v-ideas" hidden>
+    <p class="lede">Los clústeres salen de TF‑IDF + SVD + k‑means sobre aplicación, problema, propuesta, palabras clave y métodos. Cada tarjeta reúne las <b>novedades recientes</b> y las <b>ideas de trabajo futuro</b> de sus miembros. «Copiar base de redacción» copia un resumen en Markdown listo para una introducción o un estado del arte.</p>
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section class="view" id="v-explorar" hidden>
+    <div class="filters">
+      <input id="q" type="search" placeholder="Buscar en títulos, problemas, propuestas, palabras clave…" aria-label="Buscar">
+      <select id="fkind" aria-label="Tipo"><option value="">Todo tipo</option><option value="articulo">Artículos</option><option value="proyecto">Proyectos</option></select>
+      <select id="ftopic" aria-label="Tema"><option value="">Todos los temas</option></select>
+      <select id="fcluster" aria-label="Clúster"><option value="">Todos los clústeres</option></select>
+      <select id="fyear" aria-label="Desde el año"><option value="">Cualquier año</option></select>
+      <select id="fstate" aria-label="Estado en Hermes"><option value="">Cualquier estado</option><option value="eval">En evaluación (propuesto, elegible…)</option><option value="Activo">Activo</option><option value="Finalizado">Finalizado</option><option value="no">No financiado / no cumplió</option></select>
+    </div>
+    <div id="count"></div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section class="view" id="v-tiempo" hidden>
+    <p class="lede">Producción por año de inicio (proyectos) y de publicación (artículos), apilada por clúster principal del tema.</p>
+    <div class="stage" style="padding:12px 8px 4px"><svg id="timeline" role="img" aria-label="Producción por año"></svg></div>
+    <div class="chips" id="tlegend"></div>
+  </section>
+</main>
+
+<aside id="drawer" hidden aria-label="Ficha"><button class="btn close" id="dclose">Cerrar</button><div id="dbody"></div></aside>
+
+<script type="application/json" id="bank">@@BANK@@</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const BANK = JSON.parse(document.getElementById('bank').textContent);
+const ITEMS = BANK.items, BY = new Map(ITEMS.map(i => [i.id, i]));
+const TOPICS = BANK.topics, TIDS = Object.keys(TOPICS).sort();
+const CL = BANK.clusters, CBY = new Map(CL.map(c => [c.id, c]));
+const CCOL = new Map(CL.map((c, k) => [c.id, d3.hsl((k * 360 / CL.length + 200) % 360, 0.62, 0.64).formatHex()]));
+const yearOf = i => +(i.year || i.start || 0);
+const primary = i => (i.temas && i.temas[0]) || 'T13';
+const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k === 'class') e.className = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v); } kids.flat().forEach(k => e.append(k?.nodeType ? k : document.createTextNode(k ?? ''))); return e; };
+
+// Header stats
+(() => {
+  const a = ITEMS.filter(i => i.kind === 'articulo'), p = ITEMS.filter(i => i.kind === 'proyecto');
+  const ys = ITEMS.map(yearOf).filter(Boolean);
+  const s = document.getElementById('stats');
+  [['artículos', a.length], ['proyectos', p.length], ['temas', TIDS.length], ['clústeres', CL.length], ['periodo', `${Math.min(...ys)}–${Math.max(...ys)}`]]
+    .forEach(([k, v]) => s.append(el('span', {}, el('b', {}, String(v)), ' ' + k)));
+})();
+
+// Tabs with bookmarkable hash tokens
+const views = [...document.querySelectorAll('nav button')];
+function show(name) {
+  if (!views.some(b => b.dataset.view === name)) name = 'sistema';
+  views.forEach(b => b.setAttribute('aria-selected', String(b.dataset.view === name)));
+  document.querySelectorAll('.view').forEach(v => v.hidden = v.id !== 'v-' + name);
+  if (name === 'constelacion') { const f = document.getElementById('frame3d'); if (f && !f.src) f.src = 'constelacion.html'; }
+  if (name === 'tiempo') drawTimeline();
+  try { history.replaceState(null, '', '#' + name); } catch (e) {}
+}
+views.forEach(b => b.addEventListener('click', () => show(b.dataset.view)));
+
+// Drawer (record detail)
+const drawer = document.getElementById('drawer'), dbody = document.getElementById('dbody');
+document.getElementById('dclose').addEventListener('click', () => drawer.hidden = true);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') drawer.hidden = true; });
+const ESTADO = { Activo: 'Activo', Finalizado: 'Finalizado', porFinalizar: 'Por finalizar', Propuesto: 'Propuesto', Elegible: 'Elegible (en evaluación)', BancoFinanc: 'Banco de financiables', Ingresando: 'Ingresando', En_Legalizacion: 'En legalización', No_financiado: 'No financiado', No_cumplio_requisitos: 'No cumplió requisitos' };
+const REL = { yields: 'Produjo', extends: 'Extiende', derivado_de: 'Derivado del proyecto', extendido_por: 'Extendido por' };
+function field(label, value) {
+  if (!value || (Array.isArray(value) && !value.length)) return null;
+  return el('section', {}, el('h5', {}, label), Array.isArray(value) ? el('p', {}, value.join(' · ')) : el('p', {}, value));
+}
+function openItem(id) {
+  const i = BY.get(id); if (!i) return;
+  const c = CBY.get(i.cluster);
+  const kids = [
+    el('span', { class: 'pill' }, i.id), el('span', { class: 'pill' }, i.kind === 'articulo' ? 'Artículo' : 'Proyecto'),
+    el('span', { class: 'pill' }, i.kind === 'articulo' ? String(i.year || '?') : `${i.start || '?'}–${i.end || '?'}`),
+    el('span', { class: 'pill', style: `border-color:${CCOL.get(i.cluster)}` }, `${i.cluster} ${c.name}`),
+    el('h2', {}, i.title),
+    el('p', { class: 'meta' }, (i.temas || []).map(t => `${t} ${TOPICS[t]?.name || ''}`).join(' · ')),
+  ];
+  if (i.kind === 'articulo') kids.push(el('p', { class: 'meta' }, i.journal_oa || i.journal || '', i.doi ? ' · ' : '', i.doi ? el('a', { href: 'https://doi.org/' + i.doi, target: '_blank', rel: 'noopener' }, 'doi:' + i.doi) : ''));
+  else {
+    kids.push(el('p', { class: 'meta' }, 'Código Hermes: ' + ((i.hermes && i.hermes.codigo) ? `${i.hermes.codigo}${i.hermes.quipu ? ' · QUIPU ' + i.hermes.quipu : ''} · ${i.hermes.convocatoria}` : 'sin registro en Hermes')));
+    if (i.hermes && i.hermes.estado) kids.splice(3, 0, el('span', { class: 'pill', style: 'border-color:var(--gold);color:var(--ink)' }, ESTADO[i.hermes.estado] || i.hermes.estado));
+  }
+  if (i.fuente === 'titulo') kids.push(el('p', { class: 'warn' }, 'Ficha inferida del título: la fuente no trae resumen.'));
+  kids.push(field('Aplicación', i.aplicacion), field('Problema de investigación', i.problema), field('Propuesta o novedad', i.propuesta),
+    field('Resultados', i.resultados), field('Conclusiones', i.conclusiones));
+  if (i.kind === 'proyecto') kids.push(field('Productos tecnológicos', i.productos_tecnologicos), field('Apropiación social', i.apropiacion_social), field('Aliados', i.aliados));
+  else kids.push(field('Métodos', i.metodos));
+  kids.push(field('Palabras clave', i.palabras_clave), field('Idea para trabajo futuro', i.idea_futura));
+  if (i.relacionados?.length) kids.push(el('section', {}, el('h5', {}, 'Relacionados'), el('ul', {}, i.relacionados.map(([r, o]) => el('li', {}, `${REL[r]}: `, el('a', { class: 'link', onclick: () => openItem(o) }, `${o} · ${BY.get(o).title}`))))));
+  kids.push(el('section', {}, el('h5', {}, 'Archivo'), el('p', { class: 'meta' }, `${i.kind === 'articulo' ? 'articulos' : 'proyectos'}/${i.slug}.md`)));
+  dbody.replaceChildren(...kids.filter(Boolean));
+  drawer.hidden = false; drawer.scrollTop = 0;
+}
+
+// Orrery: topic planets with items in orbit (d3 force)
+const svg = d3.select('#orrery'), tip = document.getElementById('tip');
+let groupBy = 'tema', kindFilter = 'all', clusterFilter = null, sim, nodeSel, linkSel;
+function centers(W, H) {
+  const keys = groupBy === 'tema' ? TIDS : CL.map(c => c.id);
+  const m = new Map(); const rx = W * 0.36, ry = H * 0.36;
+  keys.forEach((k, j) => { const a = -Math.PI / 2 + j * 2 * Math.PI / keys.length; m.set(k, { x: W / 2 + rx * Math.cos(a), y: H / 2 + ry * Math.sin(a) }); });
+  return m;
+}
+// Per-node radial force: d3.forceRadial only takes one shared center, so each item is pulled
+// toward the ring of its own planet.
+function orbitForce(center, radius, strength) {
+  let nodes;
+  const force = alpha => nodes.forEach(n => {
+    const c = center(n), dx = n.x - c.x || 1e-3, dy = n.y - c.y, r = Math.hypot(dx, dy), k = (radius(n) - r) / r * strength * alpha;
+    n.vx += dx * k; n.vy += dy * k;
+  });
+  force.initialize = ns => { nodes = ns; };
+  return force;
+}
+function drawOrrery() {
+  const box = document.getElementById('orrery').getBoundingClientRect();
+  const W = Math.max(box.width, 360), H = Math.max(box.height, 460);
+  svg.attr('viewBox', `0 0 ${W} ${H}`).selectAll('*').remove();
+  const root = svg.append('g');
+  svg.call(d3.zoom().scaleExtent([0.4, 6]).on('zoom', e => root.attr('transform', e.transform)));
+  const C = centers(W, H);
+  const keyOf = i => groupBy === 'tema' ? primary(i) : i.cluster;
+  const counts = d3.rollup(ITEMS, v => v.length, keyOf);
+  const pr = k => 10 + Math.sqrt(counts.get(k) || 1) * 2.4;
+  // orbit rings
+  root.append('g').selectAll('circle').data([...C]).join('circle').attr('cx', d => d[1].x).attr('cy', d => d[1].y)
+    .attr('r', d => pr(d[0]) + 22).attr('fill', 'none').attr('stroke', '#262d52').attr('stroke-dasharray', '2 4');
+  const slot = new Map();
+  const nodes = ITEMS.map(i => { const k = keyOf(i); const n = counts.get(k); const j = (slot.get(k) || 0); slot.set(k, j + 1);
+    const ring = pr(k) + 14 + (j % 3) * 9, a = j * 2 * Math.PI / Math.max(n / 3, 1) + (j % 3) * .35;
+    return { i, k, x: C.get(k).x + ring * Math.cos(a), y: C.get(k).y + ring * Math.sin(a) }; });
+  const nb = new Map(nodes.map(n => [n.i.id, n]));
+  const links = BANK.links.filter(l => l.rel === 'yields').map(l => ({ source: nb.get(l.from), target: nb.get(l.to) }));
+  linkSel = root.append('g').selectAll('line').data(links).join('line').attr('stroke', '#7fb069').attr('stroke-opacity', .18).attr('stroke-width', .8);
+  // planets
+  const pg = root.append('g').selectAll('g').data([...C]).join('g').attr('transform', d => `translate(${d[1].x},${d[1].y})`);
+  pg.append('circle').attr('r', d => pr(d[0])).attr('fill', d => groupBy === 'tema' ? '#1b2147' : d3.color(CCOL.get(d[0])).darker(1.6))
+    .attr('stroke', d => groupBy === 'tema' ? '#9b7ede' : CCOL.get(d[0])).attr('stroke-width', 1.5);
+  pg.append('text').attr('class', 'planet-label').attr('text-anchor', 'middle').attr('dy', d => -pr(d[0]) - 40)
+    .text(d => groupBy === 'tema' ? `${d[0]} ${TOPICS[d[0]].name.split(' ').slice(0, 4).join(' ').replace(/ (y|e|de|del)$/, '')}` : CBY.get(d[0]).name);
+  pg.append('text').attr('class', 'planet-count').attr('text-anchor', 'middle').attr('dy', 4).text(d => counts.get(d[0]) || 0);
+  const sym = d3.symbol();
+  nodeSel = root.append('g').selectAll('path').data(nodes).join('path').attr('class', 'node')
+    .attr('d', d => sym.type(d.i.kind === 'proyecto' ? d3.symbolDiamond : d3.symbolCircle).size(d.i.kind === 'proyecto' ? 70 : 34)())
+    .attr('fill', d => CCOL.get(d.i.cluster)).attr('stroke', d => d.i.kind === 'proyecto' ? '#7fb069' : '#090b14').attr('stroke-width', d => d.i.kind === 'proyecto' ? 1.4 : .6)
+    .on('mousemove', (e, d) => { const r = document.querySelector('.stage').getBoundingClientRect(); tip.style.display = 'block'; tip.style.left = Math.min(e.clientX - r.left + 12, r.width - 330) + 'px'; tip.style.top = (e.clientY - r.top + 12) + 'px'; tip.replaceChildren(el('b', {}, `${d.i.id} · ${yearOf(d.i) || '?'}`), el('div', {}, d.i.title)); })
+    .on('mouseleave', () => tip.style.display = 'none')
+    .on('click', (e, d) => openItem(d.i.id));
+  sim = d3.forceSimulation(nodes)
+    .force('x', d3.forceX(d => C.get(d.k).x).strength(.03)).force('y', d3.forceY(d => C.get(d.k).y).strength(.03))
+    .force('collide', d3.forceCollide(d => d.i.kind === 'proyecto' ? 6 : 4.2))
+    .force('orbit', orbitForce(d => C.get(d.k), d => pr(d.k) + 24, .25))
+    .alpha(1).alphaDecay(.03).stop();
+  sim.tick(160);
+  const paint = () => {
+      nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+      linkSel.attr('x1', d => d.source.x).attr('y1', d => d.source.y).attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+  };
+  paint(); sim.alpha(.05).on('tick', paint).restart();
+  applyDim();
+}
+function applyDim() {
+  if (!nodeSel) return;
+  const keep = i => (kindFilter === 'all' || i.kind === kindFilter) && (!clusterFilter || i.cluster === clusterFilter);
+  nodeSel.classed('dim', d => !keep(d.i));
+  linkSel.classed('dim', d => !(keep(d.source.i) && keep(d.target.i)));
+}
+document.querySelectorAll('#groupby button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#groupby button').forEach(x => x.classList.toggle('on', x === b)); groupBy = b.dataset.g; drawOrrery();
+}));
+document.querySelectorAll('#kindsel button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#kindsel button').forEach(x => x.classList.toggle('on', x === b)); kindFilter = b.dataset.k; applyDim();
+}));
+const chipBox = document.getElementById('clusterchips');
+CL.forEach(c => chipBox.append(el('button', { class: 'chip', onclick: e => { clusterFilter = clusterFilter === c.id ? null : c.id; chipBox.querySelectorAll('.chip').forEach(x => x.classList.toggle('on', x === e.currentTarget && clusterFilter === c.id)); applyDim(); } },
+  el('span', { class: 'sw', style: `background:${CCOL.get(c.id)}` }), `${c.id} ${c.name}`, el('span', { class: 'n' }, String(c.members.length)))));
+
+// Cluster cards: novelty and idea bank
+function brief(c, members) {
+  const lines = [`## ${c.id} ${c.name}`, '', `Términos: ${c.top_terms.join(', ')}`, '', '### Novedades del grupo'];
+  members.slice(0, 8).forEach(i => lines.push(`- (${i.id}, ${yearOf(i) || 's.f.'}) ${i.title}: ${i.propuesta}`));
+  lines.push('', '### Brechas e ideas de trabajo futuro');
+  members.slice(0, 8).forEach(i => lines.push(`- ${i.idea_futura} (${i.id})`));
+  return lines.join('\n');
+}
+const cards = document.getElementById('cards');
+CL.forEach(c => {
+  const members = c.members.map(id => BY.get(id)).sort((a, b) => yearOf(b) - yearOf(a));
+  const na = members.filter(i => i.kind === 'articulo').length, ys = members.map(yearOf).filter(Boolean);
+  const total = Object.values(c.topics).reduce((a, b) => a + b, 0);
+  const bar = el('div', { class: 'bar', title: 'Temas principales del clúster' }, Object.entries(c.topics).map(([t, n], j) => el('span', { title: `${t} ${TOPICS[t]?.name}: ${n}`, style: `width:${100 * n / total}%;background:${d3.hsl(200 + j * 47, .45, .6 - j * .06).formatHex()}` })));
+  const copy = el('button', { class: 'btn' }, 'Copiar base de redacción');
+  copy.addEventListener('click', async () => {
+    const text = brief(c, members);
+    try { await navigator.clipboard.writeText(text); copy.textContent = 'Copiado'; }
+    catch (e) { const t = el('textarea', { style: 'width:100%;height:160px' }); t.value = text; copy.after(t); t.select(); copy.textContent = 'Seleccione y copie el texto'; }
+    setTimeout(() => copy.textContent = 'Copiar base de redacción', 2200);
+  });
+  cards.append(el('article', { class: 'card', style: `border-top:3px solid ${CCOL.get(c.id)}` },
+    el('h3', {}, el('span', { class: 'cid' }, c.id), c.name),
+    el('div', { class: 'meta' }, el('span', {}, `${na} artículos`), el('span', {}, `${members.length - na} proyectos`), el('span', {}, ys.length ? `${Math.min(...ys)}–${Math.max(...ys)}` : '')),
+    bar, el('div', { class: 'terms' }, c.top_terms.slice(0, 7).map(t => el('span', {}, t))),
+    el('h4', {}, 'Novedades recientes'),
+    el('ul', {}, members.slice(0, 3).map(i => el('li', {}, el('a', { onclick: () => openItem(i.id) }, i.titulo_corto || i.title), ' ', el('span', { class: 'src' }, `${i.id} · ${yearOf(i) || 's.f.'}`), el('div', { style: 'color:var(--muted);font-size:13px' }, i.propuesta)))),
+    el('h4', {}, 'Ideas para futuros papers o proyectos'),
+    el('ul', {}, members.slice(0, 4).map(i => el('li', {}, i.idea_futura, ' ', el('span', { class: 'src' }, i.id)))),
+    copy));
+});
+
+// Explorer
+const fs = document.getElementById('fstate');
+const stateOk = i => { const e = i.hermes && i.hermes.estado; if (!fs.value) return true; if (!e) return false; if (fs.value === 'eval') return ['Propuesto', 'Elegible', 'BancoFinanc', 'Ingresando', 'En_Legalizacion'].includes(e); if (fs.value === 'no') return e.startsWith('No_'); if (fs.value === 'Finalizado') return ['Finalizado', 'porFinalizar'].includes(e); return e === fs.value; };
+const q = document.getElementById('q'), fk = document.getElementById('fkind'), ft = document.getElementById('ftopic'), fc = document.getElementById('fcluster'), fy = document.getElementById('fyear');
+TIDS.forEach(t => ft.append(el('option', { value: t }, `${t} ${TOPICS[t].name}`)));
+CL.forEach(c => fc.append(el('option', { value: c.id }, `${c.id} ${c.name}`)));
+[...new Set(ITEMS.map(yearOf).filter(Boolean))].sort((a, b) => b - a).forEach(y => fy.append(el('option', { value: y }, `Desde ${y}`)));
+const norm = s => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const HAY = new Map(ITEMS.map(i => [i.id, norm([i.id, i.title, i.aplicacion, i.problema, i.propuesta, i.resultados, (i.palabras_clave || []).join(' '), (i.metodos || []).join(' '), (i.aliados || []).join(' ')].join(' '))]));
+function renderList() {
+  const terms = norm(q.value).split(/\s+/).filter(Boolean);
+  const rows = ITEMS.filter(i => (!fk.value || i.kind === fk.value) && (!ft.value || (i.temas || []).includes(ft.value)) && (!fc.value || i.cluster === fc.value) && (!fy.value || yearOf(i) >= +fy.value) && stateOk(i) && terms.every(t => HAY.get(i.id).includes(t)))
+    .sort((a, b) => yearOf(b) - yearOf(a));
+  document.getElementById('count').textContent = `${rows.length} de ${ITEMS.length} registros`;
+  document.getElementById('list').replaceChildren(...rows.slice(0, 300).map(i => el('div', { class: 'row', tabindex: '0', onclick: () => openItem(i.id), onkeydown: e => { if (e.key === 'Enter') openItem(i.id); } },
+    el('span', { class: 'id' }, i.id), el('span', { class: 't' }, el('span', { class: 'kind ' + i.kind }), i.title, el('small', {}, `${i.cluster} ${CBY.get(i.cluster).name} · ${(i.temas || []).join(', ')}`)), el('span', { class: 'y' }, String(yearOf(i) || '—')))));
+}
+[q, fk, ft, fc, fy, fs].forEach(x => x.addEventListener('input', renderList));
+renderList();
+
+// Timeline: stacked bars by cluster
+function drawTimeline() {
+  const node = document.getElementById('timeline'); const W = Math.max(node.parentElement.clientWidth - 16, 340), H = 360, m = { t: 10, r: 10, b: 28, l: 34 };
+  const ys = d3.range(d3.min(ITEMS, yearOf.bind(null)) || 1994, d3.max(ITEMS, yearOf) + 1).filter(y => y > 1990);
+  const keys = CL.map(c => c.id);
+  const rows = ys.map(y => { const r = { y }; keys.forEach(k => r[k] = 0); ITEMS.forEach(i => { if (yearOf(i) === y) r[i.cluster]++; }); return r; });
+  const stack = d3.stack().keys(keys)(rows);
+  const x = d3.scaleBand().domain(ys).range([m.l, W - m.r]).padding(.18), yS = d3.scaleLinear().domain([0, d3.max(rows, r => d3.sum(keys, k => r[k]))]).nice().range([H - m.b, m.t]);
+  const s = d3.select(node).attr('viewBox', `0 0 ${W} ${H}`); s.selectAll('*').remove();
+  s.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickValues(ys.filter(y => y % 2 === 0)).tickSizeOuter(0));
+  s.append('g').attr('class', 'axis').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(yS).ticks(5).tickSize(-(W - m.l - m.r))).call(g => g.select('.domain').remove()).call(g => g.selectAll('line').attr('stroke-opacity', .5));
+  s.append('g').selectAll('g').data(stack).join('g').attr('fill', d => CCOL.get(d.key)).selectAll('rect').data(d => d.map(v => Object.assign(v, { key: d.key }))).join('rect')
+    .attr('x', d => x(d.data.y)).attr('width', x.bandwidth()).attr('y', d => yS(d[1])).attr('height', d => Math.max(0, yS(d[0]) - yS(d[1])))
+    .append('title').text(d => `${d.data.y} · ${d.key} ${CBY.get(d.key).name}: ${d[1] - d[0]}`);
+  const lg = document.getElementById('tlegend'); if (!lg.childElementCount) CL.forEach(c => lg.append(el('span', { class: 'chip' }, el('span', { class: 'sw', style: `background:${CCOL.get(c.id)}` }), `${c.id} ${c.name}`)));
+}
+
+drawOrrery();
+show(location.hash.slice(1) || 'sistema');
+let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(drawOrrery, 250); });
+</script>

@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Banco LIA command line.
+#   bancoLIA ui [port] [--no-open]   serve the dashboard locally (default port 8000) and open it
+#   bancoLIA build                   regenerate articulos/, proyectos/ and docs/
+set -euo pipefail
+ROOT="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
+
+build() {
+  (cd "$ROOT" && uv run -q --with scikit-learn --with numpy python tools/build_bank.py)
+}
+
+ui() {
+  local port=8000 open=1
+  for arg in "$@"; do
+    case "$arg" in
+      --no-open) open=0 ;;
+      ''|*[!0-9]*) echo "bancoLIA ui: unknown argument '$arg'" >&2; exit 2 ;;
+      *) port="$arg" ;;
+    esac
+  done
+  if lsof -nP -iTCP:"$port" -sTCP:LISTEN >/dev/null 2>&1; then
+    echo "bancoLIA ui: port $port is already in use; try 'bancoLIA ui $((port + 1))'" >&2
+    exit 1
+  fi
+  [ -f "$ROOT/docs/index.html" ] || build
+  local url="http://localhost:$port/"
+  echo "Banco LIA en $url  (Ctrl+C para detener)"
+  if [ "$open" = 1 ] && command -v open >/dev/null; then
+    (sleep 1 && open "$url") &
+  fi
+  exec python3 -m http.server "$port" --bind 127.0.0.1 --directory "$ROOT/docs"
+}
+
+case "${1:-}" in
+  ui) shift; ui "$@" ;;
+  build) build ;;
+  *) echo "usage: bancoLIA ui [port] [--no-open] | bancoLIA build" >&2; exit 2 ;;
+esac

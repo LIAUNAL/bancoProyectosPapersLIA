@@ -1,0 +1,2060 @@
+[
+ {
+  "codigo": "68698",
+  "quipu": "400000047956",
+  "titulo": "Aplicativo móvil con agente de IA, termografía e información clínica para reporte del dolor obstétrico materno",
+  "convocatoria": "Convocatoria para el otorgamiento de becas de apoyo a estudiantes de maestría de la Universidad Nacional de Colombia, sede Manizales - 2026",
+  "modalidad": "Beca para estudiantes de primer y segundo semestre de maestría",
+  "inicio": "01/09/2026",
+  "fin": "01/01/2027",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "68557",
+  "quipu": "400000049481",
+  "titulo": "Apropiación de ecosistemas de agentes inteligentes autónomos para el desarrollo de software con inteligencia artificial",
+  "convocatoria": "Convocatoria para el apoyo y fortalecimiento de semilleros de investigación de la Universidad Nacional de Colombia Sede Manizales - 2026",
+  "modalidad": "Única",
+  "inicio": "09/09/2026",
+  "fin": "09/09/2027",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "68298",
+  "quipu": "400000049478",
+  "titulo": "Aprovechamiento de residuos del cultivo de plátano (Musa paradisiaca) en la obtención de fibra y derivados celulósicos para potenciales aplicaciones biotecnológicas",
+  "convocatoria": "Convocatoria para el apoyo y fortalecimiento de semilleros de investigación de la Universidad Nacional de Colombia Sede Manizales - 2026",
+  "modalidad": "Única",
+  "inicio": "09/09/2026",
+  "fin": "09/09/2027",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "64716",
+  "quipu": "202010048827",
+  "titulo": "Inteligencia artificial para el monitoreo de la efectividad anestésica vía neuroaxial epidural en labores de parto mediante termografía de bajo costo en dispositivos móviles",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "18/03/2026",
+  "fin": "18/03/2027",
+  "estado": "",
+  "avales": "24397 | Aval ético para proyecto | Aprobado CEPI; 24363 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "64090",
+  "quipu": "400000049070",
+  "titulo": "MONGEE: Sistema portable de adquisición y monitoreo de glucemia, EEG y ECG",
+  "convocatoria": "Convocatoria Nacional de Proyectos de Innovación y Creación Artística 2024",
+  "modalidad": "Proyectos de innovación y creación artística 2024",
+  "inicio": "28/07/2026",
+  "fin": "28/07/2027",
+  "estado": "",
+  "avales": "25940 | Aval ético para proyecto | Aprobado CEPI"
+ },
+ {
+  "codigo": "63421",
+  "quipu": "201010047276",
+  "titulo": "NatureTunes: Inteligencia artificial para el monitoreo de paisajes sonoros y visuales como fomento al aviturismo en el departamento de Caldas",
+  "convocatoria": "Convocatoria Nacional de proyectos de investigación, creación artística e innovación 2024",
+  "modalidad": "Proyectos de investigación, creación artística e innovación 2024",
+  "inicio": "29/10/2025",
+  "fin": "30/04/2027",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "62836",
+  "quipu": "202010045932",
+  "titulo": "Aprendizaje de máquina cuántico utilizando espines electrónicos",
+  "convocatoria": "CONVOCATORIA CONJUNTA UNIVERSIDAD DE CALDAS, UNIVERSIDAD NACIONAL DE COLOMBIA-SEDE MANIZALES, PARA PROYECTOS DE INVESTIGACIÓN 2024",
+  "modalidad": "Fortalecer las capacidades de investigación y el trabajo colaborativo entre los grupos de investigación de las universidades aliadas en esta convocatoria, a través del apoyo a proyectos que contribuyan a la solución de problemas identificados en los sectores público, social, cultural y productivo, alineado con los Objetivos de Desarrollo Sostenible.",
+  "inicio": "08/05/2025",
+  "fin": "08/05/2027",
+  "estado": "",
+  "avales": "24271 | Aval ético para proyecto | Aprobado CEPI"
+ },
+ {
+  "codigo": "62642",
+  "quipu": "203010047135",
+  "titulo": "Aprendizaje automático aplicado a la predicción eficiente de propiedades magnéticas de nanopartículas como soporte a la generación de dispositivos electrónicos.",
+  "convocatoria": "CONVOCATORIA DE LA FACULTAD DE INGENIERÍA Y ARQUITECTURA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA SEDE MANIZALES 2024 PARA EL APOYO A PROYECTOS DE INVESTIGACIÓN Y CREACIÓN ARTÍSTICA EN ALIANZA CON ENTIDADES EXTERNAS O INSTITUCIONES DE EDUCACIÓN SUPERIOR",
+  "modalidad": "Modalidad única: Generar o identificar redes de trabajo académico lideradas por investigadores de la Facultad de Ingeniería y Arquitectura de la Universidad Nacional de Colombia sede Manizales en alianza con entidades externas e instituciones de Educación Superior (IES)",
+  "inicio": "14/10/2025",
+  "fin": "14/04/2027",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "62122",
+  "quipu": "202010047590",
+  "titulo": "Fomento de la investigación aplicada a través de la Inteligencia Artificial y Tecnologías Aeroespaciales para la gestión de los recursos hídricos y la biodiversidad de ecosistemas estratégicos en el Pacífico Colombiano.",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "10/10/2025",
+  "fin": "10/04/2027",
+  "estado": "",
+  "avales": "22435 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "56118",
+  "quipu": "203010042271",
+  "titulo": "Alianza científica con enfoque comunitario para mitigar brechas de atención y manejo de trastornos mentales relacionados con impulsividad en Colombia (ACEMATE)",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "06/09/2023",
+  "fin": "06/09/2026",
+  "estado": "",
+  "avales": "24807 | Proyecto investigación - Contrapartida | Aprobado en Dirección; 22551 | Proyecto investigación - Contrapartida | Aprobado en Dirección; 19685 | Proyecto investigación | Aprobado en Dirección; 19683 | Proyecto investigación | No aprobado en Facultad/Instituto"
+ },
+ {
+  "codigo": "56031",
+  "quipu": "202010038856",
+  "titulo": "Sistema de monitoreo en casa basado en IoT e Inteligencia artificial para el tratamiento de enfermedades cardio-cerebrovasculares.",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "19/09/2022",
+  "fin": "19/09/2026",
+  "estado": "",
+  "avales": "19641 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "55969",
+  "quipu": "No",
+  "titulo": "Sistema de monitoreo automático para la evaluación clínica de infantes con alteraciones neurológicas motoras mediante el análisis de volumetría cerebral y patrón de la marcha",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "17/11/2021",
+  "fin": "17/11/2024",
+  "estado": "",
+  "avales": "24806 | Proyecto investigación - Contrapartida | Aprobado en Dirección; 22567 | Proyecto investigación - Contrapartida | Aprobado en Dirección; 21065 | Proyecto investigación | Aprobado en Dirección; 19614 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "69288",
+  "quipu": "",
+  "titulo": "Dashboard inteligente asistido por agente de IA para la predicción y gestión del consumo energético en climatización de edificios universitarios mediante aprendizaje informado por la física.",
+  "convocatoria": "Convocatoria nacional para el apoyo a proyectos de Investigación, Creación Artística e Innovación de las sedes De La Paz y de presencia nacional de la Universidad Nacional de Colombia (2025-2027)",
+  "modalidad": "Única",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "68981",
+  "quipu": "",
+  "titulo": "Fortalecimiento de la gestión energética inteligente en campus universitarios mediante monitoreo multivariable, modelos informados por la física y agentes de inteligencia artificial.",
+  "convocatoria": "Convocatoria nacional para el fortalecimiento de alianzas estratégicas interdisciplinarias entre los actores del Sistema de Investigación de la Universidad Nacional de Colombia - SIUN (2025-2027)",
+  "modalidad": "Única",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "68372",
+  "quipu": "",
+  "titulo": "Ecosistema de Agentes Autónomos basados en Inteligencia Artificial para Fortalecer el Aprendizaje Profundo en Estudiantes de Ingeniería",
+  "convocatoria": "Convocatoria nacional para el fortalecimiento de alianzas estratégicas interdisciplinarias entre los actores del Sistema de Investigación de la Universidad Nacional de Colombia - SIUN (2025-2027)",
+  "modalidad": "Única",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "68356",
+  "quipu": "",
+  "titulo": "VHF-AeroSense: detección inteligente de interferencias aeronáuticas con SDR y redes informadas por física",
+  "convocatoria": "Convocatoria nacional para el fortalecimiento de alianzas estratégicas interdisciplinarias entre los actores del Sistema de Investigación de la Universidad Nacional de Colombia - SIUN (2025-2027)",
+  "modalidad": "Única",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "50660",
+  "quipu": "",
+  "titulo": "Sistema de visión por computador basado en aprendizaje profundo como soporte al manejo sitio específico de malezas para cultivos de maíz y soya.",
+  "convocatoria": "CONVOCATORIA CONJUNTA DE PROYECTOS DE INVESTIGACIÓN, DESARROLLO E INNOVACIÓN I+D+i DEL SECTOR AGROPECUARIO. AGROSAVIA Y UNIVERSIDAD NACIONAL DE COLOMBIA - 2020",
+  "modalidad": "Modalidad Única",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "63344",
+  "quipu": "",
+  "titulo": "Promoción de la formación e investigación en propiedades magnéticas a nanoescala por medio de un sistema de aprendizaje automático",
+  "convocatoria": "Convocatoria Nacional de proyectos de investigación, creación artística e innovación 2024",
+  "modalidad": "Proyectos de investigación, creación artística e innovación 2024",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "69311",
+  "quipu": "",
+  "titulo": "Desarrollo de una metodología de inteligencia artificial para la desagregación no invasiva de los usos finales de acueducto residencial",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "67675",
+  "quipu": "",
+  "titulo": "Fortalecimiento de la cadena agroexportadora de aguacate Hass mediante el desarrollo herramientas tecnológicas de IA y agentes autónomos como soporte a la toma de decisiones para el incremento de la competitividad de los productores de Riosucio - Caldas.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "25784 | Proyecto investigación | No aprobado en Facultad/Instituto"
+ },
+ {
+  "codigo": "67438",
+  "quipu": "",
+  "titulo": "Desarrollo de una plataforma tecnológica de análisis de transitorios en reactores nucleares integrados en sistemas eléctricos, empleando simulaciones de computación semiclásica-cuántica y estrategias de ASC en el Eje Cafetero y Antioquia",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "25782 | Proyecto investigación | No aprobado en Facultad/Instituto"
+ },
+ {
+  "codigo": "66799",
+  "quipu": "",
+  "titulo": "Construcción de un Centro Nacional de I+D+i orientado a la gestión de conocimiento, desarrollo tecnológico y tecnologías inteligentes, que aborda los retos estratégicos de los epartamentos de Amazonas, Arauca, Cesar, Nariño, Valle del Cauca",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Regalías - Asignación Ciencia, Tecnología e Innovación (Minciencias)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "26084 | Aval etapa verificación de requisitos SGR - Regalías | Aprobado en Vicerrectoría; 25543 | Aval etapa presentación proyectos Convocatorias SGR- Regalías | Aprobado en Vicerrectoría; 25537 | Aval ético para proyecto | Aprobado CEPI"
+ },
+ {
+  "codigo": "66764",
+  "quipu": "",
+  "titulo": "Geotechnologies-enabled Smart Cities for Sustainable and Green Urban Management in Latin America",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "25534 | Proyecto investigación | No aprobado en Dirección"
+ },
+ {
+  "codigo": "63741",
+  "quipu": "",
+  "titulo": "Desarrollo de capacidades de CTeI en ingeniería biomédica para el desarrollo del sector salud en la región Eje Cafetero",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Regalías - Asignación Ciencia, Tecnología e Innovación (Minciencias)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "23166 | Aval ético para proyecto | Aprobado CEPI"
+ },
+ {
+  "codigo": "63738",
+  "quipu": "",
+  "titulo": "Desarrollo de herramientas tecnológicas para la implementación de prácticas agrícolas y agroecológicas con mayor productividad, resiliencia al cambio climático y sostenibilidad para agricultores campesinos, familiares, étnicos y comunitarios -ACFEC en el Eje Cafetero.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Regalías - Asignación Ciencia, Tecnología e Innovación (Minciencias)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "23168 | Aval etapa presentación proyectos Convocatorias SGR- Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "63074",
+  "quipu": "",
+  "titulo": "Desarrollo de estrategias de CTeI para el fortalecimiento de capacidades territoriales en Atención Primaria en Salud en cáncer de cuello uterino y sus implicaciones en la salud mental de las pacientes, con enfoque preventivo, predictivo y resolutivo en Antioquia, Caldas, Quindío y Risaralda.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Regalías - Asignación Ciencia, Tecnología e Innovación (Minciencias)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "23140 | Aval ético para proyecto | Aprobado CEPI; 22947 | Aval etapa presentación proyectos Convocatorias SGR- Regalías | Aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "63072",
+  "quipu": "",
+  "titulo": "Desarrollo de mecanismos de CTeI enfocados en la conservación, uso sostenible de la biodiversidad, servicios ecosistémicos y el fomento de modelos de economía circular en el río Cauca y su área de influencia en Antioquia, Caldas, Quindío y Risaralda.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Regalías - Asignación Ciencia, Tecnología e Innovación (Minciencias)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "24435 | Aval etapa verificación de requisitos SGR - Regalías | Aprobado en Vicerrectoría; 23154 | Aval ético para proyecto | Aprobado CEPI; 22933 | Aval etapa presentación proyectos Convocatorias SGR- Regalías | Aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "63052",
+  "quipu": "",
+  "titulo": "Sistema embebido de bajo costo como herramienta de neuroingeniería basado en inteligencia artificial y juegos serios para el diagnóstico del TDAH",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Regalías - Asignación Ciencia, Tecnología e Innovación (Minciencias)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "22942 | Aval etapa presentación proyectos Convocatorias SGR- Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "62602",
+  "quipu": "",
+  "titulo": "Modelo de despacho óptimo de recursos de generación Integrando Fuentes No Convencionales de Energía para la operación a corto plazo del Sistema Interconectado Nacional basados en gemelos digitales Informados por la física",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "22626 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "62601",
+  "quipu": "",
+  "titulo": "Estimación de la capacidad de generación de energía eléctrica del agua coproducida en campos de petróleo y gas en Colombia a partir de técnicas de aprendizaje automático informado por la física.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "22617 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "62487",
+  "quipu": "",
+  "titulo": "Desarrollo de un sistema de información enfocado a la administración de la APS, articulado con la caracterización epidemiológica, los determinantes sociales de la población y las rutas de atención.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "62184",
+  "quipu": "",
+  "titulo": "Implementación de una estrategia de gestión de la información de modelos de atención predictivo, preventivo y resolutivo mediante el uso y apropiación de la CTeI, en el marco de APS en los municipios adscritos al nodo regional del alto occidente de Caldas.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "22586 | Proyecto investigación | Aprobado en Dirección; 22536 | Aval ético para proyecto | Aprobado CEPI"
+ },
+ {
+  "codigo": "61264",
+  "quipu": "",
+  "titulo": "FORTALECIMIENTO DE UN CENTRO MULTI-REGIONAL EN MATEMÁTICAS Y CIENCIAS DE LA COMPUTACIÓN PARA LA CONSTRUCCIÓN DE NUEVOS PARADIGMAS DE DIAGNÓSTICO, PRONÓSTICO Y TRATAMIENTO DE CÁNCER A NIVEL NACIONAL",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Regalías - Asignación Ciencia, Tecnología e Innovación (Minciencias)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "22002 | PROYECTO - PAED/ Convocatorias FCTeI - Regalías | Aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "60785",
+  "quipu": "",
+  "titulo": "Ready, set, go?: Prototipo de herramienta gamificada para validación de tratamiento de impulsividad en niños",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "21718 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "60540",
+  "quipu": "",
+  "titulo": "“Descubriendo el Valle del Conocimiento - CTeI para Todos”: Fomento de vocaciones tempranas de las niñas, niños y adolescentes a través de la CTeI para el aprovechamiento, conservación y uso sostenibles de la biodiversidad y los recursos ecosistémicos del Valle del Cauca.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "21593 | Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "59645",
+  "quipu": "",
+  "titulo": "Análisis del rol de técnicas agrofísicas en el desarrollo de la tolerancia al estrés hídrico en plantas de tomate.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "21267 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "59635",
+  "quipu": "",
+  "titulo": "SISTEMA DE MONITOREO AUTOMÁTICO PARA LA EVALUACIÓN CLÍNICA DE INFANTES CON ALTERACIONES NEUROLÓGICAS DEL LENGUAJE Y MOTORAS MEDIANTE ANÁLISIS GENÓMICOS Y DE VOLUMETRÍA CEREBRAL",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "21255 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "59596",
+  "quipu": "",
+  "titulo": "Desarrollo de un sensor portable a base de grafeno que permita la detección de analitos esenciales para el cuidado de la salud humana.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "21262 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "59480",
+  "quipu": "",
+  "titulo": "Análisis multimodal interpretable basado en aprendizaje por inferencia bayesiana en condiciones de pocos datos para entornos perinatales y neonatales.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "21257 | Proyecto investigación | Aprobado en Dirección; 21256 | Proyecto investigación | Formulación; 21093 | Aval ético para proyecto | Aprobado CEPI"
+ },
+ {
+  "codigo": "58746",
+  "quipu": "",
+  "titulo": "Proyecto de Creación y Plan de Negocios del Emprendimiento Spin-Off - Modalidad 1: INFERENCE",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "57349",
+  "quipu": "",
+  "titulo": "Design of a diagnostic test for cardiovascular ischemia predisposition using a multiomics approach and artificial intelligence.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "20150 | Proyecto investigación | Devuelto para correcciones"
+ },
+ {
+  "codigo": "57174",
+  "quipu": "",
+  "titulo": "Fortalecimiento del desarrollo científico para la conservación y el uso sostenible de la biodiversidad y los servicios ecosistémicos en la cuenca media del río Cauca en la región eje cafetero.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "20084 | Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "57171",
+  "quipu": "",
+  "titulo": "Fortalecimiento integral de los servicios de innovación empresarial para la conexión efectiva del sector productivo con los proveedores y generadores de conocimiento en la región del eje cafetero",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "20082 | Regalías | Enviado a facultad"
+ },
+ {
+  "codigo": "56300",
+  "quipu": "",
+  "titulo": "Desarrollo de un protocolo basado en herramientas de inteligencia artificial para dar soporte al diagnóstico temprano de enfermedades vasculares del tejido conectivo a través de imágenes capilaroscopias.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19804 | Aval ético para proyecto | Formulación; 19763 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "56121",
+  "quipu": "",
+  "titulo": "Desarrollo de un prototipo de visión por computador para la detección y seguimiento de objetos a partir de secuencias de imágenes y video en zonas urbanas utilizando unidades aéreas no tripuladas",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19679 | Proyecto investigación | Aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "56017",
+  "quipu": "",
+  "titulo": "Desarrollo de un sistema multimodal de diagnóstico temprano del cáncer de mama con enfoque de medicina personalizada mediante imágenes médicas y factores genético-ambientales",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19635 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "55956",
+  "quipu": "",
+  "titulo": "Sistema de monitoreo personalizado en ambientes de cuidado crítico para la identificación de estados de riesgo en neonatos mediante la evaluación y seguimiento integrado de bioseñales.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19631 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "55649",
+  "quipu": "",
+  "titulo": "Desarrollo de habilidades científicas, tecnológicas e innovadoras en jóvenes en formación que ayuden al fortalecimiento de capacidades institucionales y humanas de la región del eje cafetero",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19489 | Regalías | No aprobado en Dirección"
+ },
+ {
+  "codigo": "55512",
+  "quipu": "",
+  "titulo": "Desarrollo de estrategias para la gestión del conocimiento nuevo y tradicional con énfasis en CTeI, en la población de jóvenes y adolescentes del departamento de Arauca.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19439 | Regalías | No aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "55511",
+  "quipu": "",
+  "titulo": "Modernización del sistema productivo del Marañón, empleando biotecnología y agroindustria 4.0, en armonización con tecnologías y saberes ancestrales, bajo mecanismos de I+D+I, con énfasis en sostenibilidad ambiental en Vichada",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19444 | Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "53871",
+  "quipu": "",
+  "titulo": "Gestión de operaciones logísticas aplicada al sector de alimentos.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "18030 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "53867",
+  "quipu": "",
+  "titulo": "Gestión de operaciones logísticas aplicada al sector de alimentos.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "18025 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "53745",
+  "quipu": "",
+  "titulo": "Gestión de operaciones logísticas aplicada al sector de alimentos.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "17986 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "50511",
+  "quipu": "",
+  "titulo": "Gestión de operaciones logísticas aplicada al sector de alimentos.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "16837 | Regalías | No aprobado en Facultad/Instituto"
+ },
+ {
+  "codigo": "50456",
+  "quipu": "",
+  "titulo": "Desarrollo de una plataforma web de agricultura inteligente en ganadería como soporte a la planeación del pastoreo y al diagnóstico de plagas en el departamento de Caldas",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "16818 | Regalías | Formulación"
+ },
+ {
+  "codigo": "48221",
+  "quipu": "",
+  "titulo": "Desarrollo de una plataforma web de agricultura inteligente en ganadería como soporte a la planeación del pastoreo y al diagnóstico de plagas.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "16396 | Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "47579",
+  "quipu": "",
+  "titulo": "Sistema de aprendizaje profundo para el procesamiento multi-modal de registros de electroencefalografía, audio y video en tareas de neuro-realimentación",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "16184 | Proyecto investigación | Formulación"
+ },
+ {
+  "codigo": "47416",
+  "quipu": "",
+  "titulo": "Desarrollo de una plataforma web de agricultura inteligente como fomento a la innovación y desarrollo tecnológico de la empresa Taclla",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "16098 | Proyecto investigación - Contrapartida | Formulación"
+ },
+ {
+  "codigo": "67624",
+  "quipu": "",
+  "titulo": "DESARROLLO DE ESTRATEGIAS DE CTEI PARA EL FORTALECIMIENTO DE CAPACIDADES TERRITORIALES EN ATENCIÓN PRIMARIA EN SALUD EN CÁNCER DE CUELLO UTERINO Y SUS IMPLICACIONES EN LA SALUD MENTAL DE LAS PACIENTES, CON ENFOQUE PREVENTIVO, PREDICTIVO Y RESOLUTIVO EN ANTIOQUIA, CALDAS, QUINDÍO Y RISARALDA",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "61292",
+  "quipu": "",
+  "titulo": "Formación de capital humano a nivel de doctorado enfocado en la generación de nuevo conocimiento y divulgación pública de la ciencia, que dé respuesta a los retos en Ciencia, Tecnología e Innovación, y las demandas territoriales de Caldas, Risaralda, Quindío, Antioquia",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Regalías - Asignación Ciencia, Tecnología e Innovación (Minciencias)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "59471",
+  "quipu": "",
+  "titulo": "Fórmula tarifaria para el servicio de energía eléctrica",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "21223 | Proyecto investigación | Devuelto para correcciones; 21092 | Aval ético para proyecto | Aprobado CEPI"
+ },
+ {
+  "codigo": "55509",
+  "quipu": "",
+  "titulo": "Desarrollo de tecnologías convergentes en armonía con conocimientos ancestrales y tradicionales de pueblos indígenas, para mejorar la eficiencia de la agroindustria con enfoque en seguridad alimentaria, en el departamento de Guainía",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19443 | Regalías | Devuelto para correcciones; 19434 | Regalías | Devuelto para correcciones"
+ },
+ {
+  "codigo": "60909",
+  "quipu": "202010043293",
+  "titulo": "Prototipo costo-eficiente y escalable para el monitoreo del espectro radioeléctrico en Colombia mediante radio definido por software y aprendizaje profundo",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "21752 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "55923",
+  "quipu": "No",
+  "titulo": "VALIDACIÓN TECNOLÓGICA PARA LA FABRICACIÓN DE RECONECTADORES AUTOMÁTICOS PARA REDES INTELIGENTES, DEL TIPO SECO CON POLOS ENCAPSULADOS UTILIZANDO COMPUESTOS POLIMÉRICOS TERMOESTABLES",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19593 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "52137",
+  "quipu": "202010039703",
+  "titulo": "Prototipo funcional de Lengua electrónica para identificación de sabores en cacao fino de origen colombiano.",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "24804 | Proyecto investigación - Contrapartida | Aprobado en Dirección; 22553 | Proyecto investigación - Contrapartida | Aprobado en Dirección; 17372 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "51916",
+  "quipu": "202010039704",
+  "titulo": "Plataforma de analítica de datos como soporte a la gestión de la demanda operacional en la industria manufacturera de la red de aliados de Revlog",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "17285 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "50149",
+  "quipu": "201010029886",
+  "titulo": "CARACTERIZACIÓN TERMOGRÁFICA DE LA ANESTESIA Y ANALGESIA NEUROAXIAL EPIDURAL EN OBSTETRICIA",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "16720 | Proyecto investigación | Aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "47350",
+  "quipu": "604010610634",
+  "titulo": "IMPLEMENTACIÓN DE UN CENTRO DE DESARROLLO TECNOLÓGICO DE INVESTIGACIÓN Y TRANSFERENCIA, EN MATERIALES Y PROCESOS DEL SECTOR INDUSTRIAL DE CALDAS",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "16143 | Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "13746",
+  "quipu": "20201006599",
+  "titulo": "Técnicas no lineales de reducción de dimensión orientadas al análisis y síntesis de los datos en sistemas de visión por computador",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2011",
+  "modalidad": "APOYO A TESIS DE POSGRADOS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "69693",
+  "quipu": "",
+  "titulo": "Sistema de inteligencia artificial portable para la identificación de patrones de depresión asociados a estrés postraumático en estudiantes universitarios afectados por el sismo",
+  "convocatoria": "INVITACIÓN NACIONAL FOCALIZADA - RESPUESTA A EMERGENCIAS Y DESASTRES: INVESTIGACIÓN PARA LA GESTIÓN DEL RIESGO, LA SALUD PÚBLICA, LA INFRAESTRUCTURA RESILIENTE Y LA RESPUESTA HUMANITARIA",
+  "modalidad": "Modalidad Única",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "62651",
+  "quipu": "",
+  "titulo": "Monitoreo de exposición a campos electromagnéticos en banda 5G mediante SDR y aprendizaje profundo",
+  "convocatoria": "CONVOCATORIA DE LA FACULTAD DE INGENIERÍA Y ARQUITECTURA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA SEDE MANIZALES 2024 PARA EL APOYO A PROYECTOS DE INVESTIGACIÓN Y CREACIÓN ARTÍSTICA EN ALIANZA CON ENTIDADES EXTERNAS O INSTITUCIONES DE EDUCACIÓN SUPERIOR",
+  "modalidad": "Modalidad única: Generar o identificar redes de trabajo académico lideradas por investigadores de la Facultad de Ingeniería y Arquitectura de la Universidad Nacional de Colombia sede Manizales en alianza con entidades externas e instituciones de Educación Superior (IES)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "62641",
+  "quipu": "",
+  "titulo": "NATURETUNES: INTELIGENCIA ARTIFICIAL PARA EL MONITOREO DE PAISAJES SONOROS Y VISUALES COMO FOMENTO AL AVITURISMO EN EL EJE CAFETERO",
+  "convocatoria": "CONVOCATORIA DE LA FACULTAD DE INGENIERÍA Y ARQUITECTURA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA SEDE MANIZALES 2024 PARA EL APOYO A PROYECTOS DE INVESTIGACIÓN Y CREACIÓN ARTÍSTICA EN ALIANZA CON ENTIDADES EXTERNAS O INSTITUCIONES DE EDUCACIÓN SUPERIOR",
+  "modalidad": "Modalidad única: Generar o identificar redes de trabajo académico lideradas por investigadores de la Facultad de Ingeniería y Arquitectura de la Universidad Nacional de Colombia sede Manizales en alianza con entidades externas e instituciones de Educación Superior (IES)",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "53666",
+  "quipu": "",
+  "titulo": "URVVA: Unidad de Reacción y Video-Vigilancia Automática utilizando Técnicas de Visión por Computado",
+  "convocatoria": "UN Innova: Convocatoria de Proyectos para el Fortalecimiento de la Innovación en la Universidad Nacional de Colombia a partir del Desarrollo de Prototipos y Experiencias Piloto 2019-2021 (segunda cohorte)",
+  "modalidad": "Propuestas de escalamiento de prototipos.",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "47547",
+  "quipu": "",
+  "titulo": "Sistema cerebro-computador basado en registros de electroencefalografía como soporte al análisis de las propiedades organolépticas de alimentos funcionales formulados a partir de materias primas autóctonas",
+  "convocatoria": "CONVOCATORIA NACIONAL PARA EL FOMENTO DE ALIANZAS INTERDISCIPLINARIAS QUE ARTICULEN INVESTIGACIÓN, CREACIÓN, EXTENSIÓN Y FORMACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA 2019-2021",
+  "modalidad": "Modalidad única",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "19182",
+  "quipu": "",
+  "titulo": "DESARROLLO DE UN SISTEMA AUTOMÁTICO DE MAPEO CEREBRAL PARA EL MONITOREO Y TRATAMIENTO DE ENFERMEDADES NEURODEGENERATIVAS",
+  "convocatoria": "CONVOCATORIA DEL PROGRAMA NACIONAL DE PROYECTOS PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, LA CREACIÓN Y LA INNOVACIÓN EN POSGRADOS DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "Modalidad 2: Nuevos proyectos de investigación, creación o innovación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "65441",
+  "quipu": "",
+  "titulo": "Sistema de producción a escala comercial, asistido por tratamiento magnético de semillas y guiado por una herramienta basada en tecnologías 4.0 e inteligencia artificial, orientado al fortalecimiento de la toma de decisiones para la soberanía alimentaria en organizaciones rurales del Eje Cafetero.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "24839 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "62119",
+  "quipu": "",
+  "titulo": "--Desarrollo de un sistema predictivo de vigilancia inteligente para la seguridad y convivencia ciudadana utilizando secuencias de video y registros judiciales y de medidas correctivas",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "22434 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "62097",
+  "quipu": "",
+  "titulo": "BioAvesIA: Soluciones de inteligencia artificial para el monitoreo de paisajes sonoros, visuales y culturales enfocadas en el turismo regenerativo y la sostenibilidad productiva en alianza con comunidades locales del Eje Cafetero y Antioquia.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "22433 | Proyecto investigación | Aprobado en Dirección; 22432 | Aval ético para proyecto | Aprobado CEPI"
+ },
+ {
+  "codigo": "61941",
+  "quipu": "",
+  "titulo": "Juego serio basado en inteligencia artificial y realidad virtual como soporte a la apropiación social de saberes ancestrales y tradicionales Caldenses",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "22334 | Proyecto investigación | Aprobado en Dirección; 22333 | Aval ético para proyecto | Aprobado CEPI"
+ },
+ {
+  "codigo": "56593",
+  "quipu": "",
+  "titulo": "Fortalecimiento de capacidades científicas para el desarrollo de aplicaciones de la Computación Cuántica en: Ciberseguridad, Análisis Topológico de Datos, Álgebra y Combinatoria en Colombia",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19868 | Regalías | Aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "56108",
+  "quipu": "",
+  "titulo": "Desarrollo de herramientas soporte para el diagnóstico temprano de cáncer de pulmón y su socialización, empleando Deep Learning y Nanotecnología",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19706 | Aval ético para proyecto | Aprobado CEPI; 19674 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "56084",
+  "quipu": "",
+  "titulo": "Programa de diagnóstico temprano y seguimiento en pacientes con cáncer de mama empleando modelos de inteligencia artificial y asistencia remota con enfoque de determinantes y desigualdades sociales de la salud",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19667 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "55947",
+  "quipu": "",
+  "titulo": "Generación de valor a partir de datos abiertos y de telemedida en la prestación del servicio de energía eléctrica para su transformación eficiente y responsable como un aporte a la consolidación de territorios inteligentes y sostenibles.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19619 | Proyecto investigación | Aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "55708",
+  "quipu": "",
+  "titulo": "PLATAFORMA TECNOLÓGICA BASADA EN BLOCKCHAIN E INTELIGENCIA ARTIFICIAL COMO SOPORTE AL DESARROLLO DE POLÍTICAS PÚBLICAS PARA FACILITAR LA IMPLEMENTACIÓN SEGURA DE LA IDENTIFICACIÓN NACIONAL DIGITAL EN COLOMBIA",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19520 | PROYECTO - PAED/ Convocatorias FCTeI - Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "55707",
+  "quipu": "",
+  "titulo": "Fortalecimiento de la investigación, desarrollo científico y tecnológico relacionados con el cuidado, protección y recuperación del Río Magdalena y su área de influencia cercana, que impacten el desarrollo socio económico del país.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "19516 | PROYECTO - PAED/ Convocatorias FCTeI - Regalías | Aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "53961",
+  "quipu": "",
+  "titulo": "Prototipo de interfaz cerebro-computador multimodal para la detección de patrones relevantes relacionados con trastornos de impulsividad - Minciencias 907",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "18147 | Proyecto investigación | No aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "53874",
+  "quipu": "",
+  "titulo": "Plataforma de análisis de operación de buses de transporte público basada en analítica de datos para la gestión de información de la red de aliados de Met Group S.A.S",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "18033 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "53851",
+  "quipu": "",
+  "titulo": "Sistema multimodal de evaluación e intervención neurocognitiva personalizada para niños con TDAH apoyado en herramientas de juegos serios como soporte a la cobertura presencial y remota del Hospital Infantil de Caldas.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "18018 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "52122",
+  "quipu": "",
+  "titulo": "Prototipo de agricultura digital para la planificación y establecimiento de cultivos permanentes priorizados en el departamento de Caldas",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "17344 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "52106",
+  "quipu": "",
+  "titulo": "Prototipo industrial portable de costo moderado para el soporte diagnóstico y seguimiento de trastornos de impulsividad basado en análisis multimodal de biomarcadores y orientado a la asistencia post-confinamiento",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "17347 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "52105",
+  "quipu": "",
+  "titulo": "Mejoramiento del sistema de producción de tomate orientado al fortalecimiento de la seguridad alimentaria en el marco de la pospandemia mediante tratamiento magnético de semillas e inteligencia computacional",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "17351 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "48259",
+  "quipu": "",
+  "titulo": "Desarrollo e implementación de estrategias de apoyo diagnóstico y terapéutico para trastornos de control de impulsos en Caldas y Risaralda, basado en herramientas computacionales",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "16797 | Regalías | Aprobado en Dirección; 16389 | PROYECTO - PAED/ Convocatorias FCTeI - Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46893",
+  "quipu": "",
+  "titulo": "Estudio tribológico y energético en motores de combustión interna, análisis de los ciclos de conducción y monitoreo de la calidad de aire en Pereira",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15851 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46889",
+  "quipu": "",
+  "titulo": "Implementación de tecnologías convergentes para la industria y agroindustria en el eje cafetero",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15844 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46879",
+  "quipu": "",
+  "titulo": "Herramientas de integración y análisis de información para la toma de decisiones estratégicas y tácticas en modelos de atención en salud con gestión del riesgo",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15836 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46769",
+  "quipu": "",
+  "titulo": "Integración de tecnologías convergentes para el mejoramiento de la productividad en la industria metalmecánica",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15819 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46592",
+  "quipu": "",
+  "titulo": "Desarrollo de una herramienta para el análisis eficiente de la confiabilidad del sistema de transporte de gas natural basado en optimización estocástica",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15719 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46499",
+  "quipu": "",
+  "titulo": "Herramienta de apoyo al diagnóstico del TDAH en niños a partir de múltiples características de actividad eléctrica cerebral desde registros EEG",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15668 | Proyecto investigación | Aprobado en Vicerrectoría"
+ },
+ {
+  "codigo": "46288",
+  "quipu": "",
+  "titulo": "Programa I+D en analítica de datos aplicada a la medicina de precisión, con enfoque preventivo, predictivo, para el apoyo al diagnóstico y pronóstico de enfermedades crónicas no transmisibles",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15627 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46273",
+  "quipu": "",
+  "titulo": "Alianza en I+D para el desarrollo de herramientas diagnósticas de trastornos de control de impulsos.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15628 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46071",
+  "quipu": "",
+  "titulo": "Herramienta de apoyo al diagnóstico de trastornos de impulsividad basado en aprendizaje de máquina como soporte a las estrategias de prevención de depresión, consumo de sustancias psicoactivas, y suicidio en el eje cafetero",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15539 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46070",
+  "quipu": "",
+  "titulo": "SISTEMA DE PLANEACIÓN QUIRÚRGICA DE PACIENTES CON EPILEPSIA FÁRMACO-RESISTENTE ASOCIADA A DISPLASIAS CORTICALES FOCALES POR IMÁGENES DE RESONANCIA MAGNÉTICA.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15543 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46056",
+  "quipu": "",
+  "titulo": "Estudio de conectividad eléctrica cerebral empleando electroencefalografía intracraneal (iEEG) para el modelado de mecanismos neurales del cerebro en reposo y en actividad cognitiva durante transiciones de estados de consciencia.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15541 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46052",
+  "quipu": "",
+  "titulo": "Desarrollo de una metodología para el modelamiento de la estimulación cerebral profunda (DBS) conectiva mediante la estimación del volumen de tejido activo (VTA) y técnicas de procesamiento digital de imágenes médicas (CT, MRI, dMRI). Aplicación a la Neuromodulación en pacientes con enfermedad de Parkinson",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15540 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46048",
+  "quipu": "",
+  "titulo": "SISTEMA DE PREDICCIÓN DE COMPLICACIONES MICROVASCULARES EN PACIENTES CON DIABETES MELLITUS TIPO 2 DE LA ZONA CENTRO OCCIDENTE DE COLOMBIA.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15538 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "46047",
+  "quipu": "",
+  "titulo": "DESARROLLO DE UN SISTEMA AUTOMÁTICO PARA EL RECONOCIMIENTO DE LA DISFUNCIÓN VENTRICULAR SUBCLÍNICA EN PACIENTES HIPERTENSOS Y/O DIABÉTICOS BAJO CONTROL MÉDICO",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15544 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "45911",
+  "quipu": "",
+  "titulo": "Alianza regional en I+D para el desarrollo de una plataforma web de agricultura inteligente en citricultura y ganadería: diagnóstico temprano de plagas y enfermedades (Collaria/HLB) y estimación de productividad forrajera.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "15429 | PROYECTO - PAED/ Convocatorias FCTeI - Regalías | Aprobado en Dirección"
+ },
+ {
+  "codigo": "38553",
+  "quipu": "",
+  "titulo": "SOPORTE AL DIAGNÓSTICO Y TRATAMIENTO QUIRÚRGICO DE LA ENFERMEDAD DE PARKINSON BASADO EN IMAGENOLOGÍA CLÍNICA Y TÉCNICAS DE PROCESAMIENTO DIGITAL DE SEÑALES",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "11796 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "38542",
+  "quipu": "",
+  "titulo": "Caracterización clínica y genética de pacientes afectados con enfermedades raras",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "11764 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "38363",
+  "quipu": "",
+  "titulo": "Desarrollo de un sistema de procesamiento de imágenes para la detección de anormalidades de la contractilidad segmentaria del ventrículo izquierdo utilizando ecocardiografía enfocada",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": "11826 | Proyecto investigación | Aprobado en Dirección"
+ },
+ {
+  "codigo": "37075",
+  "quipu": "",
+  "titulo": "Seguimiento y monitoreo de objetos móviles con cámaras 2D fijas en ambientes internos y externos",
+  "convocatoria": "\"UN INNOVA\": CONVOCATORIA DE PROYECTOS PARA EL FORTALECIMIENTO DE LA INNOVACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA A PARTIR DEL DESARROLLO DE PROTOTIPOS Y EXPERIENCIAS PILOTO 2016-2018",
+  "modalidad": "Modalidad 3: Propuestas de prototipos o escalamientos, presentadas por grupos de investigación en alianza con empresas del sector productivo o solidario, hasta por treinta millones de pesos.",
+  "inicio": "",
+  "fin": "",
+  "estado": "",
+  "avales": ""
+ },
+ {
+  "codigo": "66229",
+  "quipu": "202010047211",
+  "titulo": "Fase 2: sistema costo-eficiente y escalable para el monitoreo del espectro radioeléctrico en Colombia, mediante radio definido por software y aprendizaje profundo",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "03/10/2025",
+  "fin": "03/01/2026"
+ },
+ {
+  "codigo": "64377",
+  "quipu": "400000049065",
+  "titulo": "Sistema costo-eficiente para el monitoreo de señales radioeléctricas mediante radio definida por software y aprendizaje profundo",
+  "convocatoria": "Convocatoria Nacional de Proyectos de Innovación y Creación Artística 2024",
+  "modalidad": "Proyectos de innovación y creación artística 2024",
+  "inicio": "28/07/2026",
+  "fin": "28/07/2027"
+ },
+ {
+  "codigo": "62848",
+  "quipu": "202010045946",
+  "titulo": "Monitoreo SDR a exposición de IoT con alta densidad de dispositivos",
+  "convocatoria": "CONVOCATORIA CONJUNTA UNIVERSIDAD DE CALDAS, UNIVERSIDAD NACIONAL DE COLOMBIA-SEDE MANIZALES, PARA PROYECTOS DE INVESTIGACIÓN 2024",
+  "modalidad": "Fortalecer las capacidades de investigación y el trabajo colaborativo entre los grupos de investigación de las universidades aliadas en esta convocatoria, a través del apoyo a proyectos que contribuyan a la solución de problemas identificados en los sectores público, social, cultural y productivo, alineado con los Objetivos de Desarrollo Sostenible.",
+  "inicio": "08/05/2025",
+  "fin": "08/05/2027"
+ },
+ {
+  "codigo": "25442",
+  "quipu": "",
+  "titulo": "Sistema adaptativo de neuro-realimentación basado en técnicas de aprendizaje de máquina y procesado de señales en registros de EEG: Aplicación al manejo del dolor.",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "24245",
+  "quipu": "",
+  "titulo": "Estimación de los parámetros de neuro modulación con terapia de estimulación cerebral profunda en pacientes con enfermedad de Parkinson a partir del volumen de tejido activo planeado.",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "22423",
+  "quipu": "",
+  "titulo": "Plataforma tecnológica para los servicios de teleasistencia, emergencias médicas, seguimiento y monitoreo permanente a los programas de promoción y prevención - Eje2",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "22420",
+  "quipu": "",
+  "titulo": "Plataforma tecnológica para los servicios de teleasistencia, emergencias médicas, seguimiento y monitoreo permanente a los pacientes y apoyo a los programas de promoción y prevención - Vigilancia de Eventos de riesgo para pacientes crónicos (Fase II)",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "60064",
+  "quipu": "",
+  "titulo": "APOYO A ESTUDIANTE DE MAESTRÍA PARA LA INVESTIGACIÓN EN EL ESTUDIO DE NEUROCIENCIA, DENTRO DEL INSTITUTO DE EPILEPSIA Y PARKINSON DEL EJE CAFETERO EN CONVENIO CON LA UNIVERSIDAD NACIONAL SEDE MANIZALES",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "44637",
+  "quipu": "",
+  "titulo": "CARACTERIZACIÓN MORFOLÓGICA DE ESTRUCTURAS CEREBRALES POR TÉCNICAS DE IMAGEN",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "36618",
+  "quipu": "",
+  "titulo": "DETERMINANTES SOCIALES DE LA SALUD PARA LA GESTIÓN INTER-TRANSECTORIAL PARA LA TOMA DE DECISIONES INFORMADAS EN ATENCIÓN PRIMARIA SOCIAL (APS) EN EL DEPARTAMENTO DE CALDAS",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa - Fondo de CT+I REGALÍAS",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "34269",
+  "quipu": "",
+  "titulo": "DESARROLLO DE HERRAMIENTAS DE TELEDETECCIÓN E INFRAESTRUCTURA DE DATOS ESPACIALES –IDE- PARA FORTALECER LOS PROCESOS DE PLANIFICACIÓN, SEGUIMIENTO Y EVALUACIÓN DE LOS ENCADENAMIENTOS PRODUCTIVOS AGRÍCOLAS DEL DEPARTAMENTO DE CALDAS",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "31915",
+  "quipu": "",
+  "titulo": "Desarrollo de un sistema para el control de los trastornos de ansiedad, basado n biofedback y realidad virtual como herramienta de apoyo en el tratamiento cognitivo conductal",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "31866",
+  "quipu": "",
+  "titulo": "SISTEMA INTEGRADO DE SOFTWARE PARA LA CARACTERIZACIÓN DE ALTERACIONES NEUROLÓGICAS Y EVALUACIÓN DEL DETERIORO COGNITIVO EN PACIENTES CON ENCEFALOPATÍA HEPÁTICA",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "28624",
+  "quipu": "",
+  "titulo": "Estudio para determinar la sensibilidad de la medición de la entropía termodinámica en el tamizaje del cáncer de mama.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "22723",
+  "quipu": "",
+  "titulo": "Diseño y desarrollo de una plataforma basada en cloud computing para la prestación de servicios de apoyo al diagnóstico clínico: Aplicación en el área de las Neurociencias. NEURO-CLOUD.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto extensión - Innovación y gestión tecnológica",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "19904",
+  "quipu": "",
+  "titulo": "Diagnóstico y seguimiento de estados y alteraciones funcionales humanas.",
+  "convocatoria": "CONVOCATORIAS EXTERNAS",
+  "modalidad": "PROYECTOS DE CONVOCATORIAS EXTERNAS",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "13521",
+  "quipu": "",
+  "titulo": "sistema embebido para el analisis de señales de vibraciones mecanicas orientado al diagnostico de fallas en maquinas rotativas",
+  "convocatoria": "CONVOCATORIA SEMILLEROS DE INVESTIGACIÓN - DIRECCIÓN DE INVESTIGACIÓN SEDE MANIZALES",
+  "modalidad": "CONVOCATORIA SEMILLEROS DE INVESTIGACIÓN - DIRECCIÓN DE INVESTIGACIÓN SEDE MANIZALES",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "12662",
+  "quipu": "",
+  "titulo": "Antropometría y caracterización de patologías en tejidos blandos del área de la boca en pacientes con LPH utilizando señales audio visuales",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "MODULO PARA LA ACTUALIZACIÓN DE PROYECTOS (REQUISITO PARA PARTICIPAR EN LA CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012) FINANCIACIÓN EXTERNA DE POR LO MENOS LOS ÚLTIMOS CINCO AÑOS",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "12645",
+  "quipu": "",
+  "titulo": "Identificación de hipernasalidad en niños con LPH mediante el análisis acústico de la voz (Detección de los niveles de compromiso de resonancia en niños con labio y/o paladar hendido)",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "MODULO PARA LA ACTUALIZACIÓN DE PROYECTOS (REQUISITO PARA PARTICIPAR EN LA CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012) PROYECTOS DE CONVOCATORIAS CON FINANCIACIÓN INTERNA DE POR LO MENOS LOS ÚLTIMOS CINCO AÑOS",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "46500",
+  "quipu": "201010023676",
+  "titulo": "CARACTERIZACIÓN MORFOLÓGICA DE ESTRUCTURAS CEREBRALES POR TÉCNICAS DE IMAGEN PARA EL TRATAMIENTO MEDIANTE IMPLANTACIÓN QUIRÚRGICA DE NEUROESTIMULADORES EN LA ENFERMEDAD DE PARKINSON",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "28437",
+  "quipu": "20101009730",
+  "titulo": "Plataforma tecnológica para los servicios de teleasistencia, emergencias médicas, seguimiento y monitoreo permanente a los pacientes y apoyo a los programas de promoción y prevención - Vigilancia de Eventos de riesgo para pacientes crónicos (Fase II)",
+  "convocatoria": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2014",
+  "modalidad": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2014",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "28152",
+  "quipu": "20101009730",
+  "titulo": "Evaluación asistida de potenciales evocados cognitivos como marcador del trastorno por déficit de atención e hiperactividad (TDH)",
+  "convocatoria": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2014",
+  "modalidad": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2014",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "25930",
+  "quipu": "",
+  "titulo": "Machine diagnostics based on blind source separation and novelty detection using non-stationary vibration signals",
+  "convocatoria": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "25912",
+  "quipu": "",
+  "titulo": "Esquemas de trabajo de representación de características como soporte al análisis de señales de actividad cerebral",
+  "convocatoria": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "21654",
+  "quipu": "20101008238",
+  "titulo": "Monitoreo de condición de máquinas rotativas con condiciones de operación no estacionarias empleando señales de vibraciones mecánicas y emisión acústica",
+  "convocatoria": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2013",
+  "modalidad": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2013",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "16882",
+  "quipu": "",
+  "titulo": "Análisis del rendimiento competitivo de tenistas caldenses empleando técnicas de aprendizaje de máquina sobre mediciones antropométricas, biomecánicas, de condición física y psicológicas",
+  "convocatoria": "Proyectos Jornada Docente",
+  "modalidad": "Proyectos Jornada Docente",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "12854",
+  "quipu": "20201006570",
+  "titulo": "CÁLCULO CIENTÍFICO PARA EL PROCESAMIENTO AVANZADO DE BIOSEÑALES",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "Modalidad 2: Fortalecimiento a grupos de investigación y creación artística con proyección nacional. ALIANZAS DE GRUPOS",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "7654",
+  "quipu": "20201004789",
+  "titulo": "Caracterización de la Dinámica Estocástica de Señales Biomédicas para la Detección de Patologías Utilizando Representaciones de Similitud y Disimilitud",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2008",
+  "modalidad": "MODALIDAD 6. APOYO A TESIS DE PROGRAMAS DE POSGRADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "7398",
+  "quipu": "20201004791",
+  "titulo": "Detección de focos epilépticos mediante el análisis de registros EEG basado en representaciones tiempo--frecuencia paramétricas",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2008",
+  "modalidad": "MODALIDAD 6. APOYO A TESIS DE PROGRAMAS DE POSGRADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "7394",
+  "quipu": "",
+  "titulo": "Análisis tiempo-frecuencia por métodos no paramétricos orientado a la detección de patologías en bioseñales",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2008",
+  "modalidad": "MODALIDAD 6. APOYO A TESIS DE PROGRAMAS DE POSGRADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "58419",
+  "quipu": "",
+  "titulo": "Observatorio de Política Pública - Territorios Inteligentes y Sostenibles",
+  "convocatoria": "Convocatoria Nacional Observatorios de política pública 2022-2024",
+  "modalidad": "Modalidad Única",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "51218",
+  "quipu": "",
+  "titulo": "Prototipo BCI de bajo costo para la adquisición y procesamiento de registros de EEG ante estímulos audiovisuales",
+  "convocatoria": "CONVOCATORIA PARA EL APOYO AL DESARROLLO DE TESIS DE POSGRADO Y TRABAJO DE GRADO DE PREGRADO DE LA FACULTAD DE INGENIERÍA Y ARQUITECTURA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA SEDE MANIZALES 2020",
+  "modalidad": "Modalidad 2: Apoyo a tesis de maestría en la modalidad de investigación en cualquier área del conocimiento.",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "49571",
+  "quipu": "",
+  "titulo": "Prototipo de software para la identificación de forrajes en terrenos silvopastoriles de trópico alto y bajo en Caldas por medio de técnicas de visión por computador",
+  "convocatoria": "CONVOCATORIA CONJUNTA DE DESARROLLO TECNOLÓGICO E INNOVACIÓN 2019",
+  "modalidad": "Modalidad 2: Desarrollo tecnológico y prototipado",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "49439",
+  "quipu": "",
+  "titulo": "PROTOTIPO DE SOFTWARE DE RECOPILACION DE SEÑALES CARDIACAS FETALES Y DIAGNÓSTICO MATEMÁTICO EN 15 MINUTOS CON BASE EN LA PROBABILIDAD Y LA ENTROPÍA",
+  "convocatoria": "\"UN INNOVA\": CONVOCATORIA DE PROYECTOS PARA EL FORTALECIMIENTO DE LA INNOVACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA A PARTIR DEL DESARROLLO DE PROTOTIPOS Y EXPERIENCIAS PILOTO 2019-2021 (PRIMERA COHORTE)",
+  "modalidad": "Modalidad 3: Propuestas de prototipos o escalamientos, presentadas por grupos de investigación en alianza con empresas o instituciones del sector productivo o solidario, de origen nacional o internacional, hasta por treinta millones de pesos ($ 30 000 000)",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "49336",
+  "quipu": "",
+  "titulo": "Prototipo BCI de bajo costo para la adquisición y procesamiento distribuido de registros de EEG ante estímulos audiovisuales.",
+  "convocatoria": "\"UN INNOVA\": CONVOCATORIA DE PROYECTOS PARA EL FORTALECIMIENTO DE LA INNOVACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA A PARTIR DEL DESARROLLO DE PROTOTIPOS Y EXPERIENCIAS PILOTO 2019-2021 (PRIMERA COHORTE)",
+  "modalidad": "Modalidad 1: Propuestas de desarrollo de prototipos de baja complejidad, presentadas por grupos de trabajo de estudiantes de pregrado o posgrado liderados por un docente de planta, hasta por cinco millones de pesos ($ 5 000 000).",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "33253",
+  "quipu": "",
+  "titulo": "ESTIMACIÓN DE ÍNDICES DE ACTIVIDAD NEURONAL EN PROFUNDIDAD ANESTÉSICA PARA AMBIENTES QUIRÚRGICOS",
+  "convocatoria": "CONVOCATORIA CONJUNTA PARA EL FOMENTO DE LA INVESTIGACION APLICADA Y LA INNOVACION EN EL SECTOR BIOTECNOLÓGICO DE CALDAS",
+  "modalidad": "Proyectos de Investigación aplicada y de desarrollo tecnológico",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "19230",
+  "quipu": "",
+  "titulo": "Monitoreo en línea de señales industriales para el diagnóstico temprano de fallas en máquinas rotativas",
+  "convocatoria": "PROGRAMA NACIONAL DE SEMILLEROS DE INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "Modalidad 1: Proyectos para la introducción en la investigación, creación o innovación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "19144",
+  "quipu": "",
+  "titulo": "Análisis del rendimiento competitivo de tenistas caldenses empleando técnicas de aprendizaje de máquina sobre mediciones antropométricas, biomecánicas, de condición física y psicológicas",
+  "convocatoria": "PROGRAMA NACIONAL DE INICIACIÓN EN INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "Modalidad Única",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "15833",
+  "quipu": "",
+  "titulo": "Análisis de complejidad basado en embebimiento no uniforme para la detección automática de Apnea Obstructiva del Sueño mediante señales de voz.",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2012",
+  "modalidad": "MODALIDAD 1:APOYO A TESIS DE DOCTORADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "14362",
+  "quipu": "",
+  "titulo": "Programa de innovación y mejoramiento de aplicaciones biomédicas con impacto en la comunidad",
+  "convocatoria": "CONVOCATORIA NACIONAL PARA EL FORTALECIMIENTO DE LOS GRUPOS DE INVESTIGACIÓN Y CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2011-2012",
+  "modalidad": "Modalidad 1 (ALIANZAS DE GRUPOS): Fortalecimiento a grupos de investigación y creación artística con proyección internacional.",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "11654",
+  "quipu": "",
+  "titulo": "Metodología de balance de clases en la predicción de estructuras proteínicas enfocado a la automatización del proceso de anotación biológica",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO - DIMA 2010 - DOCTORADOS",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "11651",
+  "quipu": "",
+  "titulo": "Extracción de características en superficies tiempo frecuencia paramétricas por medio de análisis de relevancia y redundancia",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010 - MAESTRÍA",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "5896",
+  "quipu": "",
+  "titulo": "Metodología de optimización de los parámetros de control de un algoritmo genético",
+  "convocatoria": "Convocatoria Nacional de Investigación 2007",
+  "modalidad": "MODALIDAD 6. APOYO A TESIS DE PROGRAMAS DE POSGRADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "65664",
+  "quipu": "",
+  "titulo": "Medición de Campos Eléctricos en Ambientes IoT Interiores: Enfoque Metrológico para Protección a su Exposición",
+  "convocatoria": "Convocatoria conjunta entre el Instituto Nacional de Metrología y la Universidad Nacional de Colombia para el desarrollo de Prácticas en I+D+i 2025",
+  "modalidad": "Apoyar la implementación, acreditación y ampliación del alcance de la acreditación de nuevos o significativamente mejorados servicios de calibración, de ensayo, de ensayos de aptitud o producción de materiales de referencia, a través del fortalecimiento de las capacidades metrológicas de los laboratorios de la Universidad Nacional de Colombia, la adopción y desarrollo de transformación digital o la implementación de nuevas tecnologías, con el propósito de aumentar sus capacidades técnicas, contribuir a la reactivación económica y a la reindustrialización país.",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "65463",
+  "quipu": "",
+  "titulo": "Sistema para la gestión inteligente y sostenible de recursos hídricos subterráneos en zonas rurales de Caldas",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "51765",
+  "quipu": "",
+  "titulo": "Descomposición y adecuación de bioseñales aleatorias orientadas a la generación de piezas musicales mediante técnicas de aprendizaje profundo.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "44709",
+  "quipu": "",
+  "titulo": "Sistema para predicción de crisis de epilepsia fármaco-resistente focalizada mediante análisis y extracción de información sobre altos volúmenes de datos",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "43260",
+  "quipu": "",
+  "titulo": "Metodología para la estimación robusta de FER en las ZNI como estrategia de mitigación y adaptación al cambio climático en Colombia.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "43258",
+  "quipu": "",
+  "titulo": "Desarrollo de una metodología de generación alertas tempranas de deforestación para fortalecer el control de los parques nacionales y áreas protegidas.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "42845",
+  "quipu": "",
+  "titulo": "Desarrollo de una herramienta de optimización para la planeación a largo plazo de la operación del sistema de transmisión de gas natural de Colombia.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "42839",
+  "quipu": "",
+  "titulo": "Aforo automático de pastos para la optimización del recurso pastoril en ganadería usando variables hidroclimatológicas y técnicas de teledetección.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "42635",
+  "quipu": "",
+  "titulo": "Desarrollo de un sistema de apoyo al diagnóstico para la clasificación y localización de biomarcadores no palpables asociados al cáncer de mama en una etapa temprana.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "42634",
+  "quipu": "",
+  "titulo": "MONITOREO DE ACTIVIDAD FÍSICA DE BAJA INTENSIDAD MEDIANTE MODELADO DINÁMICO EN PACIENTES CON PARKINSON MONITOREO DE ACTIVIDAD FÍSICA DE BAJA INTENSIDAD MEDIANTE MODELADO DINÁMICO EN PACIENTES CON PARKINSON MONITOREO DE ACTIVIDAD FÍSICA DE BAJA INTENSIDAD MEDIANTE MODELADO DINÁMICO EN PACIENTES CON PARKINSON MONITOREO DE ACTIVIDAD FÍSICA DE BAJA INTENSIDAD MEDIANTE MODELADO DINÁMICO EN PACIENTES CON PARKINSON MONITOREO DE ACTIVIDAD FÍSICA DE BAJA INTENSIDAD MEDIANTE MODELADO DINÁMICO EN PACIENTES CON PARKINSON",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "42595",
+  "quipu": "",
+  "titulo": "Desarrollo e implementación de un programa de rehabilitación neurocognitiva mediante el uso aplicaciones web y móvil, dirigido a pacientes con Deterioro Cognitivo Leve de predominio amnésico como fase temprana de la enfermedad de Alzheimer.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "42592",
+  "quipu": "",
+  "titulo": "CARACTERIZACIÓN TERMOGRÁFICA DE LA ANESTESIA Y ANALGESIA NEUROAXIAL EPIDURAL EN OBSTETRICIA",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "42517",
+  "quipu": "",
+  "titulo": "Desarrollo de una metodología para el modelamiento de la estimulación cerebral profunda (DBS) conectiva mediante la estimación del volumen de tejido activo (VTA) y técnicas de procesamiento digital de imágenes médicas (CT, MRI, dMRI). Aplicación a la Neuromodulación en pacientes con enfermedad de Parkinson",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "40860",
+  "quipu": "",
+  "titulo": "CARACTERIZACIÓN DE SERIES DE TIEMPO BAJO RESTRICCIONES DE NO ESTACIONARIEDAD PARA LA DISCRIMINACIÓN DE ESTADOS MENTALES",
+  "convocatoria": "CONVOCATORIA NACIONAL PARA EL APOYO AL DESARROLLO DE TESIS DE POSGRADO O DE TRABAJOS FINALES DE ESPECIALIDADES EN EL ÁREA DE LA SALUD, DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2017-2018",
+  "modalidad": "Modalidad 1: Apoyo a tesis de doctorado en cualquier área del conocimiento",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "38943",
+  "quipu": "",
+  "titulo": "Sistema de estimación de la capacidad de generación eléctrica de fuentes de energía renovables a partir de variables climáticas en regiones de conflicto armado y zonas no interconectadas de Colombia",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "38605",
+  "quipu": "",
+  "titulo": "Estudio de los Costos Directos e Indirectos en Demencias Degenerativas y Vasculares en las ciudades de Barranquilla y Manizales (Colombia).",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "38603",
+  "quipu": "",
+  "titulo": "Sistema no invasivo de alarma y monitoreo de la evolución de la presión intracraneal (PIC) empleando aprendizaje de máquina y modelos estadísticos",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "38601",
+  "quipu": "",
+  "titulo": "Sistema adaptativo basado en ambientes virtuales para el tratamiento de la ansiedad en pacientes afectados por la violencia contra la mujer con enfoque de género en el eje cafetero",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "38596",
+  "quipu": "",
+  "titulo": "Diseño y validación de un programa de rehabilitación neurocognitiva mediante el uso aplicaciones web y móvil, dirigido a pacientes con deterioro cognitivo leve de predominio amnésico como fase preclínica de la enfermedad de Alzheimer (EA).",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "38580",
+  "quipu": "",
+  "titulo": "SEGUIMIENTO DE LA REHABILITACIÓN DE PACIENTES DESPUÉS DE INFARTOS CEREBRALES CON CONDICIÓN DE AFASIA BASADO EN SINCRONIZACIÓN NEURONAL A PARTIR DE REGISTROS ELECTROENCEFALOGRÁFICOS.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "38577",
+  "quipu": "",
+  "titulo": "Sistema de monitoreo y análisis de la actividad motora de pacientes con enfermedad de Parkinson por medio de dispositivos vestibles para uso interconsulta",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "37908",
+  "quipu": "",
+  "titulo": "Modelo para la identificación y evaluación de la complementariedad de fuentes de energía renovable en el departamento de Santander",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "35192",
+  "quipu": "",
+  "titulo": "DIAGNÓSTICO ASISTIDO DE LA ENFERMEDAD DE ALZHEIMER CON BASE EN MEDIDAS DE CONECTIVIDAD FUNCIONAL",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "35056",
+  "quipu": "",
+  "titulo": "Métricas de aprendizaje en teorías de la información para la solución al problema inverso de mapeo cerebral aplicado al soporte diagnóstico de la enfermedad de Alzheimer (EA).",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "35011",
+  "quipu": "",
+  "titulo": "Análisis de los patrones de conectividad funcional en pacientes que presentan Trastorno por Déficit de Atención y/o Hiperactividad (TDAH)",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "33864",
+  "quipu": "",
+  "titulo": "Desarrollo de un sistema automático de predicción y detección de crisis epilépticas focalizadas.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "33725",
+  "quipu": "",
+  "titulo": "DESARROLLO DE UN SISTEMA INTEGRADO DE MONITOREO DE ACTIVIDAD CEREBRAL A PARTIR DE REGISTROS ELECTROENCEFALOGRÁFICOS EN PACIENTES BAJO ANESTESIA GENERAL PARA AMBIENTES QUIRÚRGICOS",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "33720",
+  "quipu": "",
+  "titulo": "SISTEMA INTEGRADO DE SOFTWARE PARA LA CARACTERIZACIÓN DE ALTERACIONES NEUROLÓGICAS Y EVALUACIÓN DEL DETERIORO COGNITIVO EN PACIENTES CON ENCEFALOPATÍA HEPÁTICA",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "29074",
+  "quipu": "",
+  "titulo": "Estudio para determinar la sensibilidad de la medición de la entropía termodinámica en el tamizaje del cáncer de mama.",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "28059",
+  "quipu": "",
+  "titulo": "Caracterización de deportistas durante la fase básica especializada analizando patrones de motricidad fina, mediante mediciones de movilidad ocular.",
+  "convocatoria": "CONVOCATORIA CONJUNTA PARA PROYECTOS DE INVESTIGACIÓN E INNOVACIÓN",
+  "modalidad": "MODALIDAD 2: PROYECTOS DE INNOVACIÓN",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "25456",
+  "quipu": "",
+  "titulo": "Sistema aéreo no tripulado UAV de reconocimiento automático de objetos de interés para aplicaciones de seguridad nacional",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "15825",
+  "quipu": "",
+  "titulo": "Agrupamiento espectral dinámico basado en kernels",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2012",
+  "modalidad": "MODALIDAD 1:APOYO A TESIS DE DOCTORADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "12938",
+  "quipu": "",
+  "titulo": "Innovación y perfeccionamiento de aplicaciones biomédicas con impacto en la comunidad",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "Modalidad 1: Fortalecimiento a grupos de investigación y creación artística con proyección internacional - ALIANZAS DE GRUPOS",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "11663",
+  "quipu": "",
+  "titulo": "Reducción de Interferencias y separación de focos epilépticos mediante el análisis de registros Electroencefalográficos basado en modelos paramétricos y separación ciega de fuentes",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010 - MAESTRÍA",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "11662",
+  "quipu": "",
+  "titulo": "Caracterización de la dinámica de señales no estacionarias mediante técnicas asociadas a distribuciones tiempo-frecuencia",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010 - MAESTRÍA",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "11661",
+  "quipu": "",
+  "titulo": "Caracterización del nivel de desgaste en alfombras usando análisis Multi-resolución",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010 - MAESTRÍA",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "11658",
+  "quipu": "",
+  "titulo": "Metodología de balance de clases en la predicción de estructuras proteínicas enfocado a la automatización del proceso de anotación biológica",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010 - MAESTRÍA",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "11653",
+  "quipu": "",
+  "titulo": "DIAGNÓSTICO E IDENTIFICACIÓN TEMPRANA DE FALLAS EN MOTORES INDUSTRIALES A TRAVÉS DEL ANÁLISIS DE VIBRACIONES MECÁNICAS",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010 - MAESTRÍA",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "11649",
+  "quipu": "",
+  "titulo": "Sistema de acceso a imágenes medicas con detalle sobre regiones de interés en bases de datos de gran volumen.",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO - DIMA 2010 - DOCTORADOS",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "10259",
+  "quipu": "",
+  "titulo": "Estimación y Visualización de Parámetros Articulatorios a partir de Señales Acústicas de Voz",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD V. APOYO A TESIS DE POSGRADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "10071",
+  "quipu": "",
+  "titulo": "Sistema de acceso a imagenes medicas con criterio de contenido y detalle en bases de datos de gran volumen.",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD V. APOYO A TESIS DE POSGRADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "9828",
+  "quipu": "",
+  "titulo": "Red Nacional de Investigación en e-Salud",
+  "convocatoria": "CONVOCATORIA BICENTENARIO PROGRAMAS NACIONALES DE INVESTIGACIÓN",
+  "modalidad": "CONVOCATORIA BICENTENARIO PROGRAMAS NACIONALES DE INVESTIGACIÓN",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "9718",
+  "quipu": "",
+  "titulo": "Análisis en el proceso de maduración de cárnicos a partir de componentes generadores de aroma y sabor",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD I. APOYO A TRAVÉS DE PROYECTOS DIRIGIDO A GRUPOS DE INVESTIGACIÓN CONSOLIDADOS (CLASIFICADOS EN CATEGORÍA “A” y “B” EN EL SISTEMA NACIONAL DE CIENCIA Y TECNOLOGÍA, A LA FECHA DE APERTURA DE LA PRESENTE CONVOCATORIA)",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "9706",
+  "quipu": "",
+  "titulo": "ANÁLISIS E IDENTIFICACIÓN DE DAÑOS EN ESTRUCTURAS DE MAMPOSTERÍA MEDIANTE MEDICIÓN DE VIBRACIONES",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD I. APOYO A TRAVÉS DE PROYECTOS DIRIGIDO A GRUPOS DE INVESTIGACIÓN CONSOLIDADOS (CLASIFICADOS EN CATEGORÍA “A” y “B” EN EL SISTEMA NACIONAL DE CIENCIA Y TECNOLOGÍA, A LA FECHA DE APERTURA DE LA PRESENTE CONVOCATORIA)",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "9660",
+  "quipu": "",
+  "titulo": "Detección temprana de soplos cardiacos en registros fonocardiográficas mediante representaciones tiempo-frecuencia",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD I. APOYO A TRAVÉS DE PROYECTOS DIRIGIDO A GRUPOS DE INVESTIGACIÓN CONSOLIDADOS (CLASIFICADOS EN CATEGORÍA “A” y “B” EN EL SISTEMA NACIONAL DE CIENCIA Y TECNOLOGÍA, A LA FECHA DE APERTURA DE LA PRESENTE CONVOCATORIA)",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "7855",
+  "quipu": "",
+  "titulo": "Análisis tiempo-frecuencia por métodos paramétricos y no paramétricos orientado a la detección y clasificación de soplos cardiacos de diferentes tipos en señales fonocardiográficas",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2008",
+  "modalidad": "MODALIDAD 1. APOYO A TRAVÉS DE PROYECTOS A GRUPOS DE INVESTIGACIÓN CONSOLIDADOS (CLASIFICADOS EN CATEGORÍA \"A\" EN EL SISTEMA NACIONAL DE CIENCIA Y TECNOLOGÍA",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "7595",
+  "quipu": "",
+  "titulo": "Generalized Dissimilarity Representations for Pattern Recognition",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2008",
+  "modalidad": "MODALIDAD 6. APOYO A TESIS DE PROGRAMAS DE POSGRADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "7488",
+  "quipu": "",
+  "titulo": "Sistema de acceso para imágenes médicas usando métricas de calidad",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2008",
+  "modalidad": "MODALIDAD 6. APOYO A TESIS DE PROGRAMAS DE POSGRADO",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "7438",
+  "quipu": "",
+  "titulo": "Segmentación y caracterización automáticas de las estructuras anatómicas de tejidos blandos del área de la boca en niños con Labio y/o Paldar Hendido corregido",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2008",
+  "modalidad": "MODALIDAD 1. APOYO A TRAVÉS DE PROYECTOS A GRUPOS DE INVESTIGACIÓN CONSOLIDADOS (CLASIFICADOS EN CATEGORÍA \"A\" EN EL SISTEMA NACIONAL DE CIENCIA Y TECNOLOGÍA",
+  "inicio": "",
+  "fin": ""
+ },
+ {
+  "codigo": "6321",
+  "quipu": "",
+  "titulo": "CREACIÓN DE UNA PRUEBA DE HABLA BASADA EN PARÁMETROS LINGÜÍSTICOS Y FÍSICOS PARA LA CARACTERIZACIÓN DE LA NASALIDAD DEL HABLA EN INFANTES DE 3-5 AÑOS DE EDAD.",
+  "convocatoria": "Convocatoria Nacional de Investigación 2007",
+  "modalidad": "MODALIDAD 5. APOYO A CREADORES Y ARTISTAS DE LA UNIVERSIDAD NACIONAL DE COLOMBIA A TRAVÉS DE PROYECTOS",
+  "inicio": "",
+  "fin": ""
+ }
+]

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>@@TITLE@@</title>
+<style>
+html,body{height:100%}
+body{font-family:system-ui,sans-serif;background:#0a0a10;color:#e4e4ed;margin:0;padding:12px 16px;box-sizing:border-box;display:flex;flex-direction:column}
+h1{font-size:18px;font-weight:600;margin:0 0 8px;letter-spacing:.02em}
+#help{color:#9aa3bd;font-size:13px;margin:0 0 8px}
+#famlegend,#rellegend,#toolbar{margin:0 0 6px;font-size:13px;color:#9aa3bd}
+.famchip{margin:2px;padding:3px 12px;cursor:pointer;border-radius:12px;border:1px solid #9b7ede;background:#14172a;color:#e4e4ed;font-size:12px}
+.famchip.on{background:#9b7ede;color:#0a0a10}
+.dot{display:inline-block;width:16px;height:0;border-top:2px solid;margin:0 4px 3px 10px;vertical-align:middle}
+#toolbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+#toolbar button,#toolbar input{font-size:13px;padding:3px 12px;background:#14172a;color:#e4e4ed;border:1px solid #2a3350;border-radius:6px}
+#toolbar button{cursor:pointer}
+#toolbar button.on{background:#9b7ede;color:#0a0a10;border-color:#9b7ede}
+#toolbar .sep{width:1px;height:20px;background:#2a3350;margin:0 4px}
+#toolbar input{width:220px;max-width:100%}
+#stage{flex:1 1 auto;display:flex;gap:10px;min-height:420px}
+.sky{flex:1 1 auto;min-width:0;background:#0a0a10;border:1px solid #1e2236;border-radius:10px;overflow:hidden;cursor:grab}
+.sky:active{cursor:grabbing}
+#side{flex:0 0 360px;display:none;overflow:auto;background:#11131f;border:1px solid #9b7ede;border-radius:10px;padding:14px 16px;box-shadow:0 0 40px rgba(155,126,222,.18);font-size:13px;line-height:1.45}
+#side.open{display:block}
+#side h3{margin:4px 0 6px;font-size:15px;line-height:1.3}
+#side h4{margin:12px 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#9b7ede}
+#side p{margin:0 0 6px;color:#c9cfe2}
+#side .meta{color:#9aa3bd;font-size:12px}
+#side .focus{border-left:3px solid #e8b339;padding-left:10px;color:#e4e4ed}
+#side .pill{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11px;margin:0 4px 4px 0;border:1px solid #2a3350;background:#14172a}
+#side .pill.art{border-color:#e8b339;color:#e8b339}
+#side .pill.pro{border-color:#7fb069;color:#7fb069}
+#side ol{margin:0;padding-left:18px}
+#side li{margin:0 0 6px}
+#side li button{all:unset;cursor:pointer;color:#e4e4ed}
+#side li button:hover,#side li button:focus-visible{color:#e8b339;text-decoration:underline}
+#side .score{color:#9aa3bd;font-size:11px}
+#sideclose{float:right;cursor:pointer;font-size:13px;padding:2px 10px;background:#1a1d2e;color:#e4e4ed;border:1px solid #2a3350;border-radius:6px}
+@media (max-width:820px){#stage{flex-direction:column}#side{flex:0 0 auto;max-height:55vh}}
+</style>
+</head>
+<body>
+<h1>@@HEADING@@</h1>
+<div id="help">Arrastra para rotar, clic derecho para desplazar, rueda para acercar. Pasa el cursor por un nodo para ver su etiqueta; clic para iluminarlo con sus conexiones y ver su ficha y los 5 más relacionados; doble clic para volar hasta él.</div>
+<div id="toolbar">
+  <button id="zoomin" title="Acercar">zoom +</button>
+  <button id="zoomout" title="Alejar">zoom −</button>
+  <span class="sep"></span>
+  <button id="spinleft" title="Girar a la izquierda">⟲ girar</button>
+  <button id="spinright" title="Girar a la derecha">girar ⟳</button>
+  <button id="tiltup" title="Inclinar hacia arriba">▲ inclinar</button>
+  <button id="tiltdown" title="Inclinar hacia abajo">▼ inclinar</button>
+  <button id="autorotate" class="on" title="Rotación automática">⏸ rotación</button>
+  <span class="sep"></span>
+  <button id="zoomreset" title="Vista inicial y sin selección">reiniciar vista</button>
+  <button id="grouplayout" title="Reordena los sistemas por clúster; púlsalo de nuevo para volver">Disposición de grupos</button>
+  <span class="sep"></span>
+  <input id="find" type="search" list="findlist" placeholder="Buscar ID o título y Enter" aria-label="Buscar nodo">
+  <datalist id="findlist"></datalist>
+</div>
+<div id="famlegend"><em>Clústeres:</em> <span id="famchips"></span></div>
+<div id="rellegend"><em>Enlaces:</em> <span class="dot" style="border-color:#e8b339"></span>proyecto produjo artículo <span class="dot" style="border-color:#2ecc71"></span>artículo extiende a otro <span class="dot" style="border-color:#4a5a80"></span>sol → planeta <span class="dot" style="border-color:#9b7ede;border-top-style:dashed"></span>mismo clúster</div>
+<div id="stage">
+  <div id="sky" class="sky"></div>
+  <aside id="side" aria-live="polite"><button id="sideclose">cerrar</button><div id="sidebody"></div></aside>
+</div>
+<script type="application/json" id="atlas-data">@@DATA@@</script>
+<script>
+@@VIEWER@@
+</script>
+<script>
+const SCENE = JSON.parse(document.getElementById('atlas-data').textContent);
+const ATLAS = SCENE.atlas;
+const PLANETS = new Map();
+const SYSTEMS = new Map();
+ATLAS.systems.forEach(s => {
+  SYSTEMS.set(s.id, s);
+  s.planets.forEach(p => PLANETS.set(s.id + '.' + p.id, {system: s, planet: p}));
+});
+const sideEl = document.getElementById('side');
+const sideBody = document.getElementById('sidebody');
+
+function el(tag, text, cls) {
+  const node = document.createElement(tag);
+  if (text !== undefined && text !== null) node.textContent = text;
+  if (cls) node.className = cls;
+  return node;
+}
+function systemKeys(id) {
+  const s = SYSTEMS.get(id);
+  return s ? s.planets.map(p => id + '.' + p.id) : [];
+}
+function linkedSystems(id) {
+  const out = new Set();
+  SCENE.edges.forEach(e => {
+    if (!e.inter) return;
+    const a = e.from.split('.')[0], b = e.to.split('.')[0];
+    if (a === id) out.add(b);
+    if (b === id) out.add(a);
+  });
+  return out;
+}
+
+// Selection: the clicked node, its whole system, every system it links to and
+// its five most similar items stay lit; everything else dims.
+let selected = null;
+let selectedKeep = null;
+function selectionKeep(key) {
+  const id = key.split('.')[0];
+  const sys = SYSTEMS.get(id);
+  const keep = new Set(systemKeys(id));
+  linkedSystems(id).forEach(other => systemKeys(other).forEach(k => keep.add(k)));
+  ((sys && sys.meta && sys.meta.top5) || []).forEach(r => systemKeys(r.id).forEach(k => keep.add(k)));
+  return keep;
+}
+function section(title, text) {
+  if (!text) return [];
+  return [el('h4', title), el('p', text)];
+}
+function showSide(key) {
+  const entry = PLANETS.get(key);
+  if (!entry) return;
+  const sys = entry.system, m = sys.meta || {}, p = entry.planet;
+  const nodes = [];
+  const kind = el('span', m.kind === 'proyecto' ? 'Proyecto' : 'Artículo', 'pill ' + (m.kind === 'proyecto' ? 'pro' : 'art'));
+  const pills = el('div');
+  pills.append(kind);
+  if (m.estado) pills.append(el('span', m.estado, 'pill'));
+  if (m.hermes) pills.append(el('span', 'Hermes ' + m.hermes, 'pill'));
+  nodes.push(pills, el('h3', m.title || sys.title));
+  nodes.push(el('p', [sys.id, m.years, m.venue].filter(Boolean).join(' · '), 'meta'));
+  if (m.cluster) nodes.push(el('p', 'Clúster: ' + m.cluster, 'meta'));
+  if (m.temas && m.temas.length) nodes.push(el('p', 'Temas: ' + m.temas.join(' · '), 'meta'));
+  if (p.id !== 'sun' && p.detail) nodes.push(el('h4', 'Nodo: ' + p.label), el('p', p.detail, 'focus'));
+  nodes.push(...section('Aplicación', m.aplicacion), ...section('Problema', m.problema),
+             ...section('Propuesta o novedad', m.propuesta), ...section('Resultados', m.resultados),
+             ...section('Conclusiones', m.conclusiones));
+  if (m.productos) nodes.push(...section('Productos tecnológicos', m.productos));
+  if (m.aliados) nodes.push(...section('Aliados', m.aliados));
+  const top = m.top5 || [];
+  if (top.length) {
+    nodes.push(el('h4', 'Top 5 más relacionados'));
+    const ol = el('ol');
+    top.forEach(r => {
+      const li = el('li');
+      const b = el('button', r.id + ' · ' + r.title);
+      b.addEventListener('click', () => select(r.id + '.sun', true));
+      li.append(b, el('div', (r.kind === 'proyecto' ? 'Proyecto' : 'Artículo') + ' · similitud ' + r.sim.toFixed(2), 'score'));
+      ol.append(li);
+    });
+    nodes.push(ol);
+  }
+  const links = linkedSystems(sys.id);
+  if (links.size) nodes.push(el('h4', 'Conexiones en el grafo'), el('p', [...links].join(', '), 'meta'));
+  sideBody.replaceChildren(...nodes);
+  sideEl.classList.add('open');
+  sideEl.scrollTop = 0;
+}
+function select(key, fly) {
+  if (!PLANETS.has(key)) return;
+  selected = key;
+  selectedKeep = selectionKeep(key);
+  if (viewer) {
+    viewer.setDim(selectedKeep);
+    if (fly) viewer.focus(key);
+  }
+  showSide(key);
+  syncRotate();
+}
+function clearSelection() {
+  selected = null;
+  selectedKeep = null;
+  sideEl.classList.remove('open');
+  if (viewer) viewer.setDim(familyKeep());
+}
+document.getElementById('sideclose').addEventListener('click', clearSelection);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') clearSelection(); });
+
+let activeFam = null;
+function familyKeep() {
+  if (activeFam === null) return null;
+  const keep = new Set();
+  ATLAS.systems.forEach(s => {
+    if (s.planets.some(p => p.slot === 'family' && p.label === activeFam))
+      s.planets.forEach(p => keep.add(s.id + '.' + p.id));
+  });
+  return keep;
+}
+function restingKeep() { return selectedKeep || familyKeep(); }
+function hoverKeep(key) {
+  const keep = new Set([key]);
+  SCENE.edges.forEach(e => {
+    if (e.from === key || e.to === key) { keep.add(e.from); keep.add(e.to); }
+  });
+  const entry = PLANETS.get(key);
+  if (entry && entry.planet.slot === 'family') {
+    PLANETS.forEach((other, otherKey) => {
+      if (other.planet.slot === 'family' && other.planet.label === entry.planet.label) keep.add(otherKey);
+    });
+  }
+  if (selectedKeep) selectedKeep.forEach(k => keep.add(k));
+  return keep;
+}
+const viewer = AtlasViewer.mount(document.getElementById('sky'), SCENE, {
+  onSelect: key => select(key, false),
+  onHover: key => { if (viewer) viewer.setDim(key ? hoverKeep(key) : restingKeep()); },
+});
+
+const rotateButton = document.getElementById('autorotate');
+function syncRotate() {
+  if (!viewer) return;
+  const on = viewer.rotating();
+  rotateButton.classList.toggle('on', on);
+  rotateButton.textContent = on ? '⏸ rotación' : '▶ rotación';
+}
+rotateButton.addEventListener('click', () => { if (viewer) { viewer.rotate(); syncRotate(); } });
+document.getElementById('sky').addEventListener('pointerdown', () => setTimeout(syncRotate, 0));
+document.getElementById('sky').addEventListener('wheel', () => setTimeout(syncRotate, 0), {passive: true});
+const STEP = Math.PI / 12;
+function act(id, fn) {
+  document.getElementById(id).addEventListener('click', () => { if (viewer) { fn(); syncRotate(); } });
+}
+act('zoomin', () => viewer.zoom(1.5));
+act('zoomout', () => viewer.zoom(1 / 1.5));
+act('spinleft', () => viewer.spin(STEP));
+act('spinright', () => viewer.spin(-STEP));
+act('tiltup', () => viewer.tilt(STEP / 2));
+act('tiltdown', () => viewer.tilt(-STEP / 2));
+act('zoomreset', () => {
+  activeFam = null;
+  document.querySelectorAll('.famchip').forEach(c => c.classList.remove('on'));
+  clearSelection();
+  viewer.reset();
+});
+const layoutButton = document.getElementById('grouplayout');
+act('grouplayout', () => {
+  const now = viewer.setLayout(viewer.layout() === 'groups' ? 'sky' : 'groups');
+  layoutButton.classList.toggle('on', now === 'groups');
+});
+
+const findInput = document.getElementById('find');
+const findList = document.getElementById('findlist');
+ATLAS.systems.forEach(s => {
+  const o = document.createElement('option');
+  o.value = s.id + ' · ' + ((s.meta && s.meta.title) || s.title);
+  findList.append(o);
+});
+findInput.addEventListener('keydown', e => {
+  if (e.key !== 'Enter') return;
+  const q = findInput.value.trim().toLowerCase();
+  if (!q) return;
+  const id = q.split(' · ')[0].toUpperCase();
+  const hit = SYSTEMS.has(id) ? SYSTEMS.get(id)
+    : ATLAS.systems.find(s => ((s.meta && s.meta.title) || s.title).toLowerCase().includes(q));
+  if (hit) select(hit.id + '.sun', true);
+});
+
+const chips = document.getElementById('famchips');
+const fams = {};
+ATLAS.systems.forEach(s => s.planets.forEach(p => {
+  if (p.slot === 'family') fams[p.label] = (fams[p.label] || 0) + 1;
+}));
+Object.keys(fams).sort().forEach(label => {
+  const b = document.createElement('button');
+  b.textContent = label + ' (' + fams[label] + ')';
+  b.className = 'famchip';
+  b.addEventListener('click', () => {
+    activeFam = (activeFam === label) ? null : label;
+    document.querySelectorAll('.famchip').forEach(c => c.classList.toggle('on', c === b && activeFam === label));
+    if (viewer) viewer.setDim(restingKeep());
+  });
+  chips.appendChild(b);
+});
+syncRotate();
+const wanted = new URLSearchParams(location.search).get('focus');
+if (wanted && SYSTEMS.has(wanted)) select(wanted + '.sun', true);
+</script>
+</body>
+</html>

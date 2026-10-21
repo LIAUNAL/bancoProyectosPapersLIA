@@ -1,0 +1,70 @@
+# Banco de proyectos y artículos LIA
+
+Banco de ideas, novedades y base de redacción con los artículos en revistas y los proyectos de investigación del grupo GCPDS / LIA (Universidad Nacional de Colombia, sede Manizales), **de 2018 a la fecha**: artículos publicados desde 2018 y proyectos en ejecución desde 2018 (inicio o fin ≥ 2018). El corte se cambia con `MIN_YEAR` en `tools/build_bank.py`; los datos 1996–2017 siguen en `data/raw` y `data/summaries`.
+
+## Contenido
+
+| Ruta | Qué contiene |
+|------|--------------|
+| `articulos/` | Una ficha `.md` por artículo (122): aplicación, problema, propuesta o novedad, resultados, conclusiones, métodos, idea futura y relacionados |
+| `proyectos/` | Una ficha `.md` por proyecto (105: 33 de CvLAC con código Hermes `P###` y 72 tomados directamente de Hermes `H<código>` de las cuentas de Álvarez Meza y Castellanos, con su estado): lo anterior más productos tecnológicos, apropiación social, aliados y código Hermes |
+| `docs/` | Sitio estático local: `index.html` con sistema temático, constelación 3D, clústeres e ideas, buscador y línea de tiempo; `constelacion.html` con el visor SOTA de papersmith-ai; `data/bank.json` |
+| `data/bank.json` | Todos los registros con temas, clúster y relaciones |
+| `data/taxonomy.md` | Taxonomía de 16 temas (T01–T16; T15 espectro/SDR y T16 agentes de IA se añadieron con los proyectos de Hermes) |
+| `data/cluster_names.json` | Nombres de los 12 clústeres (los 16 del corpus completo están en `cluster_names_1996-2026.json`) |
+| `data/hermes.json` | Mapeo proyecto → código Hermes, QUIPU y convocatoria (80 proyectos; cuentas de Álvarez Meza y Castellanos) |
+| `data/raw/hermes_extra.json`, `data/raw/hermes_details.json` | Proyectos de Hermes incorporados (2025–2026, en evaluación y financiados desde 2018) y el texto de su ficha |
+| `data/hermes_sin_cvlac.json` | 204 proyectos de Hermes (ambas cuentas) que no aparecen en CvLAC |
+| `odd/tasks/banco-lia.md` | Especificación y bitácora del trabajo |
+
+## Fuentes
+
+- CvLAC Andrés Marino Álvarez Meza (`cod_rh=0001330950`) y César Germán Castellanos Domínguez (`cod_rh=0000043222`).
+- Google Scholar `user=4aUwQtAAAAAJ` (solo se añadieron artículos de revista ausentes en CvLAC).
+- Abstracts: OpenAlex, Crossref y Semantic Scholar (286 de 313 artículos). Las fichas sin abstract están marcadas `fuente_resumen: titulo` y se redactaron de forma conservadora, sin cifras.
+
+## Deduplicación
+
+DOI idéntico o similitud de título ≥ 0,85 entre los dos CvLAC y Scholar, más fusiones manuales: versiones ES/EN del mismo proyecto, preprints con versión publicada (SSRN, preprints.org) y registros de CvLAC que solo repetían el título de otro proyecto.
+
+## Ver el tablero (solo local)
+
+El repositorio es privado y el tablero no se publica en GitHub Pages: contiene resúmenes de propuestas en evaluación tomados de Hermes. Se levanta en local:
+
+```bash
+bancoLIA ui              # http://localhost:8000, abre el navegador
+bancoLIA ui 9000         # otro puerto
+bancoLIA ui --no-open    # sin abrir el navegador
+bancoLIA build           # regenera articulos/, proyectos/ y docs/
+```
+
+Instalación del comando (una vez): `ln -s "$PWD/bin/bancoLIA" ~/.local/bin/bancoLIA` (cualquier carpeta del `PATH` sirve). Sin el comando: `./tools/serve.sh [puerto]`. El servidor escucha solo en `127.0.0.1`.
+
+### Constelación 3D
+
+`docs/constelacion.html` usa el visor SOTA de papersmith-ai. Cada artículo o proyecto es un sistema solar, y sus planetas son aplicación, problema, novedad, clúster, temas, resultados, conclusiones y productos.
+
+- **Controles:** zoom ±, girar ⟲/⟳, inclinar ▲/▼, rotación automática ▶/⏸, reiniciar vista, «Disposición de grupos» (agrupa por clúster), filtro por clúster y buscador por ID o título.
+- **Hover:** etiqueta corta del nodo.
+- **Clic:** ilumina el nodo, su sistema, sus conexiones y sus 5 más relacionados, y abre un panel con la ficha y el top 5 (clic en uno vuela hasta él).
+- **Doble clic:** vuela hasta el nodo. `constelacion.html?focus=A060` abre con un sistema seleccionado.
+
+## Regenerar
+
+```bash
+uv run --with scikit-learn --with numpy python tools/build_bank.py
+```
+
+Los resúmenes estructurados viven en `data/summaries/*.jsonl`; edítelos ahí y regenere. Para mapear Hermes, llene `data/hermes.json` así:
+
+```json
+{"P001": {"codigo": "12345", "aliados": ["Hospital Universitario de Caldas"]}}
+```
+
+## Notas de calidad
+
+- `A247` y `A260`: el DOI registrado en CvLAC apunta a otro trabajo o está truncado; se omitió.
+- `P032`: CvLAC repite el resumen de `P031`; la ficha se infirió del título.
+- Las relaciones «produjo» (proyecto → artículo) y «extiende» (artículo → artículo previo) son similitud semántica, no vínculos declarados. Confírmelas antes de citarlas.
+
+El visor 3D en `vendor/papersmith/` proviene de LIAUNAL/papersmith-ai (Apache-2.0) y empaqueta three.js (MIT). Se conserva idéntico a upstream; la plantilla `tools/constellation_template.html` y los parches `VIEWER_PATCHES` de `tools/build_bank.py` (etiqueta del hover y controles de cámara) se aplican al generar el sitio.

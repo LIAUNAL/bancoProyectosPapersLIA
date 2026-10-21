@@ -1,0 +1,1522 @@
+[
+ {
+  "title": "Standardized evaluation of algorithms for computer-aided diagnosis of dementia based on structural MRI: the CADDementia challenge",
+  "authors": "EE Bron, M Smits, WM Van Der Flier, H Vrenken, F Barkhof, P Scheltens, ...",
+  "venue": "NeuroImage 111, 562-579, 2015",
+  "year": "2015",
+  "cites": "475",
+  "match": 1.0
+ },
+ {
+  "title": "Relevant information undersampling to support imbalanced data classification",
+  "authors": "J Hoyos-Osorio, A Alvarez-Meza, G Daza-Santacoloma, ...",
+  "venue": "Neurocomputing 436, 136-146, 2021",
+  "year": "2021",
+  "cites": "112",
+  "match": 1.0
+ },
+ {
+  "title": "Time-series discrimination using feature relevance analysis in motor imagery classification",
+  "authors": "AM Álvarez-Meza, LF Velasquez-Martinez, G Castellanos-Dominguez",
+  "venue": "Neurocomputing 151, 122-129, 2015",
+  "year": "2015",
+  "cites": "58",
+  "match": 1.0
+ },
+ {
+  "title": "Automatic selection of acoustic and non-linear dynamic features in voice signals for hypernasality detection",
+  "authors": "JR Orozco-Arroyave, S Murillo-Rendón, AM Álvarez-Meza, ...",
+  "venue": "Proc. Interspeech 2011, 529-532, 2011",
+  "year": "2011",
+  "cites": "58",
+  "match": 0.54
+ },
+ {
+  "title": "Global and local choice of the number of nearest neighbors in locally linear embedding",
+  "authors": "A Álvarez-Meza, J Valencia-Aguirre, G Daza-Santacoloma, ...",
+  "venue": "Pattern Recognition Letters 32 (16), 2171-2177, 2011",
+  "year": "2011",
+  "cites": "56",
+  "match": 1.0
+ },
+ {
+  "title": "Enhanced automatic twin support vector machine for imbalanced data classification",
+  "authors": "C Jimenez-Castano, A Alvarez-Meza, A Orozco-Gutierrez",
+  "venue": "Pattern recognition 107, 107442, 2020",
+  "year": "2020",
+  "cites": "51",
+  "match": 1.0
+ },
+ {
+  "title": "A novel OpenBCI framework for EEG-based neurophysiological experiments",
+  "authors": "YN Cardona-Álvarez, AM Álvarez-Meza, DA Cárdenas-Peña, ...",
+  "venue": "Sensors 23 (7), 3763, 2023",
+  "year": "2023",
+  "cites": "48",
+  "match": 1.0
+ },
+ {
+  "title": "Unsupervised kernel function building using maximization of information potential variability",
+  "authors": "AM Álvarez-Meza, D Cárdenas-Peña, G Castellanos-Dominguez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 335-342, 2014",
+  "year": "2014",
+  "cites": "47",
+  "match": 1.0
+ },
+ {
+  "title": "CNN-based framework using spatial dropping for enhanced interpretation of neural activity in motor imagery classification: DF Collazos-Huertas et al.",
+  "authors": "DF Collazos-Huertas, AM Álvarez-Meza, CD Acosta-Medina, ...",
+  "venue": "Brain Informatics 7 (1), 8, 2020",
+  "year": "2020",
+  "cites": "39",
+  "match": 0.9
+ },
+ {
+  "title": "A data-driven measure of effective connectivity based on Renyi's α-entropy",
+  "authors": "I De La Pava Panche, AM Alvarez-Meza, A Orozco-Gutierrez",
+  "venue": "Frontiers in neuroscience 13, 1277, 2019",
+  "year": "2019",
+  "cites": "37",
+  "match": 1.0
+ },
+ {
+  "title": "Kernel-based dimensionality reduction using Renyi's <i>α</i>-entropy measures of similarity",
+  "authors": "AM Álvarez-Meza, JA Lee, M Verleysen, G Castellanos-Dominguez",
+  "venue": "Neurocomputing 222, 36-46, 2017",
+  "year": "2017",
+  "cites": "29",
+  "match": 0.98
+ },
+ {
+  "title": "Kernel-based relevance analysis with enhanced interpretability for detection of brain activity patterns",
+  "authors": "AM Alvarez-Meza, A Orozco-Gutierrez, G Castellanos-Dominguez",
+  "venue": "Frontiers in neuroscience 11, 550, 2017",
+  "year": "2017",
+  "cites": "28",
+  "match": 1.0
+ },
+ {
+  "title": "Random fourier features-based deep learning improvement with class activation interpretability for nerve structure segmentation",
+  "authors": "CA Jimenez-Castaño, AM Álvarez-Meza, OD Aguirre-Ospina, ...",
+  "venue": "Sensors 21 (22), 7741, 2021",
+  "year": "2021",
+  "cites": "27",
+  "match": 1.0
+ },
+ {
+  "title": "Automatic choice of the number of nearest neighbors in locally linear embedding",
+  "authors": "J Valencia-Aguirre, A Álvarez-Mesa, G Daza-Santacoloma, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 77-84, 2009",
+  "year": "2009",
+  "cites": "27",
+  "match": 1.0
+ },
+ {
+  "title": "Kernel based hand gesture recognition using kinect sensor",
+  "authors": "D Ramirez-Giraldo, S Molina-Giraldo, AM Álvarez-Meza, ...",
+  "venue": "2012 XVII Symposium of image, signal processing, and artificial vision …, 2012",
+  "year": "2012",
+  "cites": "25",
+  "match": 0.6
+ },
+ {
+  "title": "Kreĭn twin support vector machines for imbalanced data classification",
+  "authors": "C Jimenez-Castaño, A Álvarez-Meza, D Cárdenas-Peña, ...",
+  "venue": "Pattern Recognition Letters 182, 39-45, 2024",
+  "year": "2024",
+  "cites": "22",
+  "match": 1.0
+ },
+ {
+  "title": "Learning from multiple annotators using kernel alignment",
+  "authors": "J Gil-Gonzalez, A Alvarez-Meza, A Orozco-Gutierrez",
+  "venue": "Pattern Recognition Letters 116, 150-156, 2018",
+  "year": "2018",
+  "cites": "22",
+  "match": 1.0
+ },
+ {
+  "title": "Automatic Singular Spectrum Analysis for Time-Series Decomposition.",
+  "authors": "AM Álvarez-Meza, CD Acosta-Medina, G Castellanos-Domínguez",
+  "venue": "ESANN, 2013",
+  "year": "2013",
+  "cites": "22",
+  "match": 0.53
+ },
+ {
+  "title": "Single-trial kernel-based functional connectivity for enhanced feature extraction in motor-related tasks",
+  "authors": "DG García-Murillo, A Alvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Sensors 21 (8), 2750, 2021",
+  "year": "2021",
+  "cites": "21",
+  "match": 1.0
+ },
+ {
+  "title": "Motor imagery classification using feature relevance analysis: An Emotiv-based BCI system",
+  "authors": "J Hurtado-Rincon, S Rojas-Jaramillo, Y Ricardo-Cespedes, ...",
+  "venue": "2014 XIX Symposium on Image, Signal Processing and Artificial Vision, 1-5, 2014",
+  "year": "2014",
+  "cites": "21",
+  "match": 0.66
+ },
+ {
+  "title": "Semi-supervised t-SNE with multi-scale neighborhood preservation",
+  "authors": "W Serna-Serna, C De Bodt, AM Alvarez-Meza, JA Lee, M Verleysen, ...",
+  "venue": "Neurocomputing 550, 126496, 2023",
+  "year": "2023",
+  "cites": "20",
+  "match": 1.0
+ },
+ {
+  "title": "Deep neural regression prediction of motor imagery skills using EEG functional connectivity indicators",
+  "authors": "J Caicedo-Acosta, GA Castaño, C Acosta-Medina, A Alvarez-Meza, ...",
+  "venue": "Sensors 21 (6), 1932, 2021",
+  "year": "2021",
+  "cites": "20",
+  "match": 1.0
+ },
+ {
+  "title": "Bearing health monitoring using relief-F-based feature relevance analysis and HMM",
+  "authors": "JA Hernández-Muriel, JB Bermeo-Ulloa, M Holguin-Londoño, ...",
+  "venue": "Applied Sciences 10 (15), 5170, 2020",
+  "year": "2020",
+  "cites": "20",
+  "match": 1.0
+ },
+ {
+  "title": "Motor imagery classification for BCI using common spatial patterns and feature relevance analysis",
+  "authors": "LF Velásquez-Martínez, AM Álvarez-Meza, CG Castellanos-Domínguez",
+  "venue": "International Work-Conference on the Interplay Between Natural and …, 2013",
+  "year": "2013",
+  "cites": "20",
+  "match": 1.0
+ },
+ {
+  "title": "GMM background modeling using divergence-based weight updating",
+  "authors": "JD Pulgarin-Giraldo, A Alvarez-Meza, D Insuasti-Ceballos, T Bouwmans, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 282-290, 2016",
+  "year": "2016",
+  "cites": "19",
+  "match": 1.0
+ },
+ {
+  "title": "Image segmentation based on multi-kernel learning and feature relevance analysis",
+  "authors": "S Molina-Giraldo, AM Alvarez-Meza, DH Peluffo-Ordónez, ...",
+  "venue": "Ibero-American Conference on Artificial Intelligence, 501-510, 2012",
+  "year": "2012",
+  "cites": "19",
+  "match": 1.0
+ },
+ {
+  "title": "Parameter selection in least squares-support vector machines regression oriented, using generalized cross-validation",
+  "authors": "AM Alvarez Meza, G Daza Santacoloma, CD Acosta Medina, ...",
+  "venue": "Dyna 79 (171), 23-30, 2012",
+  "year": "2012",
+  "cites": "19",
+  "match": 1.0
+ },
+ {
+  "title": "Kcs-fcnet: Kernel cross-spectral functional connectivity network for eeg-based motor imagery classification",
+  "authors": "DG García-Murillo, AM Álvarez-Meza, CG Castellanos-Dominguez",
+  "venue": "Diagnostics 13 (6), 1122, 2023",
+  "year": "2023",
+  "cites": "18",
+  "match": 1.0
+ },
+ {
+  "title": "Video-based social behavior recognition based on kernel relevance analysis: J. Fernández-Ramírez et al.",
+  "authors": "J Fernández-Ramírez, A Álvarez-Meza, EM Pereira, A Orozco-Gutiérrez, ...",
+  "venue": "The Visual Computer 36 (8), 1535-1547, 2020",
+  "year": "2020",
+  "cites": "17",
+  "match": 0.85
+ },
+ {
+  "title": "An enhanced joint Hilbert embedding-based metric to support mocap data classification with preserved interpretability",
+  "authors": "CK Valencia-Marin, JD Pulgarin-Giraldo, LF Velasquez-Martinez, ...",
+  "venue": "Sensors 21 (13), 4443, 2021",
+  "year": "2021",
+  "cites": "16",
+  "match": 1.0
+ },
+ {
+  "title": "Regularized chained deep neural network classifier for multiple annotators",
+  "authors": "J Gil-González, A Valencia-Duque, A Álvarez-Meza, Á Orozco-Gutiérrez, ...",
+  "venue": "Applied Sciences 11 (12), 5409, 2021",
+  "year": "2021",
+  "cites": "15",
+  "match": 1.0
+ },
+ {
+  "title": "Multiple manifold learning by nonlinear dimensionality reduction",
+  "authors": "J Valencia-Aguirre, A Álvarez-Meza, G Daza-Santacoloma, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 206-213, 2011",
+  "year": "2011",
+  "cites": "15",
+  "match": 1.0
+ },
+ {
+  "title": "Chained deep learning using generalized cross-entropy for multiple annotators classification",
+  "authors": "JC Triana-Martinez, J Gil-González, JA Fernandez-Gallego, ...",
+  "venue": "Sensors 23 (7), 3518, 2023",
+  "year": "2023",
+  "cites": "14",
+  "match": 1.0
+ },
+ {
+  "title": "Kernel-based phase transfer entropy with enhanced feature relevance analysis for brain computer interfaces",
+  "authors": "I De La Pava Panche, A Álvarez-Meza, PM Herrera Gómez, ...",
+  "venue": "Applied Sciences 11 (15), 6689, 2021",
+  "year": "2021",
+  "cites": "14",
+  "match": 1.0
+ },
+ {
+  "title": "Learning from multiple inconsistent and dependent annotators to support classification tasks",
+  "authors": "J Gil-Gonzalez, A Orozco-Gutierrez, A Álvarez-Meza",
+  "venue": "Neurocomputing 423, 236-247, 2021",
+  "year": "2021",
+  "cites": "14",
+  "match": 1.0
+ },
+ {
+  "title": "EEG signal prediction for motor imagery classification in brain–computer interfaces",
+  "authors": "ÓW Gómez-Morales, DF Collazos-Huertas, AM Álvarez-Meza, ...",
+  "venue": "Sensors 25 (7), 2259, 2025",
+  "year": "2025",
+  "cites": "12",
+  "match": 1.0
+ },
+ {
+  "title": "Kernel-based regularized EEGNet using centered alignment and Gaussian connectivity for motor imagery discrimination",
+  "authors": "M Tobón-Henao, AM Álvarez-Meza, CG Castellanos-Dominguez",
+  "venue": "Computers 12 (7), 145, 2023",
+  "year": "2023",
+  "cites": "12",
+  "match": 1.0
+ },
+ {
+  "title": "Feet segmentation for regional analgesia monitoring using convolutional RFF and layer-wise weighted CAM interpretability",
+  "authors": "JC Aguirre-Arango, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Computation 11 (6), 113, 2023",
+  "year": "2023",
+  "cites": "12",
+  "match": 1.0
+ },
+ {
+  "title": "Background modeling using object-based selective updating and correntropy adaptation",
+  "authors": "AM Álvarez-Meza, S Molina-Giraldo, G Castellanos-Dominguez",
+  "venue": "Image and Vision Computing 45, 22-36, 2016",
+  "year": "2016",
+  "cites": "12",
+  "match": 1.0
+ },
+ {
+  "title": "Subject-dependent artifact removal for enhancing motor imagery classifier performance under poor skills",
+  "authors": "M Tobón-Henao, A Álvarez-Meza, G Castellanos-Domínguez",
+  "venue": "Sensors 22 (15), 5771, 2022",
+  "year": "2022",
+  "cites": "11",
+  "match": 1.0
+ },
+ {
+  "title": "Image-based learning using gradient class activation maps for enhanced physiological interpretability of motor imagery skills",
+  "authors": "DF Collazos-Huertas, AM Alvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Applied Sciences 12 (3), 1695, 2022",
+  "year": "2022",
+  "cites": "11",
+  "match": 1.0
+ },
+ {
+  "title": "Supervised kernel approach for automated learning using General Stochastic Networks",
+  "authors": "D Cárdenas-Peña, D Collazos-Huertas, A Álvarez-Meza, ...",
+  "venue": "Engineering Applications of Artificial Intelligence 68, 10-17, 2018",
+  "year": "2018",
+  "cites": "11",
+  "match": 1.0
+ },
+ {
+  "title": "Video Segmentation based on Multi-kernel Learning and Feature Relevance Analysis for Object Classification",
+  "authors": "S Molina-Giraldo, J Carvajal, AM Alvarez-Meza, ...",
+  "venue": "ICPRAM, 396-401, 2013",
+  "year": "2013",
+  "cites": "11",
+  "match": 0.83
+ },
+ {
+  "title": "T-garnet: a transformer and multi-scale gaussian kernel connectivity network with alpha-rényi regularization for eeg-based adhd detection",
+  "authors": "DV Salazar-Dubois, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Mathematics 13 (24), 4026, 2025",
+  "year": "2025",
+  "cites": "10",
+  "match": 1.0
+ },
+ {
+  "title": "A discriminative multi-output gaussian processes scheme for brain electrical activity analysis",
+  "authors": "C Torres-Valencia, Á Orozco, D Cárdenas-Peña, A Álvarez-Meza, ...",
+  "venue": "Applied Sciences 10 (19), 6765, 2020",
+  "year": "2020",
+  "cites": "10",
+  "match": 1.0
+ },
+ {
+  "title": "Video segmentation framework based on multi-kernel representations and feature relevance analysis for object classification",
+  "authors": "S Molina-Giraldo, J Carvajal-González, AM Álvarez-Meza, ...",
+  "venue": "Pattern Recognition Applications and Methods: International Conference …, 2014",
+  "year": "2014",
+  "cites": "10",
+  "match": 0.72
+ },
+ {
+  "title": "Feature relevance analysis supporting automatic motor imagery discrimination in EEG based BCI systems",
+  "authors": "AM Álvarez-Meza, LF Velásquez-Martínez, G Castellanos-Dominguez",
+  "venue": "2013 35th Annual International Conference of the IEEE Engineering in …, 2013",
+  "year": "2013",
+  "cites": "10",
+  "match": 1.0
+ },
+ {
+  "title": "A novel tool for ground truth data generation for video-based object classification",
+  "authors": "JS Lopez-Villa, HD Insuasti-Ceballos, S Molina-Giraldo, A Alvarez-Meza, ...",
+  "venue": "2015 20th Symposium on Signal Processing, Images and Computer Vision (STSIVA …, 2015",
+  "year": "2015",
+  "cites": "9",
+  "match": 0.53
+ },
+ {
+  "title": "People detection in video streams using background subtraction and spatial-based scene modeling",
+  "authors": "S Molina-Giraldo, HD Insuasti-Ceballos, CE Arroyave, JF Montoya, ...",
+  "venue": "2015 20th Symposium on Signal Processing, Images and Computer Vision (STSIVA …, 2015",
+  "year": "2015",
+  "cites": "9",
+  "match": 0.53
+ },
+ {
+  "title": "Generalized cross-entropy for learning from crowds based on correlated chained Gaussian processes",
+  "authors": "J Gil-González, G Daza-Santacoloma, D Cárdenas-Peña, ...",
+  "venue": "Results in Engineering 25, 103863, 2025",
+  "year": "2025",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "Multimodal explainability using class activation maps and canonical correlation for MI-EEG deep learning classification",
+  "authors": "M Loaiza-Arias, AM Álvarez-Meza, D Cárdenas-Peña, ...",
+  "venue": "Applied Sciences 14 (23), 11208, 2024",
+  "year": "2024",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "Posthoc interpretability of neural responses by grouping subject motor imagery skills using cnn-based connectivity",
+  "authors": "DF Collazos-Huertas, AM Álvarez-Meza, DA Cárdenas-Peña, ...",
+  "venue": "Sensors 23 (5), 2750, 2023",
+  "year": "2023",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "An enhanced and interpretable feature representation approach to support shape classification from binary images",
+  "authors": "JS Blandon, AA Orozco-Gutierrez, AM Álvarez-Meza",
+  "venue": "Pattern Recognition Letters 151, 348-354, 2021",
+  "year": "2021",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "Deep and wide transfer learning with kernel matching for pooling data from electroencephalography and psychological questionnaires",
+  "authors": "DF Collazos-Huertas, LF Velasquez-Martinez, HD Perez-Nastar, ...",
+  "venue": "Sensors 21 (15), 5105, 2021",
+  "year": "2021",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "Spatial interpretability of time-frequency relevance optimized in motor imagery discrimination using Deep&Wide networks",
+  "authors": "DF Collazos-Huertas, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Biomedical Signal Processing and Control 68, 102626, 2021",
+  "year": "2021",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "Feature relevance estimation for vibration-based condition monitoring of an internal combustion engine",
+  "authors": "JA Hernández-Muriel, AM Álvarez-Meza, JD Echeverry-Correa, ...",
+  "venue": "TecnoLógicas 20 (39), 159-174, 2017",
+  "year": "2017",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "MoCap data segmentation and classification using kernel based multi-channel analysis",
+  "authors": "S García-Vega, AM Álvarez-Meza, CG Castellanos-Domínguez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 495-502, 2013",
+  "year": "2013",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "Kernel spectral clustering for dynamic data",
+  "authors": "DH Peluffo-Ordónez, S García-Vega, AM Alvarez-Meza, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 238-245, 2013",
+  "year": "2013",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "Video analysis based on multi-kernel representation with automatic parameter choice",
+  "authors": "AM Álvarez-Meza, J Valencia-Aguirre, G Daza-Santacoloma, ...",
+  "venue": "Neurocomputing 100, 117-126, 2013",
+  "year": "2013",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "Biomedical data analysis by supervised manifold learning",
+  "authors": "AM Álvarez-Meza, G Daza-Santacoloma, G Castellanos-Domínguez",
+  "venue": "2012 Annual International Conference of the IEEE Engineering in Medicine and …, 2012",
+  "year": "2012",
+  "cites": "8",
+  "match": 1.0
+ },
+ {
+  "title": "Enhancing agricultural data interpretability and visualization with TabNet-driven feature extraction and Local Biplots",
+  "authors": "J Triana-Martinez, A Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Results in Engineering, 106672, 2025",
+  "year": "2025",
+  "cites": "7",
+  "match": 1.0
+ },
+ {
+  "title": "EEG-based music emotion prediction using supervised feature extraction for MIDI generation",
+  "authors": "O Gomez-Morales, H Perez-Nastar, AM Álvarez-Meza, H Torres-Cardona, ...",
+  "venue": "Sensors 25 (5), 1471, 2025",
+  "year": "2025",
+  "cites": "7",
+  "match": 1.0
+ },
+ {
+  "title": "A regularized physics-informed neural network to support data-driven nonlinear constrained optimization",
+  "authors": "DA Perez-Rosero, AM Álvarez-Meza, CG Castellanos-Dominguez",
+  "venue": "Computers 13 (7), 176, 2024",
+  "year": "2024",
+  "cites": "7",
+  "match": 1.0
+ },
+ {
+  "title": "Correlated chained Gaussian processes for datasets with multiple annotators",
+  "authors": "J Gil-Gonzalez, JJ Giraldo, AM Álvarez-Meza, A Orozco-Gutierrez, ...",
+  "venue": "IEEE Transactions on Neural Networks and Learning Systems 34 (8), 4514-4528, 2021",
+  "year": "2021",
+  "cites": "7",
+  "match": 1.0
+ },
+ {
+  "title": "Shape classification using hilbert space embeddings and kernel adaptive filtering",
+  "authors": "JS Blandon, CK Valencia, A Alvarez, J Echeverry, MA Alvarez, A Orozco",
+  "venue": "International Conference Image Analysis and Recognition, 245-251, 2018",
+  "year": "2018",
+  "cites": "7",
+  "match": 0.63
+ },
+ {
+  "title": "A kernel-based representation to support 3d mri unsupervised clustering",
+  "authors": "D Cardenas-Pena, M Orbes-Arteaga, A Castro-Ospina, A Alvarez-Meza, ...",
+  "venue": "2014 22nd International Conference on Pattern Recognition, 3203-3208, 2014",
+  "year": "2014",
+  "cites": "7",
+  "match": 1.0
+ },
+ {
+  "title": "Crop water status analysis from complex agricultural data using UMAP-based local biplot",
+  "authors": "JC Triana-Martinez, AM Álvarez-Meza, J Gil-González, T De Swaef, ...",
+  "venue": "Remote Sensing 16 (15), 2854, 2024",
+  "year": "2024",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Scalable and interpretable forecasting of hydrological time series based on variational Gaussian processes",
+  "authors": "JD Pastrana-Cortés, J Gil-Gonzalez, AM Álvarez-Meza, ...",
+  "venue": "Water 16 (14), 2006, 2024",
+  "year": "2024",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Regression networks for neurophysiological indicator evaluation in practicing motor imagery tasks",
+  "authors": "L Velasquez-Martinez, J Caicedo-Acosta, C Acosta-Medina, ...",
+  "venue": "Brain Sciences 10 (10), 707, 2020",
+  "year": "2020",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Tensor decomposition processes for interpolation of diffusion magnetic resonance imaging",
+  "authors": "HD Vargas-Cardona, ÁA Orozco, AM Álvarez, MA Álvarez",
+  "venue": "Expert Systems with Applications 118, 92-108, 2019",
+  "year": "2019",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Gender effects on an EEG-based emotion level classification system",
+  "authors": "I De La Pava, A Álvarez, P Herrera, G Castellanos-Domínguez, A Orozco",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 810-819, 2018",
+  "year": "2018",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Short time EEG connectivity features to support interpretability of mi discrimination",
+  "authors": "V Gómez, A Álvarez, P Herrera, G Castellanos, A Orozco",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 699-706, 2018",
+  "year": "2018",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Sparse hilbert embedding-based statistical inference of stochastic ecological systems",
+  "authors": "W González-Vanegas, A Alvarez-Meza, Á Orozco-Gutierrez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 255-262, 2017",
+  "year": "2017",
+  "cites": "6",
+  "match": 0.44
+ },
+ {
+  "title": "Volume rendering by stochastic neighbor embedding-based 2D transfer function building",
+  "authors": "W Serna-Serna, AM Álvarez-Meza, ÁÁ Orozco-Gutierrez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 618-626, 2017",
+  "year": "2017",
+  "cites": "6",
+  "match": 0.47
+ },
+ {
+  "title": "Relevant kinematic feature selection to support human action recognition in MoCap data",
+  "authors": "JD Pulgarin-Giraldo, AA Ruales-Torres, AM Álvarez-Meza, ...",
+  "venue": "International Work-Conference on the Interplay Between Natural and …, 2017",
+  "year": "2017",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Emotion assessment based on functional connectivity variability and relevance analysis",
+  "authors": "C Torres-Valencia, A Alvarez-Meza, A Orozco-Gutierrez",
+  "venue": "International Work-Conference on the Interplay Between Natural and …, 2017",
+  "year": "2017",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "A similarity indicator for differentiating kinematic performance between qualified tennis players",
+  "authors": "JD Pulgarin-Giraldo, AM Álvarez-Meza, LG Melo-Betancourt, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 309-317, 2016",
+  "year": "2016",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Video segmentation framework by dynamic background modelling",
+  "authors": "S Molina-Giraldo, AM Álvarez-Meza, JC García-Álvarez, ...",
+  "venue": "International Conference on Image Analysis and Processing, 843-852, 2013",
+  "year": "2013",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Feature selection by relevance analysis for abandoned object classification",
+  "authors": "J Carvajal-González, AM Álvarez-Meza, G Castellanos-Domínguez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 837-844, 2012",
+  "year": "2012",
+  "cites": "6",
+  "match": 1.0
+ },
+ {
+  "title": "Gaussian Connectivity-Driven EEG Imaging for Deep Learning-Based Motor Imagery Classification",
+  "authors": "A Gomez-Rivera, DF Collazos-Huertas, D Cárdenas-Peña, ...",
+  "venue": "Sensors 26 (1), 227, 2025",
+  "year": "2025",
+  "cites": "5",
+  "match": 1.0
+ },
+ {
+  "title": "Uncertainty-aware deep learning for robust and interpretable MI EEG using channel dropout and LayerCAM integration",
+  "authors": "ÓW Gómez-Morales, S Escalante-Escobar, DF Collazos-Huertas, ...",
+  "venue": "Applied Sciences 15 (14), 8036, 2025",
+  "year": "2025",
+  "cites": "5",
+  "match": 0.93
+ },
+ {
+  "title": "Fast semi-supervised t-sne for transfer function enhancement in direct volume rendering-based medical image visualization",
+  "authors": "W Serna-Serna, AM Álvarez-Meza, Á Orozco-Gutiérrez",
+  "venue": "Mathematics 12 (12), 1885, 2024",
+  "year": "2024",
+  "cites": "5",
+  "match": 1.0
+ },
+ {
+  "title": "Deep learning semantic segmentation of feet using infrared thermal images",
+  "authors": "R Mejia-Zuluaga, JC Aguirre-Arango, D Collazos-Huertas, ...",
+  "venue": "Ibero-American Conference on Artificial Intelligence, 342-352, 2022",
+  "year": "2022",
+  "cites": "5",
+  "match": 1.0
+ },
+ {
+  "title": "Estimating directed phase-amplitude interactions from EEG data through kernel-based phase transfer entropy",
+  "authors": "I De La Pava Panche, V Gómez-Orozco, A Álvarez-Meza, ...",
+  "venue": "Applied Sciences 11 (21), 9803, 2021",
+  "year": "2021",
+  "cites": "5",
+  "match": 1.0
+ },
+ {
+  "title": "Tdnn-based engine in-cylinder pressure estimation from shaft velocity spectral representation",
+  "authors": "AF Valencia-Duque, DA Cárdenas-Peña, AM Álvarez-Meza, ...",
+  "venue": "Sensors 21 (6), 2186, 2021",
+  "year": "2021",
+  "cites": "5",
+  "match": 1.0
+ },
+ {
+  "title": "Image-based animal recognition based on transfer learning",
+  "authors": "GSG Gómez, DFC Huertas, AMÁ Meza",
+  "venue": "Scientia et Technica 26 (3), 406-411, 2021",
+  "year": "2021",
+  "cites": "5",
+  "match": 1.0
+ },
+ {
+  "title": "Student desertion prediction using kernel relevance analysis",
+  "authors": "J Fernández, A Rojas, G Daza, D Gómez, A Álvarez, Á Orozco",
+  "venue": "International Workshop on Artificial Intelligence and Pattern Recognition …, 2018",
+  "year": "2018",
+  "cites": "5",
+  "match": 0.61
+ },
+ {
+  "title": "A hierarchical K-nearest neighbor approach for volume of tissue activated estimation",
+  "authors": "I De La Pava, J Mejía, A Álvarez-Meza, M Álvarez, A Orozco, O Henao",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 125-133, 2016",
+  "year": "2016",
+  "cites": "5",
+  "match": 1.0
+ },
+ {
+  "title": "Automatic graph pruning based on kernel alignment for spectral clustering",
+  "authors": "AM Álvarez-Meza, AE Castro-Ospina, G Castellanos-Dominguez",
+  "venue": "Pattern Recognition Letters 70, 8-16, 2016",
+  "year": "2016",
+  "cites": "5",
+  "match": 1.0
+ },
+ {
+  "title": "An Interpretable Artificial Intelligence Approach for Reliability and Regulation-Aware Decision Support in Power Systems",
+  "authors": "DA Pérez-Rosero, S Pineda-Quintero, JC Álvarez-Barreto, ...",
+  "venue": "Computation 14 (1), 2, 2025",
+  "year": "2025",
+  "cites": "4",
+  "match": 1.0
+ },
+ {
+  "title": "An Explainable Framework Integrating Local Biplots and Gaussian Processes for Unemployment Rate Prediction in Colombia",
+  "authors": "DA Pérez-Rosero, DA Manrique-Cabezas, JC Triana-Martinez, ...",
+  "venue": "Computation 13 (5), 116, 2025",
+  "year": "2025",
+  "cites": "4",
+  "match": 1.0
+ },
+ {
+  "title": "Electroencephalography-based pain detection using kernel spectral connectivity network with preserved spatio-frequency interpretability",
+  "authors": "S Buitrago-Osorio, J Gil-González, AM Álvarez-Meza, D Cardenas-Peña, ...",
+  "venue": "Applied Sciences 15 (9), 4804, 2025",
+  "year": "2025",
+  "cites": "4",
+  "match": 1.0
+ },
+ {
+  "title": "Cross-dataset data augmentation using umap for deep learning-based wind speed prediction",
+  "authors": "EA Leon-Gomez, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Computers 14 (4), 123, 2025",
+  "year": "2025",
+  "cites": "4",
+  "match": 1.0
+ },
+ {
+  "title": "Optimization of interconnected natural gas and power systems using mathematical programs with complementarity constraints",
+  "authors": "CA Blanco-Martínez, AM Álvarez-Meza, G Castellanos-Dominguez, ...",
+  "venue": "Mathematics 12 (14), 2224, 2024",
+  "year": "2024",
+  "cites": "4",
+  "match": 1.0
+ },
+ {
+  "title": "Hippocampus Segmentation using Patch-based Representation and ROC Label Enhancement.",
+  "authors": "AD Tobar, JC Aguirre, DA Cardenas-Pena, AM Alvarez-Meza, ...",
+  "venue": "Engineering Letters 31 (2), 504, 2023",
+  "year": "2023",
+  "cites": "4",
+  "match": 1.0
+ },
+ {
+  "title": "A machine learning approach to support deep brain stimulation programming",
+  "authors": "V Gómez-Orozco, I de la Pava, A Álvarez-Meza, MA Álvarez, ...",
+  "venue": "Revista Facultad de Ingeniería Universidad de Antioquia, 20-33, 2020",
+  "year": "2020",
+  "cites": "4",
+  "match": 1.0
+ },
+ {
+  "title": "AKL-ABC: An automatic approximate Bayesian computation approach based on kernel learning",
+  "authors": "W González-Vanegas, A Álvarez-Meza, J Hernández-Muriel, ...",
+  "venue": "Entropy 21 (10), 932, 2019",
+  "year": "2019",
+  "cites": "4",
+  "match": 1.0
+ },
+ {
+  "title": "Automatic identification of power quality events using a machine learning approach",
+  "authors": "AFV Duque, AMÁ Meza, ÁA Orozco-Gutierrez",
+  "venue": "Scientia Et Technica 24 (2), 183-189, 2019",
+  "year": "2019",
+  "cites": "4",
+  "match": 1.0
+ },
+ {
+  "title": "Video-based human action recognition using kernel relevance analysis",
+  "authors": "J Fernández-Ramírez, A Alvarez-Meza, A Orozco-Gutiérrez",
+  "venue": "International Symposium on Visual Computing, 116-125, 2018",
+  "year": "2018",
+  "cites": "4",
+  "match": 0.8
+ },
+ {
+  "title": "Nerve structure segmentation from ultrasound images using random under-sampling and an SVM classifier",
+  "authors": "C Jimenez, D Diaz, D Salazar, AM Alvarez, A Orozco, O Henao",
+  "venue": "International Conference Image Analysis and Recognition, 571-578, 2018",
+  "year": "2018",
+  "cites": "4",
+  "match": 0.48
+ },
+ {
+  "title": "Kernel-based relevant feature extraction to support motor imagery classification",
+  "authors": "L Arias-Mora, L López-Ríos, Y Céspedes-Villar, LF Velasquez-Martinez, ...",
+  "venue": "2015 20th Symposium on Signal Processing, Images and Computer Vision (STSIVA …, 2015",
+  "year": "2015",
+  "cites": "4",
+  "match": 0.61
+ },
+ {
+  "title": "Takens-Based Kernel Transfer Entropy Connectivity Network for Motor Imagery Classification",
+  "authors": "A Gomez-Rivera, AM Álvarez-Meza, D Cárdenas-Peña, ...",
+  "venue": "Sensors 25 (22), 7067, 2025",
+  "year": "2025",
+  "cites": "3",
+  "match": 1.0
+ },
+ {
+  "title": "Integrating Cacao Physicochemical-Sensory Profiles via Gaussian Processes Crowd Learning and Localized Annotator Trustworthiness",
+  "authors": "JC Lugo-Rojas, MJ Chica-Morales, SL Florez-González, ...",
+  "venue": "Foods 14 (17), 2961, 2025",
+  "year": "2025",
+  "cites": "3",
+  "match": 1.0
+ },
+ {
+  "title": "Revolutionizing Data Exchange Through Intelligent Automation: Insights and Trends",
+  "authors": "YN Cardona-Álvarez, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Computers 14 (5), 194, 2025",
+  "year": "2025",
+  "cites": "3",
+  "match": 1.0
+ },
+ {
+  "title": "Approximation of weymouth equation using mathematical programs with complementarity constraints for natural gas transportation",
+  "authors": "CA Blanco-Martínez, DA Cardenas-Peña, M Holguín-Londoño, ...",
+  "venue": "Engineering Proceedings 39 (1), 91, 2023",
+  "year": "2023",
+  "cites": "3",
+  "match": 1.0
+ },
+ {
+  "title": "Affective Neural Responses Sonified through Labeled Correlation Alignment",
+  "authors": "AM Álvarez-Meza, HF Torres-Cardona, M Orozco-Alzate, ...",
+  "venue": "Sensors 23 (12), 5574, 2023",
+  "year": "2023",
+  "cites": "3",
+  "match": 1.0
+ },
+ {
+  "title": "Multilayer-based HMM training to support bearing fault diagnosis",
+  "authors": "J Fernández, A Álvarez, H Quintero, J Echeverry, Á Orozco",
+  "venue": "International Workshop on Artificial Intelligence and Pattern Recognition, 43-50, 2018",
+  "year": "2018",
+  "cites": "3",
+  "match": 0.49
+ },
+ {
+  "title": "Clustering-based undersampling to support automatic detection of focal cortical dysplasias",
+  "authors": "K Hoyos-Osorio, AM Álvarez, ÁA Orozco, JI Rios, G Daza-Santacoloma",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 298-305, 2017",
+  "year": "2017",
+  "cites": "3",
+  "match": 0.48
+ },
+ {
+  "title": "Time-series prediction based on kernel adaptive filtering with cyclostationary codebooks",
+  "authors": "S García-Vega, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Iberian Conference on Pattern Recognition and Image Analysis, 354-361, 2015",
+  "year": "2015",
+  "cites": "3",
+  "match": 1.0
+ },
+ {
+  "title": "Neural decoding using kernel-based functional representation of ECoG recordings",
+  "authors": "S García-Vega, AM Álvarez-Meza, G Castellanos-Domínguez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 247-254, 2014",
+  "year": "2014",
+  "cites": "3",
+  "match": 1.0
+ },
+ {
+  "title": "Automatic graph building approach for spectral clustering",
+  "authors": "AE Castro-Ospina, AM Álvarez-Meza, CG Castellanos-Domínguez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 190-197, 2013",
+  "year": "2013",
+  "cites": "3",
+  "match": 1.0
+ },
+ {
+  "title": "Image synthesis based on manifold learning",
+  "authors": "AM Álvarez-Meza, J Valencia-Aguirre, G Daza-Santacoloma, ...",
+  "venue": "International Conference on Computer Analysis of Images and Patterns, 405-412, 2011",
+  "year": "2011",
+  "cites": "3",
+  "match": 0.65
+ },
+ {
+  "title": "Temporal Attention and Convolutional Tokenization for Interpretable EEG-Based ADHD Identification in Children",
+  "authors": "JD Pastrana-Cortés, A Gomez-Rivera, AM Álvarez-Meza, J Gil-Gonzalez, ...",
+  "venue": "Technologies 14 (7), 392, 2026",
+  "year": "2026",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Artificial Intelligence-Driven Mobile Platform for Thermographic Imaging to Support Maternal Health Care",
+  "authors": "LM Iturriago-Salas, JA Mesa-Sarmiento, PA Castro-Cabrera, ...",
+  "venue": "Computers 14 (11), 466, 2025",
+  "year": "2025",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Explainable deep kernel learning for interpretable automatic modulation classification",
+  "authors": "CE Mosquera-Trujillo, JC Lugo-Rojas, DF Collazos-Huertas, ...",
+  "venue": "Computers 14 (9), 372, 2025",
+  "year": "2025",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "BCI-based real-time processing for implementing deep learning frameworks using motor imagery paradigms",
+  "authors": "YA Gomez-Rivera, Y Cardona Álvarez, OW Gomez-Morales, ...",
+  "venue": "Journal of applied research and technology 22 (5), 646-653, 2024",
+  "year": "2024",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Analysis and classification of MoCap data by hilbert space embedding-based distance and multikernel learning",
+  "authors": "JD Pulgarin-Giraldo, AM Alvarez-Meza, S Van Vaerenbergh, I Santamaría, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 186-193, 2018",
+  "year": "2018",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Emotion assessment using adaptive learning-based relevance analysis",
+  "authors": "C Torres-Valencia, A Álvarez-Meza, A Orozco-Gutierrez",
+  "venue": "International Conference Image Analysis and Recognition, 193-200, 2018",
+  "year": "2018",
+  "cites": "2",
+  "match": 0.63
+ },
+ {
+  "title": "A kernel-based approach for DBS parameter estimation",
+  "authors": "V Gómez-Orozco, J Cuellar, HF García, A Álvarez, M Álvarez, A Orozco, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 158-166, 2016",
+  "year": "2016",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Non-parametric source reconstruction via kernel temporal enhancement for eeg data",
+  "authors": "C Torres-Valencia, J Hernandez-Muriel, W González-Vanegas, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 443-450, 2016",
+  "year": "2016",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Estimación de la curva de presión en la cámara de combustión de mci monocilíndricos a partir del análisis de vibraciones",
+  "authors": "D Torres, JA Hernández-Muriel, AM Álvarez, HF Quintero, ÁA Orozco",
+  "venue": "II Jornadas Iberoamericanas de Motores Térmicos y Lubricación (La Plata, 2016)., 2016",
+  "year": "2016",
+  "cites": "2",
+  "match": 0.53
+ },
+ {
+  "title": "Connectivity analysis of motor imagery paradigm using short-time features and kernel similarities",
+  "authors": "F Velasquez-Martinez, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "International Work-Conference on the Interplay Between Natural and …, 2015",
+  "year": "2015",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Spectral clustering using compactly supported graph building",
+  "authors": "AM Álvarez-Meza, AE Castro-Ospina, G Castellanos-Dominguez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 327-334, 2014",
+  "year": "2014",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Tensor-product kernel-based representation encoding joint MRI view similarity",
+  "authors": "A Álvarez-Meza, D Cárdenas-Peña, AE Castro-Ospina, M Alvarez, ...",
+  "venue": "2014 36th Annual International Conference of the IEEE Engineering in …, 2014",
+  "year": "2014",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Correntropy-based adaptive learning to support video surveillance systems",
+  "authors": "AM Álvarez-Meza, S Molina-Giraldo, G Castellanos-Dominguez",
+  "venue": "2014 22nd International Conference on Pattern Recognition, 2590-2595, 2014",
+  "year": "2014",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "MRI discrimination by inter-slice similarities and kernel-based centered alignment",
+  "authors": "AM Álvarez-Meza, D Cárdenas-Peña, G Castellanos-Domínguez",
+  "venue": "3rd IEEE International Work-Conference on Bioinspired Intelligence, 149-153, 2014",
+  "year": "2014",
+  "cites": "2",
+  "match": 0.47
+ },
+ {
+  "title": "Human activity recognition by class label LLE",
+  "authors": "J Valencia-Aguirre, AM Álvarez-Meza, G Daza-Santacoloma, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 260-267, 2012",
+  "year": "2012",
+  "cites": "2",
+  "match": 1.0
+ },
+ {
+  "title": "Learning from Crowds Using a Focal Loss Function: Dealing with Imbalanced Annotations",
+  "authors": "J Gil-Gonzalez, DA Cárdenas-Peña, A Orozco-Gutiérrez, ...",
+  "venue": "Technologies 14 (6), 370, 2026",
+  "year": "2026",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "Multi-Scale Spectral Recurrent Network Based on Random Fourier Features for Wind Speed Forecasting",
+  "authors": "EA Leon-Gomez, V Elvira, JI Montes-Monsalve, AM Álvarez-Meza, ...",
+  "venue": "Technologies 14 (4), 238, 2026",
+  "year": "2026",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "Conditional Domain Adaptation with <i>α</i>-Rényi Entropy Regularization and Noise-Aware Label Weighting",
+  "authors": "DA Pérez-Rosero, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Mathematics 13 (16), 2602, 2025",
+  "year": "2025",
+  "cites": "1",
+  "match": 0.98
+ },
+ {
+  "title": "Lightweight and Interpretable DL Model Using Convolutional RFF for AMC",
+  "authors": "CE Mosquera-Trujilo, DF Collazos-Huertas, AM Álvarez-Meza, ...",
+  "venue": "Colombian Conference on Computing, 308-323, 2024",
+  "year": "2024",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "Gaussian Mixture Connectivity with <svg class=\"gs_fsvg\" aria-label=\"α\" width=\"11px\" height=\"8px\" style=\"vertical-align:-1px;\"><g transform=\"matrix(0.01700, 0.00000, 0.00000, 0.01700, 0.00000, 7.51400)\"><g><path transform=\"scale(0.48828, -0.48828)\" d=\"M 412 -23  Q 315 -23 239 23  T 123 147  T 82 324  Q 82 463 159 599  T 365 820  T 635 905  Q 739 905 818 850  T 938 705  T 979 512  L 981 375  Q 1051 472 1099 576  T 1174 793  Q 1178 805 1190 805  H 1214  Q 1233 805 1233 786  Q 1233 784 1231 780  Q 1207 686 1171 599  T 1086 432  T 981 285  Q 981 31 1040 31  Q 1078 31 1102 53  T 1145 109  T 1169 143  H 1194  Q 1210 143 1210 123  Q 1210 72 1151 24  T 1036 -23  Q 962 -23 913 25  T 846 150  Q 750 68 638 22  T 412 -23  Z M 416 31  Q 635 31 836 211  Q 835 223 833 240  T 831 260  V 481  Q 831 852 631 852  Q 511 852 421 749  T 285 504  T 240 244  Q 240 155 285 93  T 416 31  Z \"/></g></g></svg>-Renyi Regularization for EEG-Based MI Classification",
+  "authors": "DV Salazar-Dubois, AM Alvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Colombian Conference on Computing, 132-147, 2024",
+  "year": "2024",
+  "cites": "1",
+  "match": 0.18
+ },
+ {
+  "title": "Sparse-based feature selection for discriminating between crops and weeds using field images",
+  "authors": "DG García-Murillo, AM Álvarez, D Cárdenas-Peña, W Hincapie-Restrepo, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 357-364, 2019",
+  "year": "2019",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "Infinite Gaussian Fisher Vector to Support Video-Based Human Action Recognition",
+  "authors": "JL Fernández-Ramírez, AM Álvarez-Meza, ÁA Orozco-Gutiérrez, ...",
+  "venue": "International Symposium on Visual Computing, 38-49, 2019",
+  "year": "2019",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "Pronóstico de vida útil remanente en rodamientos con base en la estimación de la probabilidad de la degradación",
+  "authors": "M Holguín-Londoño, ÁÁ Orozco Gutiérrez, AM Álvarez Meza",
+  "venue": "Universidad Tecnológica de Pereira, 2019",
+  "year": "2019",
+  "cites": "1",
+  "match": 0.47
+ },
+ {
+  "title": "A DTW-Based Representation to Support Static Sign Language Recognition from Binary Images",
+  "authors": "JS Blandon, A Alvarez, A Orozco",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 938-945, 2018",
+  "year": "2018",
+  "cites": "1",
+  "match": 0.6
+ },
+ {
+  "title": "Automatic Identification of DBS Parameters from the Volume of Tissue Activated (VTA) Using Support Vector Machines",
+  "authors": "R Aguilar, HD Vargas-Cardona, AM Álvarez, ÁA Orozco, P Navarro",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 740-747, 2018",
+  "year": "2018",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "A data representation approach to support imbalanced data classification based on TWSVM",
+  "authors": "C Jimenez, AM Alvarez, A Orozco",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 55-63, 2018",
+  "year": "2018",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "An Automatic Approximate Bayesian Computation Approach Using Metric Learning",
+  "authors": "W González-Vanegas, A Álvarez-Meza, A Orozco-Gutiérrez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 12-19, 2018",
+  "year": "2018",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "An Enhanced Sequential Search Feature Selection Based on mRMR to Support FCD Localization",
+  "authors": "J Castañeda-Gonzalez, A Alvarez-Meza, A Orozco-Gutierrez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 487-495, 2018",
+  "year": "2018",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "An automatic brain tumor segmentation approach based on affinity clustering",
+  "authors": "C Ramirez, V Gomez, I De la Pava, A Alvarez, J Echeverry, J Rios, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 766-773, 2018",
+  "year": "2018",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "A fast reliability analysis approach for colombian natural gas subnetworks",
+  "authors": "W González-Vanegas, A Álvarez-Meza, Á Orozco-Gutiérrez",
+  "venue": "Workshop on Engineering Applications, 348-356, 2018",
+  "year": "2018",
+  "cites": "1",
+  "match": 0.48
+ },
+ {
+  "title": "A Kernelized Morphable Model for 3D Brain Tumor Analysis",
+  "authors": "DA Jimenez, HF García, AM Álvarez, ÁA Orozco, G Holguín",
+  "venue": "International Conference Image Analysis and Recognition, 529-537, 2018",
+  "year": "2018",
+  "cites": "1",
+  "match": 0.53
+ },
+ {
+  "title": "Emotion assessment by variability-based ranking of coherence features from EEG",
+  "authors": "I De La Pava, A Álvarez-Meza, AA Orozco",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 203-211, 2017",
+  "year": "2017",
+  "cites": "1",
+  "match": 0.55
+ },
+ {
+  "title": "Automatic peripheral nerve segmentation in presence of multiple annotators",
+  "authors": "J Gil González, AM Álvarez, AF Valencia, ÁA Orozco",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 246-254, 2017",
+  "year": "2017",
+  "cites": "1",
+  "match": 0.49
+ },
+ {
+  "title": "Enhancement of nerve structure segmentation by a correntropy-based pre-image approach",
+  "authors": "J Gil-González, A Álvarez-Meza, J Echeverry-Correa, A Orozco-Gutiérrez, ...",
+  "venue": "TecnoLógicas 20 (39), 199-210, 2017",
+  "year": "2017",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "Detection of EEG Dynamic Changes Due to Stimulus-Related Activity in Motor Imagery Recordings",
+  "authors": "LF Velasquez-Martinez, A Alvarez-Meza, G Castellanos-Dominguez",
+  "venue": "International Work-Conference on the Interplay Between Natural and …, 2017",
+  "year": "2017",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "Kernel-Based Feature Relevance Analysis for ECG Beat Classification",
+  "authors": "DF Collazos-Huertas, AM Álvarez-Meza, N Gaviria-Gómez, ...",
+  "venue": "Iberian Conference on Pattern Recognition and Image Analysis, 291-299, 2015",
+  "year": "2015",
+  "cites": "1",
+  "match": 1.0
+ },
+ {
+  "title": "Nonlinear dimensionality reduction frameworks to support machine learning systems",
+  "authors": "AM Álvarez Meza",
+  "venue": "",
+  "year": "2011",
+  "cites": "1",
+  "match": 0.48
+ },
+ {
+  "title": "pattern reCognition by dinamiC feature analysis based on pCa",
+  "authors": "JV Aguirre",
+  "venue": "Tecno Lógicas, 2009",
+  "year": "2009",
+  "cites": "1",
+  "match": 0.98
+ },
+ {
+  "title": "Transformer-Based Modeling of Directed Transfer Entropy Connectivity for EEG-Based ADHD Classification in Children",
+  "authors": "A Gomez-Rivera, JD Pastrana-Cortés, AM Álvarez-Meza, J Gil-Gonzalez, ...",
+  "venue": "Sensors 26 (18), 5786, 2026",
+  "year": "2026",
+  "cites": "",
+  "match": 0.63
+ },
+ {
+  "title": "DARES: Rényi-Entropy Domain Adaptation for Forest Deforestation Segmentation",
+  "authors": "LM Iturriago-Salas, AM Álvarez-Meza, DF Collazos-Huertas, AJLD Dores, ...",
+  "venue": "Preprints, 2026",
+  "year": "2026",
+  "cites": "",
+  "match": 0.49
+ },
+ {
+  "title": "Regression-based explainable deep learning for estimating Hamiltonian parameters from magnetic nanodot images",
+  "authors": "JS Méndez-Rondón, MI García-Quimbayo, AM Álvarez-Meza, ...",
+  "venue": "Materials & Design, 116816, 2026",
+  "year": "2026",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "STF-KernelSHAP: A Model-Agnostic Space–Time–Frequency Shapley Framework for Physiologically Informed EEG Explainability",
+  "authors": "DA Pérez-Rosero, AC Lopez-Boscan, AM Álvarez-Meza, ...",
+  "venue": "Computers 15 (7), 428, 2026",
+  "year": "2026",
+  "cites": "",
+  "match": 0.92
+ },
+ {
+  "title": "Text-Conditioned Semantic Aggregation for Audio-Based Multiple-Instance Learning in Depression Detection",
+  "authors": "AM Alvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Artificial Intelligence for Neuroscience, Mental Health, and …, 2026",
+  "year": "2026",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Temporal Attention and Convolutional Tokenization for Interpretable ADHD Classification from EEG",
+  "authors": "JD Pastrana-Cortés, A Gomez-Rivera, AM Álvarez-Meza, J Gil-Gonzalez, ...",
+  "venue": "Preprints, 2026",
+  "year": "2026",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Explainable AI-Based Connectivity Learning for ADHD Detection from EEG Signals",
+  "authors": "DA Pérez-Rosero, NB Rios, AM Alvarez-Meza, MP Bonomini",
+  "venue": "International Work-Conference on the Interplay Between Natural and …, 2026",
+  "year": "2026",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Detecting the unseen poor in multidimensional poverty assessment using Bayesian approaches",
+  "authors": "CA Pérez-Aguirre, G Muñetón-Santa, AM Álvarez-Meza",
+  "venue": "Quality & Quantity, 1-25, 2026",
+  "year": "2026",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Notes on Kernel Methods in Machine Learning",
+  "authors": "DA Pérez-Rosero, DV Salazar-Dubois, JC Lugo-Rojas, AM Álvarez-Meza, ...",
+  "venue": "arXiv preprint arXiv:2511.14485, 2025",
+  "year": "2025",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Pulse-Driven Spin Paradigm for Noise-Aware Quantum Classification",
+  "authors": "C Riascos-Moreno, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Computers 14 (11), 475, 2025",
+  "year": "2025",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "CrowdAttention: An Attention Based Framework to Classify Crowdsourced Data in Medical Scenarios",
+  "authors": "J Gil-Gonzalez, D Cárdenas-Peña, ÁA Orozco, G Castellanos-Dominguez, ...",
+  "venue": "Sensors 25 (20), 6435, 2025",
+  "year": "2025",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Attention Maps for Explainable Classification of Parkinson’s Disease Using Mel Filterbank-Based CTNets",
+  "authors": "A Patiño-Bedoya, AM Alvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Automatic Assessment of Parkinsonian Speech Workshop, 51-65, 2024",
+  "year": "2024",
+  "cites": "",
+  "match": 0.84
+ },
+ {
+  "title": "Hyperparameter Optimization of Multi-layer Perceptron-Based Predictors",
+  "authors": "CA Altamiranda-Gonzalez, DA Perez-Rosero, G Castellanos-Dominguez, ...",
+  "venue": "Colombian Conference on Computing, 86-98, 2024",
+  "year": "2024",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Comparing Regression Models with Enhanced Interpretability for Wind Speed Forecasting in La Guajira-Colombia",
+  "authors": "EA León-Gómez, A Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "Colombian Conference on Computing, 3-12, 2024",
+  "year": "2024",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Imbalanced Classification Krein Spaces Kernel Methods Support Vector Machines",
+  "authors": "CA Jimenez Castaño, AM Álvarez Meza, DA Cardenas Peña, ...",
+  "venue": "David Augusto and Orozco Gutierrez, Alvaro Angel and Guerrero Erazo …, 2023",
+  "year": "2023",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Graph Strength for Identification of Pre-training Desynchronization",
+  "authors": "FY Zapata Castano, ÓW Gómez Morales, AM Álvarez Meza, ...",
+  "venue": "International Conference on Science, Technology and Innovation for Society …, 2022",
+  "year": "2022",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "A supervised learning framework in the context of multiple annotators",
+  "authors": "J Gil González, AM Álvarez Meza",
+  "venue": "",
+  "year": "2021",
+  "cites": "",
+  "match": 0.57
+ },
+ {
+  "title": "Formulación de proyectos de investigación: Una visión a la construcción de proyectos en ingeniería",
+  "authors": "B Martínez González, JD Echeverry Correa, AM Álvarez Meza, ...",
+  "venue": "Universidad Tecnológica de Pereira, 2020",
+  "year": "2020",
+  "cites": "",
+  "match": 0.5
+ },
+ {
+  "title": "Identificación automática de perturbaciones en calidad de energía usando aprendizaje de máquina.",
+  "authors": "AFV Duque, AMÁ Meza, ÁÁO Gutiérrez",
+  "venue": "Scientia et technica 24 (2), 183-189, 2019",
+  "year": "2019",
+  "cites": "",
+  "match": 0.56
+ },
+ {
+  "title": "Automatic localization of Deep Stimulation Electrodes using trajectory-based segmentation approach",
+  "authors": "RG Nieto, JD Echeverry-Correa, AMA Meza, HD Benitez-Restrepo, ...",
+  "venue": "2019 XXII Symposium on Image, Signal Processing and Artificial Vision …, 2019",
+  "year": "2019",
+  "cites": "",
+  "match": 0.51
+ },
+ {
+  "title": "Gaussian Processes Regression with Multiple Annotators: When the Annotator Performance Is Not Homogeneous",
+  "authors": "JG González, AM Álvarez, ÁA Orozco",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 91-99, 2018",
+  "year": "2018",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Information potential variability for hyperparameter selection in the MMD distance",
+  "authors": "CK Valencia, A Álvarez, EA Valencia, MA Álvarez, Á Orozco",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 279-286, 2018",
+  "year": "2018",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Non-stationary generalized wishart processes for enhancing resolution over diffusion tensor fields",
+  "authors": "JF Cuellar-Fierro, HD Vargas-Cardona, AM Álvarez, ÁA Orozco, ...",
+  "venue": "International Symposium on Visual Computing, 371-381, 2018",
+  "year": "2018",
+  "cites": "",
+  "match": 0.55
+ },
+ {
+  "title": "3D Probabilistic Morphable Models for Brain Tumor Segmentation",
+  "authors": "DA Jimenez, HF García, AM Álvarez, ÁA Orozco",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 314-322, 2017",
+  "year": "2017",
+  "cites": "",
+  "match": 0.54
+ },
+ {
+  "title": "Non-stationary multi-output gaussian processes for enhancing resolution over diffusion tensor fields",
+  "authors": "JF Cuellar-Fierro, HD Vargas-Cardona, MA Álvarez, AM Álvarez, ...",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 168-176, 2017",
+  "year": "2017",
+  "cites": "",
+  "match": 0.54
+ },
+ {
+  "title": "Estimación de características relevantes para el monitoreo de condición de motores de combustión interna a partir de señales de vibración",
+  "authors": "JA Hernández-Muriel, AM Álvarez-Meza, JD Echeverry-Correa, ...",
+  "venue": "TecnoLogicas 20 (39), 157, 2017",
+  "year": "2017",
+  "cites": "",
+  "match": 0.53
+ },
+ {
+  "title": "Single-Channel Separation Between Stationary and Non-stationary Signals Using Relevant Information",
+  "authors": "JD Martínez-Vargas, C Castro-Hoyos, JJ Espinosa-Oviedo, ...",
+  "venue": "Iberian Conference on Pattern Recognition and Image Analysis, 452-459, 2015",
+  "year": "2015",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Relevant data representation by a Kernel-based framework",
+  "authors": "AM Álvarez Meza",
+  "venue": "",
+  "year": "2015",
+  "cites": "",
+  "match": 0.62
+ },
+ {
+  "title": "Kernel-Based Image Representation for Brain MRI Discrimination",
+  "authors": "D Cárdenas-Peña, AM Álvarez-Meza, G Castellanos-Domínguez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 343-350, 2014",
+  "year": "2014",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Estimation of Cyclostationary Codebooks for Kernel Adaptive Filtering",
+  "authors": "S García-Vega, AM Álvarez-Meza, G Castellanos-Domínguez",
+  "venue": "Iberoamerican Congress on Pattern Recognition, 351-358, 2014",
+  "year": "2014",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Recursive separation of stationary components by subspace projection and stochastic constraints",
+  "authors": "JD Martínez-Vargas, C Castro-Hoyos, AM Álvarez-Meza, ...",
+  "venue": "2014 22nd International Conference on Pattern Recognition, 3469-3474, 2014",
+  "year": "2014",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Compactly supported graph building for spectral clustering",
+  "authors": "AE Castro-Ospina, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "3rd IEEE International Work-Conference on Bioinspired Intelligence, 168-172, 2014",
+  "year": "2014",
+  "cites": "",
+  "match": 0.75
+ },
+ {
+  "title": "Functional relevant multichannel kernel adaptive filter for human activity analysis",
+  "authors": "A Alvarez-Meza, G Castellanos-Dominguez, JC Principe",
+  "venue": "2014 IEEE International Conference on Acoustics, Speech and Signal …, 2014",
+  "year": "2014",
+  "cites": "",
+  "match": 0.49
+ },
+ {
+  "title": "Functional Protein Prediction Using HMM Based Feature Representation and Relevance Analysis",
+  "authors": "DF Collazos-Huertas, AF Giraldo-Forero, D Cárdenas-Pena, ...",
+  "venue": "Advances in Computational Biology: Proceedings of the 2nd Colombian Congress …, 2013",
+  "year": "2013",
+  "cites": "",
+  "match": 0.59
+ },
+ {
+  "title": "Training using short-time features for OSA discrimination",
+  "authors": "LM Sepúlveda-Cano, AM Álvarez-Meza, G Castellanos-Dominguez",
+  "venue": "2012 Annual International Conference of the IEEE Engineering in Medicine and …, 2012",
+  "year": "2012",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Visualization and synthesis of data using manifold learning based on Locally Linear Embedding",
+  "authors": "AM Álvarez-Meza, J Valencia-Aguirre, G Daza-Santacoloma, ...",
+  "venue": "2011 6th Colombian Computing Congress (CCC), 1-6, 2011",
+  "year": "2011",
+  "cites": "",
+  "match": 0.56
+ },
+ {
+  "title": "Selección automática de parámetros en LLE",
+  "authors": "J Valencia Aguirre, AM Álvarez Mesa, G Daza Santacoloma, ...",
+  "venue": "Revista Facultad de Ingeniería Universidad de Antioquia, 170-181, 2010",
+  "year": "2010",
+  "cites": "",
+  "match": 1.0
+ },
+ {
+  "title": "Lightweight ROI-Centric Architecture for Low-Latency Wideband Detection on Edge Devices",
+  "authors": "CA Altamiranda Gonzalez, JC Lugo Rojas, JC Garcia Alvarez, ...",
+  "venue": "Available at SSRN 6170361, 0",
+  "year": "",
+  "cites": "",
+  "match": 0.46
+ },
+ {
+  "title": "MoCap multichannel time series representation and relevance analysis by kernel adaptive filtering and multikernel learning oriented to action recognition tasks",
+  "authors": "JD Pulgarin-Giraldo, AM Alvarez-Meza, S Van Vaerenbergh, I Santamarıa, ...",
+  "venue": "",
+  "year": "",
+  "cites": "",
+  "match": 0.53
+ },
+ {
+  "title": "Regularization Parameter Choice for Video Analysis Problems",
+  "authors": "AM Alvarez-Meza, J Valencia-Aguirre, CD Acosta-Medina, ...",
+  "venue": "",
+  "year": "",
+  "cites": "",
+  "match": 0.63
+ }
+]

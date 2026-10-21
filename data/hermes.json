@@ -1,0 +1,759 @@
+{
+ "P001": {
+  "codigo": "57661",
+  "quipu": "205010040425",
+  "titulo_hermes": "Sistema de visión artificial para el monitoreo y seguimiento de efectos analgésicos y anestésicos administrados vía neuroaxial epidural en población obstétrica durante labores de parto para el fortalecimiento de servicios de salud materna del Hospital Universitario de Caldas - SES HUC.",
+  "convocatoria": "Convocatoria Nacional para el Fomento de Alianzas Estratégicas interdisciplinarias que articulen los procesos misionales de la Universidad Nacional de Colombia 2022-2024",
+  "modalidad": "Modalidad Única",
+  "similitud_titulo": 0.95,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Activo"
+ },
+ "P002": {
+  "codigo": "57414",
+  "quipu": "202010040153",
+  "titulo_hermes": "Sistema de integración de EEG, ECG y SpO2 para seguimiento de neonatos en unidad de cuidados intensivos del Hospital Universitario de Caldas - SES HUC",
+  "convocatoria": "Convocatoria nacional para el fortalecimiento de la formación a través del apoyo a proyectos de investigación, creación artística e innovación de la Universidad Nacional de Colombia 2022-2024",
+  "modalidad": "Modalidad Única: Proyectos de investigación, creación artística e innovación de la Universidad Nacional de Colombia 2022-2024",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P003": {
+  "codigo": "52895",
+  "quipu": "205010039963",
+  "titulo_hermes": "Propuesta de Plan Estratégico para la creación del Centro de Excelencia (Intersedes) en Medicina e Inteligencia Artificial SemAI",
+  "convocatoria": "Banco de propuestas para la consolidación de Centros de Excelencia 2020-2021",
+  "modalidad": "Modalidad Única: Banco de propuestas para la consolidación de Centros de Excelencia 2020-2021",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P004": {
+  "codigo": "55261",
+  "quipu": "202010038244",
+  "titulo_hermes": "Sistema prototipo de visión por computador utilizando aprendizaje profundo como soporte al monitoreo de zonas urbanas desde unidades aéreas no tripuladas",
+  "convocatoria": "CONVOCATORIA PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN ARTICULADO CON LA FORMACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA 2020-2021",
+  "modalidad": "Modalidad Única",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P005": {
+  "codigo": "55063",
+  "quipu": "202010038239",
+  "titulo_hermes": "Sistema prototipo de procesamiento de bioseñales en unidades de cuidado intensivo neonatal utilizando aprendizaje de máquina - Fase 1: Validación en ambiente simulado",
+  "convocatoria": "CONVOCATORIA PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN ARTICULADO CON LA FORMACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA 2020-2021",
+  "modalidad": "Modalidad Única",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P006": {
+  "codigo": "54339",
+  "quipu": "202010036839",
+  "titulo_hermes": "Desarrollo de una herramienta de visión por computador para el análisis de plantas orientado al fortalecimiento de la seguridad alimentaria",
+  "convocatoria": "CONVOCATORIA CONJUNTA DE INVESTIGACIÓN, DESARROLLO TECNOLÓGICO E INNOVACIÓN - 2020",
+  "modalidad": "Modalidad Única",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P007": {
+  "codigo": "52625",
+  "quipu": "400000035813",
+  "titulo_hermes": "Centro de Excelencia en Computación Cientifica Center of Excellence in Scientific Computing: CoE-SciCo",
+  "convocatoria": "Banco de propuestas para la consolidación de Centros de Excelencia 2020-2021",
+  "modalidad": "Modalidad Única: Banco de propuestas para la consolidación de Centros de Excelencia 2020-2021",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P008": {
+  "codigo": "51175",
+  "quipu": "202010033295",
+  "titulo_hermes": "Prototipo de visión por computador para la identificación de problemas fitosanitarios en cultivos de plátano en el departamento de Caldas",
+  "convocatoria": "CONVOCATORIA PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN ARTICULADO CON LA FORMACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA 2020-2021",
+  "modalidad": "Modalidad Única",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P009": {
+  "codigo": "50116",
+  "quipu": "",
+  "titulo_hermes": "CARACTERIZACIÓN TERMOGRÁFICA DE LA ANESTESIA Y ANALGESIA NEUROAXIAL EPIDURAL EN OBSTETRICIA",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "codigos_relacionados": [
+   "50149"
+  ],
+  "estado": "Propuesto"
+ },
+ "P010": {
+  "codigo": "46874",
+  "quipu": "",
+  "titulo_hermes": "Desarrollo de una herramienta para la planeación a largo plazo de la operación del sistema de transporte de gas natural de Colombia",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P011": {
+  "codigo": "50835",
+  "quipu": "202010033271",
+  "titulo_hermes": "Prototipo de interfaz cerebro-computador multimodal para la detección de patrones relevantes relacionados con trastornos de impulsividad",
+  "convocatoria": "CONVOCATORIA PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN ARTICULADO CON LA FORMACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA 2020-2021",
+  "modalidad": "Modalidad Única",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P012": {
+  "codigo": "53223",
+  "quipu": "206010033325",
+  "titulo_hermes": "Procesamiento de señales de electroencefalografía en interfaz cerebro-computador orientado a la detección de imaginación motora utilizando modelos de aprendizaje profundo y medidas de conectividad",
+  "convocatoria": "CONVOCATORIA PARA EL APOYO A ESTUDIANTES DE POSGRADO DE LA FACULTAD DE INGENIERÍA Y ARQUITECTURA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA SEDE MANIZALES MEDIANTE EL OTORGAMIENTO DE BECA - PASANTÍA 2021",
+  "modalidad": "Modalidad 1: Beca-pasantía para estudiantes de maestría",
+  "similitud_titulo": 0.82,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P014": {
+  "codigo": "49318",
+  "quipu": "201010033090",
+  "titulo_hermes": "Prototipo de interfaz cerebro-computador de bajo costo para la detección de patrones relevantes de actividad eléctrica cerebral relacionados con TDAH.",
+  "convocatoria": "\"UN INNOVA\": CONVOCATORIA DE PROYECTOS PARA EL FORTALECIMIENTO DE LA INNOVACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA A PARTIR DEL DESARROLLO DE PROTOTIPOS Y EXPERIENCIAS PILOTO 2019-2021 (PRIMERA COHORTE)",
+  "modalidad": "Modalidad 2: Propuestas de prototipos o escalamientos, presentadas por grupos de investigación, hasta por veinte millones de pesos ($ 20 000 000).",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P015": {
+  "codigo": "50750",
+  "quipu": "201010029325",
+  "titulo_hermes": "Marco de aprendizaje profundo mejorado e interpretable para el soporte de sistemas de diagnóstico asistido por computadora.",
+  "convocatoria": "CONVOCATORIA 785 DE COLCIENCIAS PARA DOCTORADOS NACIONALES 2017",
+  "modalidad": "Modalidad única. Convocatoria 785 de Colciencias para Doctorados Nacionales 2017",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P016": {
+  "codigo": "49982",
+  "quipu": "207010026881",
+  "titulo_hermes": "Sistema de apoyo para alertas tempranas de posibles contagios mediante técnicas de análisis de datos",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P017": {
+  "codigo": "46058",
+  "quipu": "202010025997",
+  "titulo_hermes": "HERRAMIENTA DE APOYO A LA PREDICCIÓN DE LOS EFECTOS DE ANESTÉSICOS LOCALES VÍA NEUROAXIAL EPIDURAL A PARTIR DE TERMOGRAFÍA POR INFRARROJO",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "porFinalizar"
+ },
+ "P018": {
+  "codigo": "46185",
+  "quipu": "201010022755",
+  "titulo_hermes": "Sistema de visión por computador para el monitoreo automático de variables de productividad en plantas industriales",
+  "convocatoria": "CONVOCATORIA PARA EL APOYO A PROYECTOS DE INVESTIGACIÓN DE LA FACULTAD DE INGENIERÍA Y ARQUITECTURA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA SEDE MANIZALES 2019",
+  "modalidad": "MODALIDAD ÚNICA",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P019": {
+  "codigo": "49288",
+  "quipu": "205010027317",
+  "titulo_hermes": "Desarrollo de un prototipo de software para la caracterización de microclimas y aplicación de técnicas de predicción de precipitación en la ciudad de Manizales mediante el uso de algoritmos de inteligencia artificial",
+  "convocatoria": "\"UN INNOVA\": CONVOCATORIA DE PROYECTOS PARA EL FORTALECIMIENTO DE LA INNOVACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA A PARTIR DEL DESARROLLO DE PROTOTIPOS Y EXPERIENCIAS PILOTO 2019-2021 (PRIMERA COHORTE)",
+  "modalidad": "Modalidad 2: Propuestas de prototipos o escalamientos, presentadas por grupos de investigación, hasta por veinte millones de pesos ($ 20 000 000).",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Activo"
+ },
+ "P020": {
+  "codigo": "49592",
+  "quipu": "No",
+  "titulo_hermes": "Desarrollo de un prototipo automático para el análisis de la germinación in vitro mediante técnicas de visión por computador",
+  "convocatoria": "CONVOCATORIA CONJUNTA DE DESARROLLO TECNOLÓGICO E INNOVACIÓN 2019",
+  "modalidad": "Modalidad 2: Desarrollo tecnológico y prototipado",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P021": {
+  "codigo": "50985",
+  "quipu": "201010027464",
+  "titulo_hermes": "Interfaz cerebro-computador basada en aprendizaje de máquina y teoría de información como soporte a la detección de trastornos de déficit de atención e hiperactividad",
+  "convocatoria": "CONVOCATORIA PARA EL APOYO AL DESARROLLO DE TESIS DE POSGRADO Y TRABAJO DE GRADO DE PREGRADO DE LA FACULTAD DE INGENIERÍA Y ARQUITECTURA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA SEDE MANIZALES 2020",
+  "modalidad": "Modalidad 2: Apoyo a tesis de maestría en la modalidad de investigación en cualquier área del conocimiento.",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P022": {
+  "codigo": "51633",
+  "quipu": "",
+  "titulo_hermes": "Prototipo de interfaz interactiva para generación de piezas musicales basado respuestas eléctricas cerebrales y técnicas de composición atonal",
+  "convocatoria": "Registro único de proyectos",
+  "modalidad": "Proyecto o programa de investigación",
+  "similitud_titulo": 0.96,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P023": {
+  "codigo": "42662",
+  "quipu": "202010013307",
+  "titulo_hermes": "CARACTERIZACIÓN MORFOLÓGICA DE ESTRUCTURAS CEREBRALES POR TÉCNICAS DE IMAGEN PARA EL TRATAMIENTO MEDIANTE IMPLANTACIÓN QUIRÚRGICA DE NEUROESTIMULADORES EN LA ENFERMEDAD DE PARKINSON",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "codigos_relacionados": [
+   "46500"
+  ],
+  "estado": "Finalizado"
+ },
+ "P024": {
+  "codigo": "46057",
+  "quipu": "",
+  "titulo_hermes": "Desarrollo de una herramienta de seguimiento de aguja y localización de nervios en ecografía para la práctica de anestesia regional: Aplicación al tratamiento de dolor agudo traumático y prevención del dolor neuropático crónico",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Activo"
+ },
+ "P025": {
+  "codigo": "46043",
+  "quipu": "No",
+  "titulo_hermes": "DESARROLLO DE UN SISTEMA AUTOMÁTICO DE ANÁLISIS DE VOLUMETRÍA CEREBRAL COMO APOYO EN LA EVALUACIÓN CLÍNICA DE RECIÉN NACIDOS CON ASFIXIA PERINATAL",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "porFinalizar"
+ },
+ "P026": {
+  "codigo": "42659",
+  "quipu": "No",
+  "titulo_hermes": "Herramienta de apoyo al diagnóstico del TDAH en niños a partir de múltiples características de actividad eléctrica cerebral desde registros EEG",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 0.95,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P027": {
+  "codigo": "41918",
+  "quipu": "201010014169",
+  "titulo_hermes": "DISCRIMINATING MENTAL STATES BY EXTRACTING RELEVANT SPATIAL PATTERNS UNDER NON-STATIONARY AND SUBJECT-INDEPENDENT CONSTRAINTS",
+  "convocatoria": "CONVOCATORIA 727 DE COLCIENCIAS PARA DOCTORADOS NACIONALES 2015",
+  "modalidad": "Modalidad única. Convocatoria 727 de Colciencias para doctorados nacionales 2015",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P028": {
+  "codigo": "41383",
+  "quipu": "No",
+  "titulo_hermes": "Fortalecimiento docente desde la Alfabetización Mediática Informacional y la CTel, como estrategia didáctico-pedagógica y soporte para la recuperación de la confianza del tejido social afectado por el conflicto.",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "porFinalizar"
+ },
+ "P029": {
+  "codigo": "38944",
+  "quipu": "201010016390",
+  "titulo_hermes": "Seguimiento de la salud de los parques naturales y áreas protegidas en Colombia usando técnicas de monitoreo remoto",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P030": {
+  "codigo": "33953",
+  "quipu": "No",
+  "titulo_hermes": "DESARROLLO DE UN SISTEMA DE APOYO AL DIAGNÓSTICO NO INVASIVO DE PACIENTES CON EPILEPSIA FÁRMACO­RESISTENTE ASOCIADA A DISPLASIAS CORTICALES CEREBRALES: MÉTODO COSTO­-EFECTIVO BASADO EN PROCESAMIENTO DE IMÁGENES DE RESONANCIA MAGNÉTICA.",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P031": {
+  "codigo": "38545",
+  "quipu": "No",
+  "titulo_hermes": "SISTEMA DE IDENTIFICACIÓN DE FUENTES EPILEPTOGÉNICAS BASADO EN MEDIDAS DE CONECTIVIDAD FUNCIONAL USANDO REGISTROS ELECTROENCEFALOGRÁFICOS E IMÁGENES DE RESONANCIA MAGNÉTICA EN PACIENTES CON EPILEPSIA REFRACTARIA: APOYO A LA CIRUGÍA RESECTIVA",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P032": {
+  "codigo": "37068",
+  "quipu": "202010015350",
+  "titulo_hermes": "Fortalecimiento del desarrollo de un sistema de monitoreo inalámbrico para el diagnóstico fallas en turbinas de generación hidroeléctrica mediante técnicas avanzadas de procesamiento de señales",
+  "convocatoria": "\"UN INNOVA\": CONVOCATORIA DE PROYECTOS PARA EL FORTALECIMIENTO DE LA INNOVACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA A PARTIR DEL DESARROLLO DE PROTOTIPOS Y EXPERIENCIAS PILOTO 2016-2018",
+  "modalidad": "Modalidad 3: Propuestas de prototipos o escalamientos, presentadas por grupos de investigación en alianza con empresas del sector productivo o solidario, hasta por treinta millones de pesos.",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P033": {
+  "codigo": "34014",
+  "quipu": "",
+  "titulo_hermes": "Desarrollo de un sistema de identificación de estructuras nerviosas en imágenes de ultrasonido para la asistencia del bloqueo de nervios periféricos. Aplicación al tratamiento de dolor agudo traumático y prevención del dolor neuropático crónico",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P034": {
+  "codigo": "31681",
+  "quipu": "No",
+  "titulo_hermes": "Desarrollo de un sistema de monitoreo de condición y diagnóstico de fallas en línea de sistemas de generación de energía hidroeléctrica empleando una red de sensores inalámbricos de datos de alta resolución.",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P035": {
+  "codigo": "36706",
+  "quipu": "No",
+  "titulo_hermes": "BrainScore: Sistema compositivo, gráfico y sonoro creado a partir del comportamiento frecuencial de las señales cerebrales.",
+  "convocatoria": "CONVOCATORIA CONJUNTA PARA EL FOMENTO DE LA INVESTIGACION EN CIENCIAS SOCIALES, ARTES Y HUMANIDADES",
+  "modalidad": "CONVOCATORIA CONJUNTA PARA EL FOMENTO DE LA INVESTIGACION EN CIENCIAS SOCIALES, ARTES Y HUMANIDADES",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P036": {
+  "codigo": "36719",
+  "quipu": "202010015370",
+  "titulo_hermes": "CARACTERIZACIÓN DE CULTIVOS AGRÍCOLAS MEDIANTE ESTRATEGIAS DE TELEDETECCIÓN Y TÉCNICAS DE PROCESAMIENTO DE IMÁGENES",
+  "convocatoria": "CONVOCATORIA CONJUNTA PARA EL FOMENTO DE LA INVESTIGACION APLICADA Y DESARROLLO TECNOLOGICO",
+  "modalidad": "CONVOCATORIA CONJUNTA PARA EL FOMENTO DE LA INVESTIGACION APLICADA Y DESARROLLO TECNOLOGICO",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P037": {
+  "codigo": "36075",
+  "quipu": "202010014220",
+  "titulo_hermes": "Sistema de realidad aumentada para la proyección de conexiones cerebrales producidas por estímulos afectivos a partir de señales de EEG.",
+  "convocatoria": "CONVOCATORIA NACIONAL DE PROYECTOS PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2016-2018",
+  "modalidad": "Modalidad Única",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P038": {
+  "codigo": "31123",
+  "quipu": "201010011690",
+  "titulo_hermes": "Caracterización de registros de actividad eléctrica cerebral utilizando medidas de conectividad",
+  "convocatoria": "CONVOCATORIA NACIONAL JÓVENES INVESTIGADORES E INNOVADORES 2015 - COLCIENCIAS",
+  "modalidad": "CONVOCATORIA NACIONAL JÓVENES INVESTIGADORES E INNOVADORES 2015 - COLCIENCIAS",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P039": {
+  "codigo": "33723",
+  "quipu": "202010013631",
+  "titulo_hermes": "DESARROLLO DE UN SISTEMA DE SOPORTE DIAGNÓSTICO Y DETECCIÓN TEMPRANA DE LA ENFERMEDAD DE ALZHEIMER BASADO EN MEDIDAS DE CONECTIVIDAD FUNCIONAL A PARTIR DE REGISTROS ELECTROENCEFALOGRÁFICOS EN ESTADO DE REPOSO",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P040": {
+  "codigo": "31113",
+  "quipu": "201010011690",
+  "titulo_hermes": "Representación automática de registros de actividad eléctrica cerebral mediante técnicas de aprendizaje adaptativo",
+  "convocatoria": "CONVOCATORIA NACIONAL JÓVENES INVESTIGADORES E INNOVADORES 2015 - COLCIENCIAS",
+  "modalidad": "CONVOCATORIA NACIONAL JÓVENES INVESTIGADORES E INNOVADORES 2015 - COLCIENCIAS",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P041": {
+  "codigo": "31817",
+  "quipu": "201010013657",
+  "titulo_hermes": "Desarrollo de un sistema integrado de monitoreo de actividad cerebral a partir de registros electroencefalográficos en pacientes bajo anestesia general para ambientes quirúrgicos",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P042": {
+  "codigo": "28478",
+  "quipu": "20101009730",
+  "titulo_hermes": "Monitoreo de condición de máquinas rotativas con condiciones de operación no estacionarias empleando señales de emisión acústica.",
+  "convocatoria": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2014",
+  "modalidad": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2014",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P043": {
+  "codigo": "28636",
+  "quipu": "20101008264",
+  "titulo_hermes": "On the modeling of M/EEG non-stationary signals to detect brain diseases",
+  "convocatoria": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P044": {
+  "codigo": "28138",
+  "quipu": "201010010475",
+  "titulo_hermes": "Extracción automática de regiones de interés utilizando técnicas de reconocimiento de patrones para apoyar tareas de video-vigilancia a partir de videos capturados por cámaras estáticas.",
+  "convocatoria": "PROGRAMA NACIONAL DE SEMILLEROS DE INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "Modalidad 1: Proyectos para la introducción en la investigación, creación o innovación",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P045": {
+  "codigo": "28316",
+  "quipu": "20101008264",
+  "titulo_hermes": "Sistema de interacción cerebro máquina para el control de dispositivos robóticos a partir del procesamiento automático de registros de electroencefalografía",
+  "convocatoria": "PROGRAMA NACIONAL DE INICIACIÓN EN INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "Modalidad Única",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P046": {
+  "codigo": "28667",
+  "quipu": "20101008264",
+  "titulo_hermes": "Machine Diagnostics Based On Blind Source Separation and Novelty Detection Using Non-Stationary Vibration Signals",
+  "convocatoria": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P047": {
+  "codigo": "28603",
+  "quipu": "20101008264",
+  "titulo_hermes": "Segmentación de estructuras cerebrales a partir de imágenes de resonancia magnética como soporte en la localización de regiones patológicas",
+  "convocatoria": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P048": {
+  "codigo": "23055",
+  "quipu": "201010010351",
+  "titulo_hermes": "Monitoreo en línea de señales industriales para el diagnóstico temprano de fallas en máquinas rotativas.",
+  "convocatoria": "PROGRAMA NACIONAL DE SEMILLEROS DE INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "Modalidad 1: Proyectos para la introducción en la investigación, creación o innovación",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P049": {
+  "codigo": "22835",
+  "quipu": "20101008264",
+  "titulo_hermes": "Análisis del rendimiento competitivo de tenistas caldenses empleando técnicas de aprendizaje de máquina sobre mediciones antropométricas, biomecánicas, de condición física y psicológicas",
+  "convocatoria": "PROGRAMA NACIONAL DE INICIACIÓN EN INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "Modalidad Única",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P050": {
+  "codigo": "28671",
+  "quipu": "20101008264",
+  "titulo_hermes": "Feature Representation Frameworks to support Brain Activity Signals Analysis",
+  "convocatoria": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P051": {
+  "codigo": "23079",
+  "quipu": "20101008725",
+  "titulo_hermes": "Sistema de monitoreo de condición en turbinas de generación eléctrica",
+  "convocatoria": "CONVOCATORIA \"FOMENTO DE UNA CULTURA DE LA INNOVACIÓN EN LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015\" - SEDES MANIZALES Y PALMIRA",
+  "modalidad": "Modalidad 2. Proyectos de innovaciónen ejecución.",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P052": {
+  "codigo": "21534",
+  "quipu": "20101008323",
+  "titulo_hermes": "Sistemas de interacción cerebro - máquina (BMI) a partir de registros de actividad eléectrica cerebral",
+  "convocatoria": "MÓDULO PARA LA INSCRIPCIÓN DE SEMILLEROS DE COLCIENCIAS - 2013",
+  "modalidad": "MÓDULO PARA LA INSCRIPCIÓN DE SEMILLEROS DE COLCIENCIAS - 2013",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P053": {
+  "codigo": "22419",
+  "quipu": "",
+  "titulo_hermes": "Evaluación asistida de potenciales evocados cognitivos como marcador del trastorno por déficit de atención e hiperactividad (TDAH)",
+  "convocatoria": "Convocatoria externa",
+  "modalidad": "Convocatoria externa",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Propuesto"
+ },
+ "P054": {
+  "codigo": "25928",
+  "quipu": "",
+  "titulo_hermes": "“Adquisición Multicanal y Procesamiento Multimodal de Bioseñales para pacientes en movimiento” (Multichannelacquisition and biosignal multimodal processingformovingpatients)",
+  "convocatoria": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "CONVOCATORIA DEL PROGRAMA NACIONAL DE APOYO A ESTUDIANTES DE POSGRADO PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, CREACIÓN E INNOVACIÓN DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "similitud_titulo": 0.95,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P055": {
+  "codigo": "28424",
+  "quipu": "20101009730",
+  "titulo_hermes": "Plataforma tecnológica para los servicios de teleasistencia, emergencias médicas, seguimiento y monitoreo permanente a los pacientes y apoyo a los programas de promoción y prevención - Aplicaciones móviles para el apoyo a la adherencia terapéutica",
+  "convocatoria": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2014",
+  "modalidad": "MÓDULO PARA LA INSCRIPCIÓN DE JÓVENES INVESTIGADORES DE COLCIENCIAS - 2014",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P056": {
+  "codigo": "13627",
+  "quipu": "20201006594",
+  "titulo_hermes": "Análisis de deficiencias de patrones básicos de movimiento empleando técnicas de extracción no lineal de características",
+  "convocatoria": "Proyectos Jornada Docente",
+  "modalidad": "Proyectos Jornada Docente",
+  "similitud_titulo": 0.95,
+  "nota": "Hermes registra el título «Análisis de deficiencias de patrones básicos…»; verificar que sea el mismo proyecto.",
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P057": {
+  "codigo": "15795",
+  "quipu": "",
+  "titulo_hermes": "ANÁLISIS DE MOVIMIENTO EN SISTEMAS DE VISION POR COMPUTADOR UTILIZANDO APRENDIZAJE DE MÁQUINA",
+  "convocatoria": "PROGRAMA PARA FINANCIACIÓN DE SEMILLEROS DE INVESTIGACIÓN EN PREGRADO EN LA UNIVERSIDAD NACIONAL DE COLOMBIA SEDE MANIZALES - 2012",
+  "modalidad": "MODALIDAD ÚNICA: SEMILLEROS DE INVESTIGACIÓN",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P058": {
+  "codigo": "22506",
+  "quipu": "20101008264",
+  "titulo_hermes": "DESARROLLO DE UN SISTEMA AUTOMÁTICO DE MAPEO CEREBRAL PARA EL MONITOREO Y TRATAMIENTO DE ENFERMEDADES NEURODEGENERATIVAS",
+  "convocatoria": "CONVOCATORIA DEL PROGRAMA NACIONAL DE PROYECTOS PARA EL FORTALECIMIENTO DE LA INVESTIGACIÓN, LA CREACIÓN Y LA INNOVACIÓN EN POSGRADOS DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2013-2015",
+  "modalidad": "Modalidad 2: Nuevos proyectos de investigación, creación o innovación",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Álvarez Meza",
+  "estado": "Finalizado"
+ },
+ "P059": {
+  "codigo": "13753",
+  "quipu": "20201006998",
+  "titulo_hermes": "DIAGNÓSTICO E IDENTIFICACIÓN TEMPRANA DE FALLAS EN MOTORES INDUSTRIALES A TRAVÉS DEL ANÁLISIS DE VIBRACIONES MECÁNICAS",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2011",
+  "modalidad": "APOYO A TESIS DE POSGRADOS",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P060": {
+  "codigo": "16080",
+  "quipu": "20501007205",
+  "titulo_hermes": "GRUPO DE CONTROL Y PROCESAMIENTO DIGITAL DE SEÑALES",
+  "convocatoria": "CONVOCATORIA NACIONAL APOYO PARA EL FORTALECIMIENTO DE GRUPOS DE INVESTIGACIÓN O CREACIÓN ARTÍSTICA QUE SOPORTEN PROGRAMAS DE POSGRADO DE LA UNIVERSIDAD NACIONAL DE COLOMBIA - 2012",
+  "modalidad": "CONVOCATORIA NACIONAL APOYO PARA EL FORTALECIMIENTO DE GRUPOS DE INVESTIGACIÓN O CREACIÓN ARTÍSTICA QUE SOPORTEN PROGRAMAS DE POSGRADO DE LA UNIVERSIDAD NACIONAL DE COLOMBIA - 2012 - MODALIDAD ÚNICA",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P062": {
+  "codigo": "13742",
+  "quipu": "",
+  "titulo_hermes": "Análisis de movimiento basado en técnicas de extracción no lineal de características",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2011",
+  "modalidad": "APOYO A TESIS DE POSGRADOS",
+  "similitud_titulo": 0.92,
+  "cuenta_hermes": "Castellanos Domínguez",
+  "nota": "Título en Hermes: «Análisis de movimiento basado en técnicas de extracción no lineal de características»; verificar que sea el mismo proyecto."
+ },
+ "P064": {
+  "codigo": "11652",
+  "quipu": "20201006027",
+  "titulo_hermes": "Extracción de características en superficies tiempo frecuencia paramétricas por medio de análisis de relevancia y redundancia",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010 - MAESTRÍA",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P065": {
+  "codigo": "11657",
+  "quipu": "",
+  "titulo_hermes": "Análisis tiempo-frecuencia de señales de vibraciones mecánicas para la detección de fallos en máquinas rotativas",
+  "convocatoria": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2010 - MAESTRÍA",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P066": {
+  "codigo": "10242",
+  "quipu": "",
+  "titulo_hermes": "Análisis de bioseñales en la identificación de arritmias mediante técnicas no supervisadas",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD V. APOYO A TESIS DE POSGRADO",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P067": {
+  "codigo": "9969",
+  "quipu": "20201005271",
+  "titulo_hermes": "Metodología de entrenamiento de Modelos Ocultos de Markov Empleando Criterios Discriminativos de Gran Margen para la Detección de Patologías en Bioseñales.",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD V. APOYO A TESIS DE POSGRADO",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P068": {
+  "codigo": "10233",
+  "quipu": "20201005277",
+  "titulo_hermes": "Predicción de funciones proteicas a partir de clasificación semi-supervisada mediante técnicas de optimización multi-objetivo",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD V. APOYO A TESIS DE POSGRADO",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P069": {
+  "codigo": "10156",
+  "quipu": "",
+  "titulo_hermes": "Caracterización estocástica de dinámicas no lineales en la detección automática de niveles de calidad de voz",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD V. APOYO A TESIS DE POSGRADO",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P070": {
+  "codigo": "10696",
+  "quipu": "",
+  "titulo_hermes": "Análisis no lineal de la dinámica intrínseca de las bioseñales con el fin de caracterizar patologías",
+  "convocatoria": "APOYO A TESIS DE POSGRADO - DIMA 2009",
+  "modalidad": "CONVOCATORIA DE APOYO A TESIS DE POSGRADO- DIMA 2009",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P071": {
+  "codigo": "12701",
+  "quipu": "",
+  "titulo_hermes": "Desarrollo de un sistema piloto de mantenimiento predictivo en la línea de propulsión de las lanchas patrulleras de la armada nacional mediante el análisis de vibraciones mecánicas e imágenes termográficas.",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "MODULO PARA LA ACTUALIZACIÓN DE PROYECTOS (REQUISITO PARA PARTICIPAR EN LA CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012) FINANCIACIÓN EXTERNA DE POR LO MENOS LOS ÚLTIMOS CINCO AÑOS",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P072": {
+  "codigo": "10235",
+  "quipu": "20201005278",
+  "titulo_hermes": "Representación y discriminación de datos funcionales empleando inmersiones localmente lineales",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD V. APOYO A TESIS DE POSGRADO",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P073": {
+  "codigo": "10072",
+  "quipu": "",
+  "titulo_hermes": "Análisis multivariado para la identificación de componentes generadores de sabor y aroma en productos alimenticios",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2009",
+  "modalidad": "MODALIDAD V. APOYO A TESIS DE POSGRADO",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P075": {
+  "codigo": "12712",
+  "quipu": "",
+  "titulo_hermes": "Identificación Automática del Trastorno por Déficit de Atención y/o Hiperactividad sobre registros de Potenciales Evocados Cognitivos.",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "MODULO PARA LA ACTUALIZACIÓN DE PROYECTOS (REQUISITO PARA PARTICIPAR EN LA CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012) PROYECTOS DE CONVOCATORIAS CON FINANCIACIÓN INTERNA DE POR LO MENOS LOS ÚLTIMOS CINCO AÑOS",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P076": {
+  "codigo": "7507",
+  "quipu": "",
+  "titulo_hermes": "Sistema de Diagnóstico Asistido para la Identificación de TDAH sobre Registros de Potenciales Evocados Cognitivos",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2008",
+  "modalidad": "MODALIDAD 1. APOYO A TRAVÉS DE PROYECTOS A GRUPOS DE INVESTIGACIÓN CONSOLIDADOS (CLASIFICADOS EN CATEGORÍA \"A\" EN EL SISTEMA NACIONAL DE CIENCIA Y TECNOLOGÍA",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P078": {
+  "codigo": "7402",
+  "quipu": "",
+  "titulo_hermes": "Clasificación de señales de origen biológico mediante HMM empleando entrenamiento Discriminativo",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN 2008",
+  "modalidad": "MODALIDAD 6. APOYO A TESIS DE PROGRAMAS DE POSGRADO",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P080": {
+  "codigo": "5577",
+  "quipu": "20201004224",
+  "titulo_hermes": "Técnicas de computación de alto rendimiento en la interpretación automatizada de imágenes médicas y bioseñales",
+  "convocatoria": "Convocatoria Nacional de Investigación 2006",
+  "modalidad": "2. Apoyo a grupos de investigación consolidados A, B y C a través de proyectos",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P081": {
+  "codigo": "5404",
+  "quipu": "20201004208",
+  "titulo_hermes": "Identificación automatizada de hipernasalidad en niños con LPH por medio del análisis acústico del habla.",
+  "convocatoria": "Convocatoria Nacional de Investigación 2006",
+  "modalidad": "2. Apoyo a grupos de investigación consolidados A, B y C a través de proyectos",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P082": {
+  "codigo": "12668",
+  "quipu": "",
+  "titulo_hermes": "Caracterización acústica de soplos y ruidos cardíacos empleando procesamiento digital de señales fonocardiográficas",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "MODULO PARA LA ACTUALIZACIÓN DE PROYECTOS (REQUISITO PARA PARTICIPAR EN LA CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012) PROYECTOS DE CONVOCATORIAS CON FINANCIACIÓN INTERNA DE POR LO MENOS LOS ÚLTIMOS CINCO AÑOS",
+  "similitud_titulo": 0.92,
+  "cuenta_hermes": "Castellanos Domínguez",
+  "nota": "Título en Hermes: «Caracterización acústica de soplos y ruidos cardíacos empleando procesamiento digital de señales fonocardiográficas»; verificar que sea el mismo proyecto."
+ },
+ "P083": {
+  "codigo": "12723",
+  "quipu": "",
+  "titulo_hermes": "Sistema automatizado efectivo y apropiado de caracterización y clasificación de señales electromiografías para el control de prótesis y brazos robóticos",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "MODULO PARA LA ACTUALIZACIÓN DE PROYECTOS (REQUISITO PARA PARTICIPAR EN LA CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012) FINANCIACIÓN EXTERNA DE POR LO MENOS LOS ÚLTIMOS CINCO AÑOS",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P084": {
+  "codigo": "12698",
+  "quipu": "",
+  "titulo_hermes": "Sistema automatizado de clasificación de eventos fisiológicos a partir de patrones bioeléctricos como soporte en el tratamiento de la enfermedad de parkinson y otros desórdenes neurológicos",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "MODULO PARA LA ACTUALIZACIÓN DE PROYECTOS (REQUISITO PARA PARTICIPAR EN LA CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012) FINANCIACIÓN EXTERNA DE POR LO MENOS LOS ÚLTIMOS CINCO AÑOS",
+  "similitud_titulo": 1.0,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P085": {
+  "codigo": "12741",
+  "quipu": "",
+  "titulo_hermes": "Diseño de una herramienta diagnóstica para el análisis funcional de personas con secuelas de quemaduras",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "MODULO PARA LA ACTUALIZACIÓN DE PROYECTOS (REQUISITO PARA PARTICIPAR EN LA CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012) FINANCIACIÓN EXTERNA DE POR LO MENOS LOS ÚLTIMOS CINCO AÑOS",
+  "similitud_titulo": 0.95,
+  "cuenta_hermes": "Castellanos Domínguez"
+ },
+ "P088": {
+  "codigo": "12639",
+  "quipu": "",
+  "titulo_hermes": "Análisis acústico de la voz y de posturas labiales en pacientes de 5 a 15 años con labio y/o paladar hendido corregido en la zona centro del país",
+  "convocatoria": "CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012",
+  "modalidad": "MODULO PARA LA ACTUALIZACIÓN DE PROYECTOS (REQUISITO PARA PARTICIPAR EN LA CONVOCATORIA NACIONAL DE INVESTIGACIÓN Y DE CREACIÓN ARTÍSTICA DE LA UNIVERSIDAD NACIONAL DE COLOMBIA 2010 - 2012) FINANCIACIÓN EXTERNA DE POR LO MENOS LOS ÚLTIMOS CINCO AÑOS",
+  "similitud_titulo": 0.99,
+  "cuenta_hermes": "Castellanos Domínguez"
+ }
+}
