@@ -294,8 +294,14 @@ def atlas(items, clusters, links):
 
 
 # Build-time additions to the vendored viewer (vendor/papersmith stays byte-identical
-# to upstream): a node's own short tooltip and camera controls for the toolbar.
+# to upstream): no permanent labels, centred framing, a node's own short tooltip and camera controls.
 VIEWER_PATCHES = [
+    # No permanent system or cluster labels: names appear only in the hover tooltip and the side panel.
+    ("let U=Yh(String(at.title||nt).slice(0,64),r_);U.position.copy(xt),Mt.add(U)", ""),
+    ("yt.forEach(A=>{A.visible=dt===\"groups\"})", "yt.forEach(A=>{A.visible=!1})"),
+    # Frame the initial view on the centroid of the nodes (the bounding-box centre sat off the mass).
+    ("let J=k(m,_),X=J;",
+     "let J=k(u.reduce((a,b)=>a.add(b),new L).multiplyScalar(1/Math.max(1,u.length)),_*.7),X=J;"),
     ("s.textContent=`${A.planet.label} [${A.planet.slot}]`",
      "s.textContent=A.planet.tip||`${A.planet.label} [${A.planet.slot}]`"),
     ("layout(){return dt}}}",

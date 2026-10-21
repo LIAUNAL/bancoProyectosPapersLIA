@@ -3,6 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Banco LIA</title>
+<link rel="icon" href="data:,">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -58,7 +59,7 @@ main { padding-block: 18px 48px; }
 .chip .sw { width: 9px; height: 9px; border-radius: 50%; }
 .chip.on { border-color: var(--ink); background: var(--panel-2); }
 .chip .n { font-family: var(--mono); color: var(--muted); font-size: 11px; }
-.frame3d { width: 100%; height: max(88vh, 680px); border: 1px solid var(--line); border-radius: 12px; background: #0a0a10; display: block; }
+.frame3d { width: 100%; height: calc(100vh - 190px); min-height: 520px; border: 1px solid var(--line); border-radius: 12px; background: #0a0a10; display: block; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 14px; }
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
 .card h3 { font: 500 15px/1.25 var(--display); margin: 0; display: flex; gap: 10px; align-items: baseline; text-wrap: balance; }
@@ -134,7 +135,7 @@ aside a { color: var(--ink); }
   </section>
 
   <section class="view" id="v-constelacion" hidden>
-    <p class="lede">Visor 3D de <b>papersmith-ai</b> (SOTA constellation). Cada sistema es un artículo (sol dorado) o un proyecto (sol verde), y sus planetas son aplicación, problema, propuesta, resultados, conclusiones, temas y clúster. Los arcos unen proyectos con los artículos que produjeron y cada artículo con su antecesor más cercano. El botón «Disposición de grupos» reúne los sistemas por clúster. <a class="link" href="constelacion.html" target="_blank" rel="noopener">Abrir en pantalla completa</a></p>
+    <p class="lede">Visor 3D de <b>papersmith-ai</b>: cada sistema es un artículo (sol dorado) o un proyecto (sol verde) con sus planetas temáticos. <a class="link" href="constelacion.html" target="_blank" rel="noopener">Abrir en pantalla completa</a></p>
     <iframe class="frame3d" id="frame3d" title="Constelación 3D" loading="lazy"></iframe>
   </section>
 

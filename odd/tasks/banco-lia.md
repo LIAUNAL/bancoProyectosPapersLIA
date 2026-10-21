@@ -9,6 +9,7 @@ Branch: main (private repo github.com/amalvarezme/bancoProyectosPapersLIA). Deli
 - S5 Dashboard: graph "tipo constelacion", papers and projects with main topics as planets, clustering, as an ideas/novelty bank.
 - S6 "sincroniza con github pero no en publico, por ende solo se puede levantar el servidor local" (private repo, no GitHub Pages)
 - S7 "genera un comanto bancoLIA ui para que se levante el tablero en local"
+- S9 "levante el tablero en http://localhost:8000/#constelacion y la constelacion 3D no se ve, verifica que si funcione. asegurate que en la constelacion 3D no se muestren los tagas de los nodos al tiempo, solo se muestra si paso el cursor y si se da clic en un nodo y se muestra panel con la informacino principal de dicho nodo. usa palywretight mcp para verificar funcinoalidad, disposicion de textos, que no se traslapen y demas pruebas de calidad de visualicon y funcionalidad"
 - S8 "revisa que se este utilizando la forma de graficar el grafo como en https://github.com/LIAUNAL/papersmith-ai sota grafo, tipo constelacion, con visualizacion 3d, rotacion y giro, con botones de control como en smith, que al dar clic en un nodo se ilumine dicho nodo y sus conexiones y aparezca panel con la informacion principal y los papers o proyecto mas relacionados (top 5) y si paso el cursor por alguno node debe mostrar una etiqueta descriptiva corta de dicho nodo"
 
 ## Tasks
@@ -19,6 +20,7 @@ Branch: main (private repo github.com/amalvarezme/bancoProyectosPapersLIA). Deli
 - T6 S8 constellation controls, click highlight + side panel with top-5, hover labels (inline) — done, 140b2f2
 - T7 S7 `bancoLIA ui` command (inline) — done, 140b2f2 (bin/bancoLIA, symlink ~/.local/bin/bancoLIA)
 - T8 S6 private GitHub repo, drop Pages workflow (inline) — done, 140b2f2 pushed, visibility PRIVATE
+- T9 S9 3D tab visible, no simultaneous labels, Playwright QA (inline) — done
 - T5 S4 Hermes mapping (inline) — done: 80/94 projects mapped (data/hermes.json, accounts Álvarez Meza + Castellanos); 204 Hermes-only projects in data/hermes_sin_cvlac.json
 
 ## Log
@@ -36,3 +38,4 @@ Branch: main (private repo github.com/amalvarezme/bancoProyectosPapersLIA). Deli
 - L12 (2026-10-20) User: "ya inicie sesion" (own Hermes). Read states for 140 projects; selected 31 not yet in bank; 28 details fetched (two passes), 3 Ingresando without link. Bank: 122 articles + 105 projects (72 from Hermes). Clusters renamed (k=12).
 - L13 (2026-10-21) User: "sincroniza con github pero no en publico, por ende solo se puede levantar el servidor local. genera un comanto bancoLIA ui ... (top 5) y si paso el cursor por alguno node debe mostrar una etiqueta descriptiva corta de dicho nodo" (full text in S6-S8). Vendored viewer is byte-identical to upstream papersmith-ai (skills/plausibility/assets/atlas3d.bundle.js); upstream toolbar = zoom +/−, reset view, Disposición de grupos, family chips; auto-rotate exists but has no toggle; click opens a modal, no persistent highlight, no related list; hover tooltip shows "label [slot]".
 - L14 (2026-10-21) Verified in Chrome: hover tooltip shows node tip; click on P033.prod lit 57 nodes, opened side panel with top 5 (P024, A060, A054, H61264, A052); viewer.rotate/spin/tilt work. Removed .github/workflows/pages.yml and .nojekyll; server binds 127.0.0.1.
+- L15 (2026-10-21) S9. Cause: graph rendered in the lower half of a sky that began below three rows of chips and the long lede, so the visible area looked empty; system and cluster sprite labels drew all at once. Fixes: VIEWER_PATCHES drop system/cluster sprites and frame on the node centroid; embedded mode hides heading/help; cluster chips -> select; iframe height calc(100vh-190px); tooltip clamped inside sky; mobile stacks sky (52vh) over panel; favicon 404 removed. Playwright MCP not installed: used Playwright Python with system Chrome (tools/qa_constellation.py), 81/81 pass on 1440x900, 1280x720, 390x844; one earlier run had a flaky 'no tooltip at rest' on mobile (1 of 5 runs).

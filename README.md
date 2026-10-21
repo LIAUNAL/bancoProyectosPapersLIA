@@ -44,10 +44,23 @@ Instalación del comando (una vez): `ln -s "$PWD/bin/bancoLIA" ~/.local/bin/banc
 
 `docs/constelacion.html` usa el visor SOTA de papersmith-ai. Cada artículo o proyecto es un sistema solar, y sus planetas son aplicación, problema, novedad, clúster, temas, resultados, conclusiones y productos.
 
-- **Controles:** zoom ±, girar ⟲/⟳, inclinar ▲/▼, rotación automática ▶/⏸, reiniciar vista, «Disposición de grupos» (agrupa por clúster), filtro por clúster y buscador por ID o título.
-- **Hover:** etiqueta corta del nodo.
+- **Controles:** zoom ±, girar ⟲/⟳, inclinar ▲/▼, rotación automática ▶/⏸, reiniciar vista, «Disposición de grupos» (agrupa por clúster), selector de clúster y buscador por ID o título.
+- **Etiquetas:** no hay nombres fijos en el cielo; el nombre de un nodo solo aparece al pasar el cursor.
 - **Clic:** ilumina el nodo, su sistema, sus conexiones y sus 5 más relacionados, y abre un panel con la ficha y el top 5 (clic en uno vuela hasta él).
 - **Doble clic:** vuela hasta el nodo. `constelacion.html?focus=A060` abre con un sistema seleccionado.
+
+Prueba de calidad visual y funcional (Playwright con el Chrome del sistema, con el tablero levantado):
+
+```bash
+uv run --with playwright --with pillow python tools/qa_constellation.py http://localhost:8000/
+```
+
+Verifica en 1440×900, 1280×720 y 390×844:
+- que el grafo se dibuje centrado y sin etiquetas en reposo;
+- la etiqueta del hover dentro del lienzo;
+- el panel con el top 5, sin traslapes ni desbordes;
+- los controles, el buscador y el filtro;
+- la ausencia de errores de JavaScript.
 
 ## Regenerar
 
