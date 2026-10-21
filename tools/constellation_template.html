@@ -18,7 +18,7 @@ h1{font-size:18px;font-weight:600;margin:0 0 8px;letter-spacing:.02em}
 #toolbar button.on{background:#9b7ede;color:#0a0a10;border-color:#9b7ede}
 #toolbar .sep{width:1px;height:20px;background:#2a3350;margin:0 4px}
 #toolbar input{width:200px;max-width:100%}
-#toolbar select{max-width:260px;cursor:pointer}
+#toolbar select{max-width:220px;cursor:pointer}
 #toolbar select.on{border-color:#9b7ede;color:#c9b8f5}
 body.embedded{padding:8px 10px}
 body.embedded h1,body.embedded #help{display:none}
@@ -27,6 +27,11 @@ body.embedded h1,body.embedded #help{display:none}
 #sky{position:relative}
 #sky canvas{display:block;width:100%;height:100%}
 #gpunote{margin:0 0 6px;font-size:12px;color:#e8b339}
+.atlas-names{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:4}
+.atlas-names div{position:absolute;left:0;top:0;font:11px system-ui,sans-serif;white-space:nowrap;text-shadow:0 0 3px #0a0a10,0 0 3px #0a0a10,0 0 6px #0a0a10}
+.atlas-names .art{color:#f3d98b}
+.atlas-names .pro{color:#b5dca0}
+.atlas-names .lit{font-weight:600;color:#fff}
 #gpunote[hidden]{display:none}
 .sky{flex:1 1 auto;min-width:0;background:#0a0a10;border:1px solid #1e2236;border-radius:10px;overflow:hidden;cursor:grab}
 .sky:active{cursor:grabbing}
@@ -61,6 +66,7 @@ body.embedded h1,body.embedded #help{display:none}
   <button id="tiltup" title="Inclinar hacia arriba">▲ inclinar</button>
   <button id="tiltdown" title="Inclinar hacia abajo">▼ inclinar</button>
   <button id="autorotate" class="on" title="Rotación automática">⏸ rotación</button>
+  <button id="names" class="on" title="Mostrar u ocultar los nombres; solo se dibujan los que no se tapan, y acercar muestra más">nombres</button>
   <span class="sep"></span>
   <button id="zoomreset" title="Vista inicial y sin selección">reiniciar vista</button>
   <button id="grouplayout" title="Reordena los sistemas por clúster; púlsalo de nuevo para volver">Disposición de grupos</button>
@@ -332,6 +338,7 @@ const FlatViewer = {mount(host, scene, opts) {
       ctx.fill();
     });
     ctx.globalAlpha = 1;
+    if (opts.afterDraw) opts.afterDraw(ctx, W, H);
   }
   function redraw() {
     if (!queued) { queued = true; requestAnimationFrame(draw); }
@@ -346,8 +353,9 @@ const FlatViewer = {mount(host, scene, opts) {
     if (first) fitView();
     redraw();
   }
+  let hidden = false;
   function tick(t) {
-    if (!spinning) return;
+    if (!spinning || hidden) return;
     if (last) yaw += (t - last) * 0.00008;
     last = t;
     draw();
@@ -446,12 +454,132 @@ const FlatViewer = {mount(host, scene, opts) {
     },
     setLayout(name) { layout = name === 'groups' ? 'groups' : 'sky'; fitView(); redraw(); return layout; },
     layout() { return layout; },
+    project(ks) {
+      return ks.map(k => {
+        const i = index.get(k);
+        return i === undefined ? null
+          : {x: sx[i], y: sy[i], z: 0, on: sx[i] >= 0 && sy[i] >= 0 && sx[i] <= W && sy[i] <= H};
+      });
+    },
+    refresh() { redraw(); },
+    pause() { hidden = true; },
+    resume() {
+      if (!hidden) return;
+      hidden = false;
+      last = 0;
+      if (spinning) requestAnimationFrame(tick);
+      redraw();
+    },
   };
   return api;
 }};
+// Names of articles and projects next to their suns. Placed greedily by priority
+// (selection, hover, lit, then nearer or better connected), a name is skipped
+// when it would overlap one already placed, so zooming in reveals more of them.
+const SUNS = ATLAS.systems.map(s => ({key: s.id + '.sun', id: s.id, kind: (s.meta && s.meta.kind) || '',
+  name: (s.meta && (s.meta.name || s.meta.title)) || s.title}));
+const DEGREE = new Map(SUNS.map(s => [s.id, linkedSystems(s.id).size]));
+const NAME_FONT = '11px system-ui, sans-serif';
+const measureCtx = document.createElement('canvas').getContext('2d');
+measureCtx.font = NAME_FONT;
+const NAME_WIDTH = new Map(SUNS.map(s => [s.key, Math.ceil(measureCtx.measureText(s.name).width)]));
+let showNames = true;
+let hovered = null;
+// The dim set last sent to the viewer, kept so names need not rebuild it every frame.
+let namesKeep = null;
+let namesDirty = true;
+function placeNames(W, H, pos) {
+  if (!showNames || !viewer || !viewer.project) return [];
+  pos = pos || viewer.project(SUNS.map(s => s.key));
+  const keep = namesKeep;
+  const hoverId = hovered && hovered.split('.')[0], selId = selected && selected.split('.')[0];
+  const cands = [];
+  SUNS.forEach((s, i) => {
+    const p = pos[i];
+    if (!p || !p.on) return;
+    const lit = !keep || keep.has(s.key);
+    const boost = s.id === selId ? 4 : s.id === hoverId ? 3 : 0;
+    if (!lit && !boost) return;
+    cands.push({s, p, lit: keep && lit, prio: boost + (keep && lit ? 2 : 0) + (1 - p.z) + DEGREE.get(s.id) * 0.01});
+  });
+  cands.sort((a, b) => b.prio - a.prio);
+  const placed = [], budget = Math.max(12, Math.floor(W * H / 12000));
+  for (const c of cands) {
+    if (placed.length >= budget) break;
+    const w = NAME_WIDTH.get(c.s.key), h = 14;
+    const box = {x: c.p.x - w / 2, y: c.p.y - h - 7, w, h};
+    if (box.x < 2 || box.y < 2 || box.x + w > W - 2 || box.y + h > H - 2) continue;
+    if (placed.some(o => box.x < o.x + o.w + 6 && o.x < box.x + w + 6 && box.y < o.y + o.h + 2 && o.y < box.y + h + 2)) continue;
+    placed.push(Object.assign(box, {s: c.s, lit: c.lit || c.prio >= 3}));
+  }
+  return placed;
+}
+// 2D: names are drawn on the canvas whenever it redraws.
+function drawNames(ctx, W, H) {
+  ctx.font = NAME_FONT;
+  ctx.textBaseline = 'top';
+  ctx.lineJoin = 'round';
+  placeNames(W, H).forEach(b => {
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = '#0a0a10';
+    ctx.strokeText(b.s.name, b.x, b.y + 1);
+    ctx.fillStyle = b.lit ? '#ffffff' : b.s.kind === 'proyecto' ? '#b5dca0' : '#f3d98b';
+    ctx.fillText(b.s.name, b.x, b.y + 1);
+  });
+}
+// 3D: an HTML layer over the WebGL canvas. Each frame only projects the suns; placement and
+// DOM writes happen when the view moved by half a pixel or the dimming changed.
+const nameLayer = {paused: false, running: false, start() {}};
+function runNameLayer(host) {
+  const layer = document.createElement('div');
+  layer.className = 'atlas-names';
+  host.appendChild(layer);
+  const pool = new Map();
+  const keys = SUNS.map(s => s.key);
+  let last = null, lastW = 0, lastH = 0;
+  function moved(pos, W, H) {
+    if (!last || W !== lastW || H !== lastH) return true;
+    for (let i = 0; i < pos.length; i++) {
+      const a = pos[i], b = last[i];
+      if (!a !== !b || (a && (Math.abs(a.x - b.x) > 0.5 || Math.abs(a.y - b.y) > 0.5 || a.on !== b.on))) return true;
+    }
+    return false;
+  }
+  function frame() {
+    if (nameLayer.paused) { nameLayer.running = false; return; }
+    const W = host.clientWidth, H = host.clientHeight;
+    const pos = showNames ? viewer.project(keys) : null;
+    if (namesDirty || (pos && moved(pos, W, H))) {
+      namesDirty = false;
+      last = pos; lastW = W; lastH = H;
+      const shown = new Set();
+      placeNames(W, H, pos).forEach(b => {
+        let el = pool.get(b.s.key);
+        if (!el) {
+          el = document.createElement('div');
+          el.textContent = b.s.name;
+          pool.set(b.s.key, el);
+          layer.appendChild(el);
+        }
+        el.className = b.lit ? 'lit' : b.s.kind === 'proyecto' ? 'pro' : 'art';
+        el.style.transform = `translate(${Math.round(b.x)}px,${Math.round(b.y)}px)`;
+        el.style.display = '';
+        shown.add(b.s.key);
+      });
+      pool.forEach((el, key) => { if (!shown.has(key)) el.style.display = 'none'; });
+    }
+    requestAnimationFrame(frame);
+  }
+  nameLayer.start = () => {
+    nameLayer.paused = false;
+    if (!nameLayer.running) { nameLayer.running = true; namesDirty = true; requestAnimationFrame(frame); }
+  };
+  nameLayer.start();
+}
 const viewerOpts = {
   onSelect: key => select(key, false),
-  onHover: key => { if (viewer) viewer.setDim(key ? hoverKeep(key) : restingKeep()); },
+  onHover: key => { hovered = key; if (viewer) viewer.setDim(key ? hoverKeep(key) : restingKeep()); },
+  afterDraw: drawNames,
 };
 const skyHost = document.getElementById('sky');
 const gpu = new URLSearchParams(location.search).get('view') === '2d' ? 'forced' : webglSupport();
@@ -468,7 +596,32 @@ if (!viewer) {
   note.hidden = false;
   document.getElementById('help').textContent = 'Vista 2D: arrastra para desplazar, rueda para acercar; girar e inclinar cambian el ángulo. '
     + 'Pasa el cursor por un nodo para ver su etiqueta; clic para iluminarlo con sus conexiones y ver su ficha; doble clic para centrarlo.';
+} else {
+  runNameLayer(skyHost);
 }
+// Every dimming change goes through setDim: remember it for the names and mark them stale.
+const viewerSetDim = viewer.setDim;
+viewer.setDim = keep => { namesKeep = keep; namesDirty = true; viewerSetDim(keep); };
+const namesButton = document.getElementById('names');
+namesButton.addEventListener('click', () => {
+  showNames = !showNames;
+  namesDirty = true;
+  namesButton.classList.toggle('on', showNames);
+  if (viewer.refresh) viewer.refresh();
+});
+// The dashboard hides this page in a background tab: stop rendering until it is shown again.
+function setVisible(on) {
+  if (on) {
+    if (viewer.resume) viewer.resume();
+    if (gpu === 'ok') nameLayer.start();
+  } else {
+    if (viewer.pause) viewer.pause();
+    nameLayer.paused = true;
+  }
+}
+window.addEventListener('message', e => {
+  if (e.origin === location.origin && e.data && e.data.type === 'banco-lia-visibility') setVisible(!!e.data.visible);
+});
 
 const rotateButton = document.getElementById('autorotate');
 function syncRotate() {

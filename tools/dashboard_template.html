@@ -200,6 +200,15 @@ const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag)
     .forEach(([k, v]) => s.append(el('span', {}, el('b', {}, String(v)), ' ' + k)));
 })();
 
+// The constellation iframe renders continuously; tell it when its tab is hidden so it pauses.
+const frame3d = document.getElementById('frame3d');
+function notifyConstellation(visible) {
+  if (frame3d.contentWindow && frame3d.src) {
+    frame3d.contentWindow.postMessage({type: 'banco-lia-visibility', visible}, location.origin);
+  }
+}
+frame3d.addEventListener('load', () => notifyConstellation(!document.getElementById('v-constelacion').hidden));
+
 // Tabs with bookmarkable hash tokens
 const views = [...document.querySelectorAll('nav button')];
 function show(name) {
@@ -207,6 +216,9 @@ function show(name) {
   views.forEach(b => b.setAttribute('aria-selected', String(b.dataset.view === name)));
   document.querySelectorAll('.view').forEach(v => v.hidden = v.id !== 'v-' + name);
   if (name === 'constelacion') { const f = document.getElementById('frame3d'); if (f && !f.src) f.src = 'constelacion.html'; }
+  notifyConstellation(name === 'constelacion');
+  if (name !== 'sistema' && sim) sim.stop();
+  if (name === 'sistema' && orreryStale) drawOrrery();
   if (name === 'tiempo') drawTimeline();
   try { history.replaceState(null, '', '#' + name); } catch (e) {}
 }
@@ -269,9 +281,14 @@ function orbitForce(center, radius, strength) {
   force.initialize = ns => { nodes = ns; };
   return force;
 }
+// A resize while another tab is shown measures a hidden (zero-size) stage: redraw on return instead.
+let orreryStale = false;
 function drawOrrery() {
+  if (document.getElementById('v-sistema').hidden) { orreryStale = true; return; }
+  orreryStale = false;
   const box = document.getElementById('orrery').getBoundingClientRect();
   const W = Math.max(box.width, 360), H = Math.max(box.height, 460);
+  if (sim) sim.stop();
   svg.attr('viewBox', `0 0 ${W} ${H}`).selectAll('*').remove();
   const root = svg.append('g');
   svg.call(d3.zoom().scaleExtent([0.4, 6]).on('zoom', e => root.attr('transform', e.transform)));
@@ -385,8 +402,11 @@ function renderList() {
 renderList();
 
 // Timeline: stacked bars by cluster
+let timelineWidth = 0;
 function drawTimeline() {
   const node = document.getElementById('timeline'); const W = Math.max(node.parentElement.clientWidth - 16, 340), H = 360, m = { t: 10, r: 10, b: 28, l: 34 };
+  if (W === timelineWidth) return; // same size: the chart already drawn is still right
+  timelineWidth = W;
   const ys = d3.range(d3.min(ITEMS, yearOf.bind(null)) || 1994, d3.max(ITEMS, yearOf) + 1).filter(y => y > 1990);
   const keys = CL.map(c => c.id);
   const rows = ys.map(y => { const r = { y }; keys.forEach(k => r[k] = 0); ITEMS.forEach(i => { if (yearOf(i) === y) r[i.cluster]++; }); return r; });

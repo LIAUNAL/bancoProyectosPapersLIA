@@ -271,7 +271,7 @@ def atlas(items, clusters, links):
                 ps.append(planet("prod", "contribution", 3, "Productos tecnológicos", "; ".join(prods), it))
         label = f"{it['id']} · {(it.get('titulo_corto') or it['title'])[:28]}" if is_p else it["id"]
         h = it.get("hermes") or {}
-        meta = {"kind": it["kind"], "title": it["title"],
+        meta = {"kind": it["kind"], "title": it["title"], "name": short(it.get("titulo_corto") or it["title"], 44),
                 "years": f"{it.get('start') or '?'}–{it.get('end') or '?'}" if is_p else str(it.get("year") or ""),
                 "venue": it.get("journal") or h.get("convocatoria") or "",
                 "cluster": f"{it['cluster']} {cname[it['cluster']]}",
@@ -295,9 +295,10 @@ def atlas(items, clusters, links):
 
 
 # Build-time additions to the vendored viewer (vendor/papersmith stays byte-identical
-# to upstream): no permanent labels, centred framing, a node's own short tooltip and camera controls.
+# to upstream): no sprite labels (the page draws its own non-overlapping names), centred framing,
+# a node's own short tooltip, camera controls, screen projection and pause/resume.
 VIEWER_PATCHES = [
-    # No permanent system or cluster labels: names appear only in the hover tooltip and the side panel.
+    # No sprite labels for systems or clusters: they all render at once and overlap.
     ("let U=Yh(String(at.title||nt).slice(0,64),r_);U.position.copy(xt),Mt.add(U)", ""),
     ("yt.forEach(A=>{A.visible=dt===\"groups\"})", "yt.forEach(A=>{A.visible=!1})"),
     # Render at least one canvas pixel per CSS pixel, so a zoomed-out browser (devicePixelRatio < 1)
@@ -310,6 +311,10 @@ VIEWER_PATCHES = [
     # Frame the initial view on the centroid of the nodes (the bounding-box centre sat off the mass).
     ("let J=k(m,_),X=J;",
      "let J=k(u.reduce((a,b)=>a.add(b),new L).multiplyScalar(1/Math.max(1,u.length)),_*.7),X=J;"),
+    # pause()/resume() stop the render loop while the page hides the viewer (another dashboard tab).
+    ("n.render(r,P),requestAnimationFrame(me)}return me(),{",
+     "n.render(r,P),__paused||requestAnimationFrame(me)}let __paused=!1;return me(),{"
+     "pause(){__paused=!0},resume(){__paused&&(__paused=!1,requestAnimationFrame(me))},"),
     ("s.textContent=`${A.planet.label} [${A.planet.slot}]`",
      "s.textContent=A.planet.tip||`${A.planet.label} [${A.planet.slot}]`"),
     ("layout(){return dt}}}",
@@ -320,7 +325,11 @@ VIEWER_PATCHES = [
      "P.position.copy(Q.target).add(d)},"
      "tilt(a){Q.autoRotate=!1;let d=P.position.clone().sub(Q.target),"
      "x=new L().crossVectors(d,new L(0,0,1)).normalize();d.applyAxisAngle(x,a);"
-     "P.position.copy(Q.target).add(d)}}}"),
+     "P.position.copy(Q.target).add(d)},"
+     # Screen position of nodes, for the page's name labels: x, y in CSS pixels, z the NDC depth.
+     "project(ks){let r=n.domElement.getBoundingClientRect(),v=new L;return ks.map(k=>{let j=l.get(k);"
+     "if(j===void 0)return null;v.copy(u[j]).project(P);return{x:(v.x+1)/2*r.width,y:(1-v.y)/2*r.height,"
+     "z:v.z,on:v.z<1&&Math.abs(v.x)<1&&Math.abs(v.y)<1}})}}}"),
 ]
 
 

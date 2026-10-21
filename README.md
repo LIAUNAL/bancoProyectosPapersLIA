@@ -56,13 +56,21 @@ uv run --with playwright --with pillow python tools/qa_constellation.py http://l
 ```
 
 Verifica en 1440×900, 1280×720, 390×844 y una pantalla de 5760×3088 con el navegador al 50 % de zoom:
-- que el grafo se dibuje centrado y sin etiquetas en reposo;
+- que el grafo se dibuje centrado y que no aparezca el tooltip en reposo;
 - la etiqueta del hover dentro del lienzo;
 - el panel con el top 5, sin traslapes ni desbordes;
 - los controles, el buscador y el filtro;
 - la ausencia de errores de JavaScript.
 
-Sin una GPU apropiada para WebGL, la pestaña muestra la constelación en 2D con un aviso; `constelacion.html?view=2d` fuerza esa vista.
+Los nombres de artículos y proyectos aparecen junto a sus soles sin taparse entre sí (acercar muestra más); el botón **nombres** los oculta. Sin una GPU apropiada para WebGL, la pestaña muestra la constelación en 2D con un aviso; `constelacion.html?view=2d` fuerza esa vista.
+
+Mientras otra pestaña del tablero está a la vista, la constelación deja de dibujar. Prueba de memoria y CPU al ir y volver entre pestañas (12 vueltas por defecto):
+
+```bash
+uv run --with playwright python tools/qa_memory.py http://localhost:8000/ [vueltas]
+```
+
+Falla si el heap de JS, los nodos del DOM o los listeners siguen creciendo, si la constelación oculta consume más del 5 % de un núcleo o si visible baja de 40 fps.
 
 ## Servidor MCP
 
