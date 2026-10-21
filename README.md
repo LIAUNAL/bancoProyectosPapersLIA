@@ -55,7 +55,7 @@ Instalación del comando (una vez): `ln -s "$PWD/bin/bancoLIA" ~/.local/bin/banc
 Prueba de calidad visual y funcional (Playwright con el Chrome del sistema, con el tablero levantado):
 
 ```bash
-uv run --with playwright --with pillow python tools/qa_constellation.py http://localhost:8000/
+uv run --no-project --with playwright --with pillow python tools/qa_constellation.py http://localhost:8000/
 ```
 
 Verifica en 1440×900, 1280×720, 390×844 y una pantalla de 5760×3088 con el navegador al 50 % de zoom:
@@ -70,7 +70,7 @@ Los nombres de artículos y proyectos aparecen junto a sus soles sin taparse ent
 Mientras otra pestaña del tablero está a la vista, la constelación deja de dibujar. Prueba de memoria y CPU al ir y volver entre pestañas (12 vueltas por defecto):
 
 ```bash
-uv run --with playwright python tools/qa_memory.py http://localhost:8000/ [vueltas]
+uv run --no-project --with playwright python tools/qa_memory.py http://localhost:8000/ [vueltas]
 ```
 
 Falla si el heap de JS, los nodos del DOM o los listeners siguen creciendo, si la constelación oculta consume más del 5 % de un núcleo o si visible baja de 40 fps.
@@ -115,7 +115,7 @@ Pruebas del índice: `python3 -m unittest discover -s tests`. Consulta rápida d
 ## Regenerar
 
 ```bash
-uv run --with scikit-learn --with numpy python tools/build_bank.py
+uv run --no-project --with scikit-learn --with numpy python tools/build_bank.py
 ```
 
 Los resúmenes estructurados viven en `data/summaries/*.jsonl`; edítelos ahí y regenere. Para mapear Hermes, llene `data/hermes.json` así:

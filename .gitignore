@@ -4,3 +4,5 @@ __pycache__/
 .atl/
 data/bank.db
 data/bank.db.tmp
+.venv/
+uv.lock

@@ -7,7 +7,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
 
 build() {
-  (cd "$ROOT" && uv run -q --with scikit-learn --with numpy python tools/build_bank.py)
+  (cd "$ROOT" && uv run -q --no-project --with scikit-learn --with numpy python tools/build_bank.py)
 }
 
 ui() {
@@ -33,7 +33,7 @@ ui() {
 }
 
 mcp() {
-  exec uv run -q --directory "$ROOT" --with "mcp>=2.3,<3" python "$ROOT/tools/banco_lia_mcp.py"
+  exec uv run -q --no-project --directory "$ROOT" --with "mcp>=2.3,<3" python "$ROOT/tools/banco_lia_mcp.py"
 }
 
 case "${1:-}" in

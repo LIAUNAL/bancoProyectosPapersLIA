@@ -1,7 +1,7 @@
 """Visual and functional QA of the Banco LIA 3D constellation tab (Playwright + system Chrome).
 
 Usage (with the dashboard running, e.g. `bancoLIA ui --no-open`):
-    uv run --with playwright --with pillow python tools/qa_constellation.py [http://localhost:8000/]
+    uv run --no-project --with playwright --with pillow python tools/qa_constellation.py [http://localhost:8000/]
 Screenshots go to a temporary folder printed at the end. Exit 1 if any check fails.
 """
 import io, json, sys, tempfile

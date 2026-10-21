@@ -7,7 +7,7 @@ nodes and event listeners; it also measures CPU while the constellation is hidde
 frame rate while it is shown.
 
 Usage (with the dashboard running, e.g. `bancoLIA ui --no-open`):
-    uv run --with playwright python tools/qa_memory.py [http://localhost:8000/] [rounds]
+    uv run --no-project --with playwright python tools/qa_memory.py [http://localhost:8000/] [rounds]
 Exit 1 if memory keeps growing, the hidden tab still burns CPU or the frame rate collapses.
 """
 import os
