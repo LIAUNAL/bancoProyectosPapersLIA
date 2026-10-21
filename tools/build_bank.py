@@ -380,7 +380,8 @@ def main():
         '<!doctype html>\n<html lang="es">\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' + page,
         encoding="utf-8")
-    shutil.copyfile(ROOT / "tools/assets/logo_labIA.png", SITE / "logo_labIA.png")
+    for asset in ("logo_labIA.png", "favicon.png", "apple-touch-icon.png"):
+        shutil.copyfile(ROOT / "tools/assets" / asset, SITE / asset)
     (SITE / "data").mkdir(exist_ok=True)
     (SITE / "data/bank.json").write_text(json.dumps(bank, ensure_ascii=False), encoding="utf-8")
     notice = (ROOT / "vendor/papersmith/THIRD_PARTY_NOTICES.md").read_text(encoding="utf-8")
