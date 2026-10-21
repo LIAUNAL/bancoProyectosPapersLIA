@@ -1,6 +1,6 @@
 """SQLite FTS5 index over data/bank.json, the query layer of the Banco LIA MCP server.
 
-The index (data/bank.db) is derived data: it is rebuilt automatically whenever the
+The index (data/bank.db in a checkout, ~/.cache/banco-lia/bank.db when installed) is derived data: it is rebuilt automatically whenever the
 content of bank.json changes, so `bancoLIA build` never has to remember it.
 
     python3 tools/bank_db.py build            # force a rebuild
@@ -18,7 +18,6 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_VERSION = "1"
 # Weighted for bm25(): title and keywords count more than the long narrative fields.
 FTS_COLUMNS = [("title", 5.0), ("palabras_clave", 3.0), ("metodos", 2.0), ("temas", 2.0), ("aplicacion", 1.0),
@@ -51,6 +50,20 @@ STOPWORDS = set("""a al con como de del e el en entre es la las lo los o para po
 an and as at by for from in is of on or the to with""".split())
 
 
+def default_paths(here):
+    """(bank.json, bank.db) for this module's folder. In a checkout the data sits beside tools/ and the index
+    goes to data/bank.db; in an installed wheel the data is packaged beside the module and the index goes to
+    the user cache, so the package folder is never written."""
+    here = Path(here)
+    if (here.parent / "data/bank.json").exists():
+        return here.parent / "data/bank.json", here.parent / "data/bank.db"
+    cache = Path(os.environ.get("XDG_CACHE_HOME") or Path.home() / ".cache")
+    return here / "data/bank.json", cache / "banco-lia" / "bank.db"
+
+
+BANK_PATH, DB_PATH = default_paths(Path(__file__).resolve().parent)
+
+
 def match_query(text, match="any"):
     """Free text to a safe FTS5 query: every word is quoted, so FTS operators are inert.
     match="any" joins the words with OR, match="all" with AND."""
@@ -59,7 +72,7 @@ def match_query(text, match="any"):
 
 
 class Bank:
-    def __init__(self, bank_path=ROOT / "data/bank.json", db_path=ROOT / "data/bank.db"):
+    def __init__(self, bank_path=BANK_PATH, db_path=DB_PATH):
         self.bank_path = Path(bank_path)
         self.db_path = Path(db_path)
         self.root = self.bank_path.parent.parent
@@ -86,6 +99,7 @@ class Bank:
         """Write the index to a temporary file and swap it in, so readers never see a half-built db."""
         bank = json.loads(self.bank_path.read_text(encoding="utf-8"))
         topics = bank.get("topics", {})
+        self.db_path.parent.mkdir(parents=True, exist_ok=True)
         tmp = self.db_path.with_suffix(".db.tmp")
         if tmp.exists():
             tmp.unlink()

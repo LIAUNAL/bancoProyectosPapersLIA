@@ -133,6 +133,22 @@ class BankDbTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.bank_db.export(["A001"], str(self.tmp / "no-such-dir"))
 
+    def test_default_paths_use_the_checkout_data_when_present(self):
+        tools = self.tmp / "tools"
+        tools.mkdir()
+        self.assertEqual(bank_db.default_paths(tools), (self.bank, self.db))
+
+    def test_default_paths_in_an_installed_wheel_read_packaged_data_and_cache_the_index(self):
+        pkg = self.tmp / "site-packages" / "banco_lia"
+        (pkg / "data").mkdir(parents=True)
+        (pkg / "data" / "bank.json").write_text("{}", encoding="utf-8")
+        cache = self.tmp / "cache"
+        os.environ["XDG_CACHE_HOME"] = str(cache)
+        try:
+            self.assertEqual(bank_db.default_paths(pkg), (pkg / "data" / "bank.json", cache / "banco-lia" / "bank.db"))
+        finally:
+            del os.environ["XDG_CACHE_HOME"]
+
     def test_index_rebuilds_when_bank_json_changes(self):
         self.assertEqual(len(self.bank_db.search("", kind="articulo")), 2)
         changed = dict(BANK, items=BANK["items"][:1])

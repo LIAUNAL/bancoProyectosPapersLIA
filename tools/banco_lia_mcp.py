@@ -1,7 +1,7 @@
 """Banco LIA MCP server (stdio): the lab's articles and projects as input for papers and proposals.
 
-    bancoLIA mcp                                   # what MCP clients launch
-    uv run -q --with "mcp>=2.3,<3" python tools/banco_lia_mcp.py
+    uvx --from git+https://github.com/LIAUNAL/bancoProyectosPapersLIA banco-lia-mcp   # installed from GitHub
+    bancoLIA mcp                                                                       # from a local checkout
 
 Every tool reads the SQLite FTS5 index from tools/bank_db.py, rebuilt from data/bank.json on change.
 """
@@ -86,5 +86,9 @@ def export_to_insumos(item_ids: list[str], dest_dir: str) -> dict:
         raise ToolError(str(exc)) from exc
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()

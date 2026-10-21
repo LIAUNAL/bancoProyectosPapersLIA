@@ -1,5 +1,7 @@
 # Banco de proyectos y artículos LIA
 
+Repositorio privado de la organización [LIAUNAL](https://github.com/LIAUNAL). Tablero local con constelación 3D y [servidor MCP](#servidor-mcp) para redactar artículos y propuestas a partir del trabajo previo del laboratorio.
+
 Banco de ideas, novedades y base de redacción con los artículos en revistas y los proyectos de investigación del grupo GCPDS / LIA (Universidad Nacional de Colombia, sede Manizales), **de 2018 a la fecha**: artículos publicados desde 2018 y proyectos en ejecución desde 2018 (inicio o fin ≥ 2018). El corte se cambia con `MIN_YEAR` en `tools/build_bank.py`; los datos 1996–2017 siguen en `data/raw` y `data/summaries`.
 
 ## Contenido
@@ -15,6 +17,7 @@ Banco de ideas, novedades y base de redacción con los artículos en revistas y 
 | `data/hermes.json` | Mapeo proyecto → código Hermes, QUIPU y convocatoria (80 proyectos; cuentas de Álvarez Meza y Castellanos) |
 | `data/raw/hermes_extra.json`, `data/raw/hermes_details.json` | Proyectos de Hermes incorporados (2025–2026, en evaluación y financiados desde 2018) y el texto de su ficha |
 | `data/hermes_sin_cvlac.json` | 204 proyectos de Hermes (ambas cuentas) que no aparecen en CvLAC |
+| `pyproject.toml`, `tools/banco_lia_mcp.py`, `tools/bank_db.py` | Paquete `banco-lia` con el servidor MCP y su índice SQLite FTS5 |
 | `odd/tasks/banco-lia.md` | Especificación y bitácora del trabajo |
 
 ## Fuentes
@@ -74,7 +77,17 @@ Falla si el heap de JS, los nodos del DOM o los listeners siguen creciendo, si l
 
 ## Servidor MCP
 
-`bancoLIA mcp` expone el banco a clientes MCP (stdio) como insumo para escribir artículos (papers_smith) y propuestas (RedaccionPropuestas). Busca sobre un índice SQLite FTS5 (`data/bank.db`, BM25, sin tildes) que se regenera solo cuando cambia `data/bank.json`; el archivo no se versiona.
+El servidor MCP (stdio) expone el banco como insumo para escribir artículos (papers_smith) y propuestas (RedaccionPropuestas). Busca sobre un índice SQLite FTS5 (BM25, sin tildes) que se regenera solo cuando cambia `data/bank.json`; el índice no se versiona.
+
+Se instala desde GitHub con [uv](https://docs.astral.sh/uv/), sin clonar el repositorio:
+
+```bash
+uvx --from git+https://github.com/LIAUNAL/bancoProyectosPapersLIA banco-lia-mcp
+```
+
+El repositorio es privado: hace falta acceso a la organización LIAUNAL y que git pueda autenticarse en GitHub (una vez: `gh auth setup-git`). El paquete trae el servidor, `data/bank.json` y las fichas; el índice queda en `~/.cache/banco-lia/bank.db`. Para tomar una versión nueva del banco: `uvx --refresh --from git+https://github.com/LIAUNAL/bancoProyectosPapersLIA banco-lia-mcp`.
+
+Desde un clon local, `bancoLIA mcp` sirve los datos del clon y guarda el índice en `data/bank.db`.
 
 | Herramienta | Para qué |
 |---|---|
@@ -85,11 +98,17 @@ Falla si el heap de JS, los nodos del DOM o los listeners siguen creciendo, si l
 | `taxonomy` | Temas y clústeres con su número de ítems |
 | `export_to_insumos` | Copia fichas Markdown a una carpeta existente, p. ej. `proposals/<run>/insumos/background` |
 
-Registro en un proyecto (`.mcp.json`):
+Registro en un proyecto (`.mcp.json`), como en papersmith-ai y RedaccionPropuestas:
 
 ```json
-"banco-lia": {"type": "stdio", "command": "bancoLIA", "args": ["mcp"]}
+"banco-lia": {
+  "type": "stdio",
+  "command": "uvx",
+  "args": ["--from", "git+https://github.com/LIAUNAL/bancoProyectosPapersLIA", "banco-lia-mcp"]
+}
 ```
+
+La primera ejecución descarga y compila el paquete (unos segundos); las siguientes usan la caché de uv.
 
 Pruebas del índice: `python3 -m unittest discover -s tests`. Consulta rápida desde la terminal: `python3 tools/bank_db.py search "visión por computador"`.
 

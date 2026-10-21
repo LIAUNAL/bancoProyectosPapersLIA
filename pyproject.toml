@@ -1,0 +1,25 @@
+[project]
+name = "banco-lia"
+version = "0.1.0"
+description = "Banco LIA MCP server: articles and research projects of LabIA UNAL Manizales as input for papers and proposals"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["mcp>=2.3,<3"]
+
+[project.scripts]
+banco-lia-mcp = "banco_lia.banco_lia_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# The wheel holds only the MCP server and the data it serves; the dashboard and build tools stay in the repo.
+[tool.hatch.build.targets.wheel]
+bypass-selection = true
+
+[tool.hatch.build.targets.wheel.force-include]
+"tools/bank_db.py" = "banco_lia/bank_db.py"
+"tools/banco_lia_mcp.py" = "banco_lia/banco_lia_mcp.py"
+"data/bank.json" = "banco_lia/data/bank.json"
+"articulos" = "banco_lia/articulos"
+"proyectos" = "banco_lia/proyectos"
