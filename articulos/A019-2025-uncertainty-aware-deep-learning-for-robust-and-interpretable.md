@@ -1,6 +1,6 @@
 ---
 id: A019
-titulo: "[HTML] de mdpi.com Uncertainty-Aware Deep Learning for Robust and Interpretable MI EEG Using Channel Dropout and LayerCAM Integration"
+titulo: "Uncertainty-Aware Deep Learning for Robust and Interpretable MI EEG Using Channel Dropout and LayerCAM Integration"
 tipo: articulo
 temas: [T01, T07, T06]
 cluster: "C02 BCI por imaginación motora"
@@ -13,7 +13,7 @@ citas_openalex: 3
 fuentes: [0001330950]
 ---
 
-# [HTML] de mdpi.com Uncertainty-Aware Deep Learning for Robust and Interpretable MI EEG Using Channel Dropout and LayerCAM Integration
+# Uncertainty-Aware Deep Learning for Robust and Interpretable MI EEG Using Channel Dropout and LayerCAM Integration
 
 **Autores:** Óscar Wladimir Gómez Morales, Sofia Escalante-Escobar, Diego Fabián Collazos-Huertas, Andrés Marino Álvarez-Meza, German Castellanos-Dominguez  
 **Revista:** Applied Sciences (2025)  
