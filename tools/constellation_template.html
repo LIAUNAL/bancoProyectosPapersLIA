@@ -51,7 +51,15 @@ body.embedded h1,body.embedded #help{display:none}
 #side li button:hover,#side li button:focus-visible{color:#e8b339;text-decoration:underline}
 #side .score{color:#9aa3bd;font-size:11px}
 #sideclose{float:right;cursor:pointer;font-size:13px;padding:2px 10px;background:#1a1d2e;color:#e4e4ed;border:1px solid #2a3350;border-radius:6px}
-@media (max-width:820px){html,body{height:auto}body{min-height:100%}#stage{flex-direction:column}.sky{flex:0 0 auto;height:52vh;min-height:280px}#side{flex:0 0 auto;max-height:none}#toolbar .sep{display:none}}
+@media (max-width:820px){html,body{height:auto}body{min-height:100%}#stage{flex-direction:column}.sky{flex:0 0 auto;height:52vh;min-height:280px}#side{flex:0 0 auto;max-height:none}#toolbar .sep{display:none}
+  /* One scrollable row of controls, so the sky keeps most of a phone screen. */
+  #toolbar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+  #toolbar::-webkit-scrollbar{display:none}
+  #toolbar>*{flex:0 0 auto}
+  #toolbar input{width:170px}
+  #rellegend{font-size:11px;line-height:1.5}
+  body.embedded .sky{height:calc(100vh - 96px)}}
+@media (pointer:coarse){#toolbar button,#toolbar input,#toolbar select{font-size:16px;padding:7px 12px}#sideclose{padding:6px 12px}}
 </style>
 </head>
 <body>
@@ -82,6 +90,13 @@ body.embedded h1,body.embedded #help{display:none}
   <aside id="side" aria-live="polite"><button id="sideclose">cerrar</button><div id="sidebody"></div></aside>
 </div>
 <script type="application/json" id="atlas-data">@@DATA@@</script>
+<script>
+// Phones and modest machines (few cores or little memory) render at a lower pixel ratio and
+// without antialiasing; the viewer patches in tools/build_bank.py read this flag.
+window.BANCO_LIA_LOW_POWER = (navigator.hardwareConcurrency || 8) <= 4 || (navigator.deviceMemory || 8) <= 4
+  || matchMedia('(pointer: coarse)').matches;
+window.BANCO_LIA_MAX_DPR = window.BANCO_LIA_LOW_POWER ? 1.5 : 2;
+</script>
 <script>
 @@VIEWER@@
 </script>
@@ -311,7 +326,7 @@ const FlatViewer = {mount(host, scene, opts) {
   function draw() {
     queued = false;
     project();
-    const dpr = Math.max(window.devicePixelRatio || 1, 1);
+    const dpr = Math.min(Math.max(window.devicePixelRatio || 1, 1), window.BANCO_LIA_MAX_DPR);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.fillStyle = '#0a0a10';
     ctx.fillRect(0, 0, W, H);
@@ -344,8 +359,9 @@ const FlatViewer = {mount(host, scene, opts) {
     if (!queued) { queued = true; requestAnimationFrame(draw); }
   }
   function resize() {
-    const dpr = Math.max(window.devicePixelRatio || 1, 1);
+    const dpr = Math.min(Math.max(window.devicePixelRatio || 1, 1), window.BANCO_LIA_MAX_DPR);
     const first = !W;
+    if (!first && !host.clientWidth) return; // hidden: keep the current canvas
     W = host.clientWidth || 800;
     H = host.clientHeight || 600;
     canvas.width = Math.round(W * dpr);
@@ -599,6 +615,8 @@ if (!viewer) {
 } else {
   runNameLayer(skyHost);
 }
+// Honour reduced motion: the 3D viewer starts rotating on its own.
+if (matchMedia('(prefers-reduced-motion: reduce)').matches && viewer.rotate) viewer.rotate(false);
 // Every dimming change goes through setDim: remember it for the names and mark them stale.
 const viewerSetDim = viewer.setDim;
 viewer.setDim = keep => { namesKeep = keep; namesDirty = true; viewerSetDim(keep); };

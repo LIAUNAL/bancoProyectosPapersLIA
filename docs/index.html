@@ -109,6 +109,25 @@ footer.lab img { height: 44px; width: auto; display: block; }
 footer.lab strong { display: block; font: 700 13px var(--body); color: var(--ink); }
 footer.lab span { font-size: 12px; color: var(--muted); }
 @media (max-width: 560px) { footer.lab { flex-direction: column; text-align: center; } }
+/* Phones and short landscape screens: the header scrolls away instead of covering a fifth of the view. */
+@media (max-width: 640px), (max-height: 500px) {
+  header { position: static; }
+  .head { padding-block: 10px 6px; gap: 6px 14px; }
+  h1 small { font-size: 11px; }
+  .stats { margin-left: 0; gap: 2px 12px; font-size: 11px; }
+  main { padding-block: 12px 32px; }
+  .frame3d { height: calc(100svh - 24px); min-height: 380px; }
+  .card { padding: 14px; }
+}
+/* Touch screens: larger targets and 16px fields, so iOS does not zoom in on focus. */
+@media (pointer: coarse) {
+  nav button { padding: 9px 14px; }
+  .seg button { padding: 9px 14px; }
+  .chip { padding: 6px 12px 6px 10px; }
+  .btn { padding: 9px 14px; }
+  input, select { font-size: 16px; padding: 10px; }
+  .row { padding-block: 12px; }
+}
 </style>
 
 <header>
@@ -129,7 +148,7 @@ footer.lab span { font-size: 12px; color: var(--muted); }
 
 <main class="wrap">
   <section class="view" id="v-sistema">
-    <p class="lede">Cada <b>planeta</b> es un tema de la taxonomía (T01–T14), con tamaño proporcional a su producción. A su alrededor orbitan los <b>artículos</b> (círculos) y <b>proyectos</b> (rombos), coloreados por el clúster semántico que les asignó el agrupamiento. Cambie a «Agrupar por clúster» para ver cada grupo como un sistema propio. Arrastre para mover, use la rueda para acercar y haga clic en un punto para leer su ficha.</p>
+    <p class="lede">Cada <b>planeta</b> es un tema de la taxonomía (T01–T14), con tamaño proporcional a su producción. A su alrededor orbitan los <b>artículos</b> (círculos) y <b>proyectos</b> (rombos), coloreados por el clúster semántico que les asignó el agrupamiento. Cambie a «Agrupar por clúster» para ver cada grupo como un sistema propio. Arrastre para mover, use la rueda (dos dedos en pantallas táctiles) para acercar y haga clic en un punto para leer su ficha.</p>
     <div class="toolbar">
       <span>Agrupar por</span>
       <div class="seg" id="groupby"><button class="on" data-g="tema">Tema</button><button data-g="cluster">Clúster</button></div>
@@ -268,12 +287,26 @@ function openItem(id) {
 // Orrery: topic planets with items in orbit (d3 force)
 const svg = d3.select('#orrery'), tip = document.getElementById('tip');
 let groupBy = 'tema', kindFilter = 'all', clusterFilter = null, sim, nodeSel, linkSel;
+const groupKeys = () => groupBy === 'tema' ? TIDS : CL.map(c => c.id);
+// Narrow or short screens cannot fit a ring of planets with readable labels: lay them out in a grid instead.
+const CELL_H = 200;
+const useGrid = W => W < 1100 || innerHeight < 860;
+const gridCols = W => Math.max(2, Math.min(6, Math.floor(W / 210)));
 function centers(W, H) {
-  const keys = groupBy === 'tema' ? TIDS : CL.map(c => c.id);
-  const m = new Map(); const rx = W * 0.36, ry = H * 0.36;
+  const keys = groupKeys(), m = new Map();
+  if (useGrid(W)) {
+    const cols = gridCols(W), cw = W / cols;
+    keys.forEach((k, j) => m.set(k, { x: cw * (j % cols + .5), y: CELL_H * (Math.floor(j / cols) + .5) + 10 }));
+    return m;
+  }
+  const rx = W * 0.36, ry = H * 0.36;
   keys.forEach((k, j) => { const a = -Math.PI / 2 + j * 2 * Math.PI / keys.length; m.set(k, { x: W / 2 + rx * Math.cos(a), y: H / 2 + ry * Math.sin(a) }); });
   return m;
 }
+// Touch: one finger scrolls the page, two fingers pan and pinch the orrery.
+const coarse = matchMedia('(pointer: coarse)').matches;
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const zoomFilter = e => e.type.startsWith('touch') ? e.touches.length > 1 : (!e.ctrlKey || e.type === 'wheel') && !e.button;
 // Per-node radial force: d3.forceRadial only takes one shared center, so each item is pulled
 // toward the ring of its own planet.
 function orbitForce(center, radius, strength) {
@@ -290,13 +323,19 @@ let orreryStale = false;
 function drawOrrery() {
   if (document.getElementById('v-sistema').hidden) { orreryStale = true; return; }
   orreryStale = false;
-  const box = document.getElementById('orrery').getBoundingClientRect();
-  const W = Math.max(box.width, 360), H = Math.max(box.height, 460);
+  const node = document.getElementById('orrery');
+  const W = Math.max(node.getBoundingClientRect().width, 300), grid = useGrid(W), cols = gridCols(W);
+  // The grid sets its own height; the ring keeps the stylesheet's height.
+  node.style.height = grid ? `${Math.ceil(groupKeys().length / cols) * CELL_H + 20}px` : '';
+  node.style.touchAction = coarse ? 'pan-y' : '';
+  const H = Math.max(node.getBoundingClientRect().height, 460);
   if (sim) sim.stop();
   svg.attr('viewBox', `0 0 ${W} ${H}`).selectAll('*').remove();
   const root = svg.append('g');
-  svg.call(d3.zoom().scaleExtent([0.4, 6]).on('zoom', e => root.attr('transform', e.transform)));
+  svg.call(d3.zoom().scaleExtent([0.4, 6]).filter(zoomFilter).on('zoom', e => root.attr('transform', e.transform)));
   const C = centers(W, H);
+  const labelChars = Math.floor(W / cols / 7.5);
+  const fitLabel = s => !grid || s.length <= labelChars ? s : s.slice(0, labelChars - 1).replace(/\s+\S*$/, '') + '…';
   const keyOf = i => groupBy === 'tema' ? primary(i) : i.cluster;
   const counts = d3.rollup(ITEMS, v => v.length, keyOf);
   const pr = k => 10 + Math.sqrt(counts.get(k) || 1) * 2.4;
@@ -314,8 +353,9 @@ function drawOrrery() {
   const pg = root.append('g').selectAll('g').data([...C]).join('g').attr('transform', d => `translate(${d[1].x},${d[1].y})`);
   pg.append('circle').attr('r', d => pr(d[0])).attr('fill', d => groupBy === 'tema' ? '#1b2147' : d3.color(CCOL.get(d[0])).darker(1.6))
     .attr('stroke', d => groupBy === 'tema' ? '#9b7ede' : CCOL.get(d[0])).attr('stroke-width', 1.5);
-  pg.append('text').attr('class', 'planet-label').attr('text-anchor', 'middle').attr('dy', d => -pr(d[0]) - 40)
-    .text(d => groupBy === 'tema' ? `${d[0]} ${TOPICS[d[0]].name.split(' ').slice(0, 4).join(' ').replace(/ (y|e|de|del)$/, '')}` : CBY.get(d[0]).name);
+  pg.append('text').attr('class', 'planet-label').attr('text-anchor', 'middle').attr('dy', d => grid ? -CELL_H / 2 + 12 : -pr(d[0]) - 40)
+    .text(d => fitLabel(groupBy === 'tema' ? `${d[0]} ${TOPICS[d[0]].name.split(' ').slice(0, 4).join(' ').replace(/ (y|e|de|del)$/, '')}` : CBY.get(d[0]).name))
+    .append('title').text(d => groupBy === 'tema' ? `${d[0]} ${TOPICS[d[0]].name}` : CBY.get(d[0]).name);
   pg.append('text').attr('class', 'planet-count').attr('text-anchor', 'middle').attr('dy', 4).text(d => counts.get(d[0]) || 0);
   const sym = d3.symbol();
   nodeSel = root.append('g').selectAll('path').data(nodes).join('path').attr('class', 'node')
@@ -334,7 +374,8 @@ function drawOrrery() {
       nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
       linkSel.attr('x1', d => d.source.x).attr('y1', d => d.source.y).attr('x2', d => d.target.x).attr('y2', d => d.target.y);
   };
-  paint(); sim.alpha(.05).on('tick', paint).restart();
+  paint();
+  if (!reducedMotion) sim.alpha(.05).on('tick', paint).restart();
   applyDim();
 }
 function applyDim() {
@@ -427,5 +468,12 @@ function drawTimeline() {
 
 drawOrrery();
 show(location.hash.slice(1) || 'sistema');
-let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(drawOrrery, 250); });
+// Phones fire resize when the address bar slides; only a width change needs a redraw.
+let rt, lastW = innerWidth;
+window.addEventListener('resize', () => {
+  if (innerWidth === lastW) return;
+  lastW = innerWidth;
+  clearTimeout(rt);
+  rt = setTimeout(() => { drawOrrery(); if (!document.getElementById('v-tiempo').hidden) drawTimeline(); }, 250);
+});
 </script>

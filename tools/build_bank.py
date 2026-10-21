@@ -303,8 +303,15 @@ VIEWER_PATCHES = [
     ("yt.forEach(A=>{A.visible=dt===\"groups\"})", "yt.forEach(A=>{A.visible=!1})"),
     # Render at least one canvas pixel per CSS pixel, so a zoomed-out browser (devicePixelRatio < 1)
     # does not shrink points and lines to a faint quarter size.
+    # Low-power devices (window.BANCO_LIA_LOW_POWER, set by the page) cap it lower and skip antialiasing.
     ("n.setPixelRatio(Math.min(window.devicePixelRatio||1,2))",
-     "n.setPixelRatio(Math.min(Math.max(window.devicePixelRatio||1,1),2))"),
+     "n.setPixelRatio(Math.min(Math.max(window.devicePixelRatio||1,1),window.BANCO_LIA_MAX_DPR||2))"),
+    ("n=new to({antialias:!0})",
+     "n=new to({antialias:!window.BANCO_LIA_LOW_POWER,"
+     "powerPreference:window.BANCO_LIA_LOW_POWER?\"low-power\":\"default\"})"),
+    # A hidden container measures 0x0: keep the current canvas instead of reallocating it at 800x600.
+    ("function q(){let nt=i.clientWidth||800,$=i.clientHeight||600;",
+     "function q(){if(!i.clientWidth&&n.domElement.width>1)return;let nt=i.clientWidth||800,$=i.clientHeight||600;"),
     # Fit the framing to the narrower field of view, so a tall container does not crop the sides.
     ("let at=$/Math.sin(H/2*Math.PI/180)*.8;",
      "let at=$/Math.sin(H/2*Math.PI/180)*.8/Math.min(1,(i.clientWidth||800)/(i.clientHeight||600));"),
