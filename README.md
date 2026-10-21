@@ -55,7 +55,7 @@ Prueba de calidad visual y funcional (Playwright con el Chrome del sistema, con 
 uv run --with playwright --with pillow python tools/qa_constellation.py http://localhost:8000/
 ```
 
-Verifica en 1440×900, 1280×720 y 390×844:
+Verifica en 1440×900, 1280×720, 390×844 y una pantalla de 5760×3088 con el navegador al 50 % de zoom:
 - que el grafo se dibuje centrado y sin etiquetas en reposo;
 - la etiqueta del hover dentro del lienzo;
 - el panel con el top 5, sin traslapes ni desbordes;

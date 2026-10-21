@@ -299,6 +299,13 @@ VIEWER_PATCHES = [
     # No permanent system or cluster labels: names appear only in the hover tooltip and the side panel.
     ("let U=Yh(String(at.title||nt).slice(0,64),r_);U.position.copy(xt),Mt.add(U)", ""),
     ("yt.forEach(A=>{A.visible=dt===\"groups\"})", "yt.forEach(A=>{A.visible=!1})"),
+    # Render at least one canvas pixel per CSS pixel, so a zoomed-out browser (devicePixelRatio < 1)
+    # does not shrink points and lines to a faint quarter size.
+    ("n.setPixelRatio(Math.min(window.devicePixelRatio||1,2))",
+     "n.setPixelRatio(Math.min(Math.max(window.devicePixelRatio||1,1),2))"),
+    # Fit the framing to the narrower field of view, so a tall container does not crop the sides.
+    ("let at=$/Math.sin(H/2*Math.PI/180)*.8;",
+     "let at=$/Math.sin(H/2*Math.PI/180)*.8/Math.min(1,(i.clientWidth||800)/(i.clientHeight||600));"),
     # Frame the initial view on the centroid of the nodes (the bounding-box centre sat off the mass).
     ("let J=k(m,_),X=J;",
      "let J=k(u.reduce((a,b)=>a.add(b),new L).multiplyScalar(1/Math.max(1,u.length)),_*.7),X=J;"),

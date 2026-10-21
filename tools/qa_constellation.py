@@ -51,9 +51,10 @@ def find_node(page, frame_el, step=14):
 
 with sync_playwright() as p:
     b = p.chromium.launch(channel="chrome", headless=False, args=["--window-position=4000,4000"])
-    for vw, vh in [(1440, 900), (1280, 720), (390, 844)]:
-        tag = f"{vw}x{vh}"
-        page = b.new_page(viewport={"width": vw, "height": vh})
+    # The last case is a large display with the browser zoomed out to 50 %.
+    for vw, vh, dpr in [(1440, 900, 1), (1280, 720, 1), (390, 844, 1), (5760, 3088, .5)]:
+        tag = f"{vw}x{vh}@{dpr}"
+        page = b.new_page(viewport={"width": vw, "height": vh}, device_scale_factor=dpr)
         errors = []
         page.on("pageerror", lambda e: errors.append(str(e)))
         page.on("console", lambda m: m.type == "error" and errors.append(m.text))
@@ -66,10 +67,11 @@ with sync_playwright() as p:
         sb = f.evaluate("() => { const r=document.getElementById('sky').getBoundingClientRect(); return [r.left,r.top,r.width,r.height]; }")
         check(f"{tag} sky starts near top of frame", sb[1] < 200 if vw > 500 else sb[1] < 300, f"sky top={round(sb[1])} h={round(sb[3])}")
         check(f"{tag} sky taller than 330px", sb[3] > 330, str(round(sb[3])))
+        check(f"{tag} sky not taller than 1.3x its width", sb[3] <= sb[2] * 1.3 or vw < 500, f"{round(sb[2])}x{round(sb[3])}")
         f.evaluate("() => viewer.rotate(false)")
         page.wait_for_timeout(400)
         shot = frame_el.screenshot()
-        frac, cx, cy = bright_stats(page.screenshot(clip={"x": fb["x"] + sb[0], "y": fb["y"] + sb[1], "width": sb[2], "height": min(sb[3], vh - fb["y"] - sb[1])}))
+        frac, cx, cy = bright_stats(f.locator("#sky").screenshot())
         check(f"{tag} graph drawn (bright pixels)", frac > 0.01, f"{frac:.3f}")
         check(f"{tag} graph centred", .3 < cx < .7 and .25 < cy < .75, f"cx={cx:.2f} cy={cy:.2f}")
         open(OUT / f"sky_{tag}.png", "wb").write(shot)
