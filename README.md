@@ -87,7 +87,7 @@ Se instala desde GitHub con [uv](https://docs.astral.sh/uv/), sin clonar el repo
 uvx --from git+https://github.com/LIAUNAL/bancoProyectosPapersLIA banco-lia-mcp
 ```
 
-El repositorio es privado: hace falta acceso a la organización LIAUNAL y que git pueda autenticarse en GitHub (una vez: `gh auth setup-git`). El paquete trae el servidor, `data/bank.json` y las fichas; el índice queda en `~/.cache/banco-lia/bank.db`. Para tomar una versión nueva del banco: `uvx --refresh --from git+https://github.com/LIAUNAL/bancoProyectosPapersLIA banco-lia-mcp`.
+El repositorio es público, así que `uvx` lo instala sin autenticarse en GitHub. El paquete trae el servidor, `data/bank.json` y las fichas; el índice queda en `~/.cache/banco-lia/bank.db`. Para tomar una versión nueva del banco: `uvx --refresh --from git+https://github.com/LIAUNAL/bancoProyectosPapersLIA banco-lia-mcp`.
 
 Desde un clon local, `bancoLIA mcp` sirve los datos del clon y guarda el índice en `data/bank.db`.
 
