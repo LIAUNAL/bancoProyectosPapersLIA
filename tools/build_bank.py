@@ -380,7 +380,7 @@ def main():
         '<!doctype html>\n<html lang="es">\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' + page,
         encoding="utf-8")
-    for asset in ("logo_labIA.png", "favicon.png", "apple-touch-icon.png"):
+    for asset in ("logo_labIA.png", "favicon.png", "favicon.ico", "apple-touch-icon.png"):
         shutil.copyfile(ROOT / "tools/assets" / asset, SITE / asset)
     (SITE / "data").mkdir(exist_ok=True)
     (SITE / "data/bank.json").write_text(json.dumps(bank, ensure_ascii=False), encoding="utf-8")
