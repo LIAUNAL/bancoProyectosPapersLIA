@@ -1,6 +1,6 @@
 # Banco de proyectos y artículos LIA
 
-Repositorio privado de la organización [LIAUNAL](https://github.com/LIAUNAL). Tablero local con constelación 3D y [servidor MCP](#servidor-mcp) para redactar artículos y propuestas a partir del trabajo previo del laboratorio.
+Repositorio público de la organización [LIAUNAL](https://github.com/LIAUNAL). **Tablero en línea: <https://liaunal.github.io/bancoProyectosPapersLIA/>**, con constelación 3D, y [servidor MCP](#servidor-mcp) para redactar artículos y propuestas a partir del trabajo previo del laboratorio.
 
 Banco de ideas, novedades y base de redacción con los artículos en revistas y los proyectos de investigación del grupo GCPDS / LIA (Universidad Nacional de Colombia, sede Manizales), **de 2018 a la fecha**: artículos publicados desde 2018 y proyectos en ejecución desde 2018 (inicio o fin ≥ 2018). El corte se cambia con `MIN_YEAR` en `tools/build_bank.py`; los datos 1996–2017 siguen en `data/raw` y `data/summaries`.
 
@@ -10,7 +10,7 @@ Banco de ideas, novedades y base de redacción con los artículos en revistas y 
 |------|--------------|
 | `articulos/` | Una ficha `.md` por artículo (122): aplicación, problema, propuesta o novedad, resultados, conclusiones, métodos, idea futura y relacionados |
 | `proyectos/` | Una ficha `.md` por proyecto (105: 33 de CvLAC con código Hermes `P###` y 72 tomados directamente de Hermes `H<código>` de las cuentas de Álvarez Meza y Castellanos, con su estado): lo anterior más productos tecnológicos, apropiación social, aliados y código Hermes |
-| `docs/` | Sitio estático local: `index.html` con sistema temático, constelación 3D, clústeres e ideas, buscador y línea de tiempo; `constelacion.html` con el visor SOTA de papersmith-ai; `data/bank.json` |
+| `docs/` | Sitio estático publicado en GitHub Pages: `index.html` con sistema temático, constelación 3D, clústeres e ideas, buscador y línea de tiempo; `constelacion.html` con el visor SOTA de papersmith-ai; `data/bank.json` |
 | `data/bank.json` | Todos los registros con temas, clúster y relaciones |
 | `data/taxonomy.md` | Taxonomía de 16 temas (T01–T16; T15 espectro/SDR y T16 agentes de IA se añadieron con los proyectos de Hermes) |
 | `data/cluster_names.json` | Nombres de los 12 clústeres (los 16 del corpus completo están en `cluster_names_1996-2026.json`) |
@@ -30,9 +30,11 @@ Banco de ideas, novedades y base de redacción con los artículos en revistas y 
 
 DOI idéntico o similitud de título ≥ 0,85 entre los dos CvLAC y Scholar, más fusiones manuales: versiones ES/EN del mismo proyecto, preprints con versión publicada (SSRN, preprints.org) y registros de CvLAC que solo repetían el título de otro proyecto.
 
-## Ver el tablero (solo local)
+## Ver el tablero
 
-El repositorio es privado y el tablero no se publica en GitHub Pages: contiene resúmenes de propuestas en evaluación tomados de Hermes. Se levanta en local:
+En línea: **<https://liaunal.github.io/bancoProyectosPapersLIA/>** (la constelación 3D a pantalla completa está en [`constelacion.html`](https://liaunal.github.io/bancoProyectosPapersLIA/constelacion.html)). GitHub Pages publica la carpeta `docs/` de la rama `main`, así que cada push que regenere `docs/` actualiza el sitio en uno o dos minutos.
+
+En local:
 
 ```bash
 bancoLIA ui              # http://localhost:8000, abre el navegador
