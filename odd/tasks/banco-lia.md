@@ -1,5 +1,5 @@
 Objective: knowledge bank of LIA/GCPDS journal articles and research projects (one .md each) plus a constellation dashboard.
-Branch: n/a (folder is not a git repository). Delivery: local files + artifact. Test runner: structural checks (counts, duplicates, JSON validity).
+Branch: main (private repo github.com/amalvarezme/bancoProyectosPapersLIA). Delivery: local site only. Test runner: structural checks (counts, duplicates, JSON validity).
 
 ## Specs
 - S1 Sources: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001330950, https://scholar.google.com/citations?user=4aUwQtAAAAAJ&hl=es&oi=ao, https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000043222"
@@ -16,9 +16,9 @@ Branch: n/a (folder is not a git repository). Delivery: local files + artifact. 
 - T2 S3 structured summaries (delegated, 8 parallel writers: disjoint batches) — done, every batch validated ids 1:1
 - T3 S2-S3 render .md files (inline) — done: articulos/ 313, proyectos/ 94, no duplicate ids or titles
 - T4 S5 dashboard (inline) — done: dashboard/index.html, dashboard/constelacion.html (papersmith viewer), artifact https://claude.ai/artifact/TGjNPFcBTUdeTFi2WMFQx4
-- T6 S8 constellation controls, click highlight + side panel with top-5, hover labels (inline) — in progress
-- T7 S7 `bancoLIA ui` command (inline) — pending
-- T8 S6 private GitHub repo, drop Pages workflow (inline) — pending
+- T6 S8 constellation controls, click highlight + side panel with top-5, hover labels (inline) — done, 140b2f2
+- T7 S7 `bancoLIA ui` command (inline) — done, 140b2f2 (bin/bancoLIA, symlink ~/.local/bin/bancoLIA)
+- T8 S6 private GitHub repo, drop Pages workflow (inline) — done, 140b2f2 pushed, visibility PRIVATE
 - T5 S4 Hermes mapping (inline) — done: 80/94 projects mapped (data/hermes.json, accounts Álvarez Meza + Castellanos); 204 Hermes-only projects in data/hermes_sin_cvlac.json
 
 ## Log
@@ -35,3 +35,4 @@ Branch: n/a (folder is not a git repository). Delivery: local files + artifact. 
 - L11 (2026-10-20) User: "asegurate de incluir los proyectos propuestos entre 2025 y 2026, relacionados con ecosistemas de agentes, salud mental, energia y los que estan en proceso de evaluacion" / "ya active la sesion de hermes de german". Selected from Germán's Hermes: code>=61000 any state, plus 2018+ in evaluation or financed not in CvLAC (43; 2 were duplicates of P009/P023 -> codigos_relacionados). Details fetched by POSTing form j_id_k with j_id_k:_idcl (38 OK; session expired twice; H50660, H50456, H67624 title-only). Added topics T15 SDR, T16 agentes IA; k=12. Bank: 122 articles + 74 projects. Pending: projects only in Andrés' Hermes account (69311, 69288, 68981, 68698, 68298, 64716, 64090, 62836, 62122, ...) need his session for state and detail.
 - L12 (2026-10-20) User: "ya inicie sesion" (own Hermes). Read states for 140 projects; selected 31 not yet in bank; 28 details fetched (two passes), 3 Ingresando without link. Bank: 122 articles + 105 projects (72 from Hermes). Clusters renamed (k=12).
 - L13 (2026-10-21) User: "sincroniza con github pero no en publico, por ende solo se puede levantar el servidor local. genera un comanto bancoLIA ui ... (top 5) y si paso el cursor por alguno node debe mostrar una etiqueta descriptiva corta de dicho nodo" (full text in S6-S8). Vendored viewer is byte-identical to upstream papersmith-ai (skills/plausibility/assets/atlas3d.bundle.js); upstream toolbar = zoom +/−, reset view, Disposición de grupos, family chips; auto-rotate exists but has no toggle; click opens a modal, no persistent highlight, no related list; hover tooltip shows "label [slot]".
+- L14 (2026-10-21) Verified in Chrome: hover tooltip shows node tip; click on P033.prod lit 57 nodes, opened side panel with top 5 (P024, A060, A054, H61264, A052); viewer.rotate/spin/tilt work. Removed .github/workflows/pages.yml and .nojekyll; server binds 127.0.0.1.
