@@ -62,6 +62,29 @@ Verifica en 1440×900, 1280×720, 390×844 y una pantalla de 5760×3088 con el n
 - los controles, el buscador y el filtro;
 - la ausencia de errores de JavaScript.
 
+Sin una GPU apropiada para WebGL, la pestaña muestra la constelación en 2D con un aviso; `constelacion.html?view=2d` fuerza esa vista.
+
+## Servidor MCP
+
+`bancoLIA mcp` expone el banco a clientes MCP (stdio) como insumo para escribir artículos (papers_smith) y propuestas (RedaccionPropuestas). Busca sobre un índice SQLite FTS5 (`data/bank.db`, BM25, sin tildes) que se regenera solo cuando cambia `data/bank.json`; el archivo no se versiona.
+
+| Herramienta | Para qué |
+|---|---|
+| `search_bank` | Búsqueda por texto con filtros `kind`, `cluster`, `topic`, `year_from`; `match` `any` (alguna palabra) o `all` (todas) |
+| `get_item` | Registro completo y ficha Markdown de un artículo o proyecto |
+| `related_items` | Enlaces proyecto → artículo y artículo → artículo, top 5 similares y mismo clúster |
+| `lab_capabilities` | Aliados, financiadores, productos tecnológicos y métodos del laboratorio para un tema, con los ítems que los respaldan |
+| `taxonomy` | Temas y clústeres con su número de ítems |
+| `export_to_insumos` | Copia fichas Markdown a una carpeta existente, p. ej. `proposals/<run>/insumos/background` |
+
+Registro en un proyecto (`.mcp.json`):
+
+```json
+"banco-lia": {"type": "stdio", "command": "bancoLIA", "args": ["mcp"]}
+```
+
+Pruebas del índice: `python3 -m unittest discover -s tests`. Consulta rápida desde la terminal: `python3 tools/bank_db.py search "visión por computador"`.
+
 ## Regenerar
 
 ```bash
