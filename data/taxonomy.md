@@ -15,4 +15,4 @@ T13 Representación de datos, reducción de dimensión y agrupamiento (manifold 
 T14 Educación, sociedad y analítica de datos (deserción, alfabetización mediática, alertas sanitarias, centros de excelencia)
 T15 Radio definida por software y espectro radioeléctrico (SDR, monitoreo del espectro, exposición electromagnética, IoT)
 T16 Agentes de IA y modelos de lenguaje (ecosistemas multiagente, LLM, tutoría inteligente)
-T17 Materiales y celdas solares (películas delgadas, CuInSe₂, pulverización catódica, ingeniería de banda prohibida, capas luminiscentes)
+T17 Materiales y celdas solares (películas delgadas, CuInSe₂, pulverización catódica, ingeniería de banda prohibida, capas luminiscentes, materiales magnéticos)

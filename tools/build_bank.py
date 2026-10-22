@@ -26,7 +26,7 @@ from sklearn.preprocessing import normalize
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "docs"  # static site, served locally by bin/bancoLIA ui or tools/serve.sh
-N_CLUSTERS = 12
+N_CLUSTERS = 13
 MIN_YEAR = 2018  # articles published, or projects active (start or end), from this year on
 SEED = 7
 

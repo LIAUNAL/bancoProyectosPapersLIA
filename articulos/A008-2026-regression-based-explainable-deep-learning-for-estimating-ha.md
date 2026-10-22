@@ -2,8 +2,8 @@
 id: A008
 titulo: "Regression-based explainable deep learning for estimating Hamiltonian parameters from magnetic nanodot images"
 tipo: articulo
-temas: [T07, T13]
-cluster: "C10 Visión por computador y representación kernel"
+temas: [T07, T13, T17]
+cluster: "C13 Materiales, celdas solares y física computacional"
 palabras_clave: [nanodiscos magnéticos, interacción Dzyaloshinskii-Moriya, skyrmions, recocido simulado, mapas de activación de regresión, Vision Transformer]
 fuente_resumen: abstract
 anio: 2026
@@ -18,8 +18,8 @@ fuentes: [0001330950]
 **Autores:** Juan Sebastián Méndez-Rondón, María Isabel García-Quimbayo, Andrés Marino Álvarez-Meza, Jorge Montes-Monsalve, J.D. Agudelo-Giraldo  
 **Revista:** Materials & Design (2026)  
 **DOI:** https://doi.org/10.1016/j.matdes.2026.116816  
-**Temas:** T07 Aprendizaje profundo y explicabilidad; T13 Representación de datos, reducción de dimensión y agrupamiento  
-**Clúster:** C10 Visión por computador y representación kernel
+**Temas:** T07 Aprendizaje profundo y explicabilidad; T13 Representación de datos, reducción de dimensión y agrupamiento; T17 Materiales y celdas solares  
+**Clúster:** C13 Materiales, celdas solares y física computacional
 
 ## Aplicación
 Estimación de parámetros del hamiltoniano de Heisenberg extendido a partir de imágenes de magnetización de nanodiscos magnéticos.

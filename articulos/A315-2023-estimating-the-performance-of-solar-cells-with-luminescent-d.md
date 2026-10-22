@@ -3,7 +3,7 @@ id: A315
 titulo: "Estimating the performance of solar cells with luminescent down-shifting layers"
 tipo: articulo
 temas: [T17, T09]
-cluster: "C06 Diagnóstico de fallas y sistemas de energía"
+cluster: "C13 Materiales, celdas solares y física computacional"
 palabras_clave: [celdas solares, capas luminiscentes de desplazamiento descendente, LDS, CdTe, eficiencia cuántica, modelado óptico]
 fuente_resumen: abstract
 anio: 2023
@@ -19,7 +19,7 @@ fuentes: [orcid:0000-0003-0569-0605]
 **Revista:** PHYSICA SCRIPTA (2023)  
 **DOI:** https://doi.org/10.1088/1402-4896/acce7c  
 **Temas:** T17 Materiales y celdas solares; T09 Monitoreo industrial y sistemas de energía  
-**Clúster:** C06 Diagnóstico de fallas y sistemas de energía
+**Clúster:** C13 Materiales, celdas solares y física computacional
 
 ## Aplicación
 Mejora del desempeño de celdas solares convencionales (ejemplo con CdTe) mediante capas luminiscentes de desplazamiento descendente (LDS).

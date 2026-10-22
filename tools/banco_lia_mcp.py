@@ -72,7 +72,7 @@ def lab_capabilities(query: str = "", kind: str | None = None, match: str = "all
 
 @mcp.tool()
 def taxonomy() -> dict:
-    """The bank's 16 topics (T##) and 12 clusters (C##) with their item counts, to pick search filters."""
+    """The bank's topics (T##) and clusters (C##) with their item counts, to pick search filters."""
     return bank.taxonomy()
 
 
