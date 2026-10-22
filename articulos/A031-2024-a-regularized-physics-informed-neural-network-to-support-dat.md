@@ -45,7 +45,7 @@ La base en redes neuronales aporta flexibilidad y escalabilidad útiles donde la
 Aplicar RPINN a problemas de despacho energético con incertidumbre y comparar costo computacional con solvers comerciales.
 
 ## Relacionados (similitud semántica)
-- Ninguno sobre el umbral
+- derivado del proyecto: [[H53871-2021-gestion-de-operaciones-logisticas-aplicada-al-sector-de-alim]] — Gestión de operaciones logísticas aplicada al sector de alimentos.
 
 <details><summary>Abstract</summary>
 

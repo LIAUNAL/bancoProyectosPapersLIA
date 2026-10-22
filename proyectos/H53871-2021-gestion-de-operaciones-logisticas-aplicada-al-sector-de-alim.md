@@ -53,7 +53,7 @@ No descrita en Hermes
 Probar el modelo en una empresa piloto del sector y medir el impacto en costos y tiempos.
 
 ## Relacionados (similitud semántica)
-- Ninguno sobre el umbral
+- produjo: [[A031-2024-a-regularized-physics-informed-neural-network-to-support-dat]] — A Regularized Physics-Informed Neural Network to Support Data-Driven Nonlinear Constrained Optimization
 
 <details><summary>Resumen original (CvLAC)</summary>
 

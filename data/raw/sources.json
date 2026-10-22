@@ -12113,6 +12113,56 @@
    "doi": "",
    "id": "A314",
    "slug": "A314-2004-realizacion-para-un-dsp-de-aplicaciones-en-tiempo-real-ingen"
+  },
+  {
+   "src": "orcid:0000-0003-0569-0605",
+   "kind": "Publicado en revista especializada",
+   "title": "Estimating the performance of solar cells with luminescent down-shifting layers",
+   "authors": [
+    "ROBERTO BERNAL-CORREA",
+    "ARTURO MORALES-ACEVEDO",
+    "JORGE MONTES-MONSALVE"
+   ],
+   "journal": "PHYSICA SCRIPTA",
+   "year": "2023",
+   "doi": "10.1088/1402-4896/acce7c",
+   "abstract": "Technological developments for improving the performance of conventional solar cells have become a topic of great interest in recent years. For instance, solar concentrators, new anti-reflective coatings, and Luminescent Down-Shifting Layers (LDS), among different techniques have been used in the past. The latter is an attractive option because an LDS layer has the property of increasing the photon flux density in the appropriate wavelength range on top of a cell device with the possibility of increasing the photo-current density. Then, in this work we focus on the development of a theoretical model to determine the cell´s illumination current density, considering the modified solar spectrum, and taking in account the modified spectral reflectance and transmittance at the upper layers when an optimized LDS layer is inserted on a solar cell. The correct selection of such a layer for a specific solar cell would increase its performance due to the enhanced photon density in the absorption region for which the solar cell has the highest quantum efficiency. As an example, it is shown that a Lu3Al5O12:Ce3+ layer on top of a CdTe solar cell might cause an efficiency increase of around 21%.",
+   "id": "A315",
+   "slug": "A315-2023-estimating-the-performance-of-solar-cells-with-luminescent-d"
+  },
+  {
+   "src": "orcid:0000-0003-0569-0605",
+   "kind": "Publicado en revista especializada",
+   "title": "Study of the structural and optical properties of CuInSe₂ thin films obtained by RF sputtering as a function of the deposition temperature",
+   "authors": [
+    "JORGE MONTES-MONSALVE",
+    "ROBERTO BERNAL-CORREA",
+    "ARTURO MORALES-ACEVEDO",
+    "A. PULZARA-MORA"
+   ],
+   "journal": "REVISTA DE LA ACADEMIA COLOMBIANA DE CIENCIAS EXACTAS, FISICAS Y NATURALES",
+   "year": "2025",
+   "doi": "10.18257/raccefyn.3225",
+   "abstract": "The formation of a copper-deficient surface layer is a common phenomenon in CuInSe₂ thin films, typically arising in deposition processes that involve multiple steps, such as thermal treatment and post-selenization. Here, we studied the radio-frequency magnetron sputtering film deposition from a CuInSe₂ target. Substrate temperature varied between 50 and 400°C. X-ray photoelectron spectroscopy (XPS) confirmed the persistent presence of a Cu-deficient surface layer across all deposition temperatures. Films grown below 200°C were amorphous and Cu-deficient, while at 200°C and above, the films exhibited a transition to a polycrystalline chalcopyrite structure, as evidenced by X-ray diffraction (XRD). The crystallite size for the polycrystalline films deposited at 200°C and 400°C was approximately 10–12 nm. Energy dispersive spectroscopy (EDS) revealed a progressive decrease in copper content from ~20 at.% at 50–200°C to ~16 at.% at 400°C, while indium remained nearly constant and selenium increased slightly from 50 at.% to 56 at.% with increasing temperature. UV-Vis spectroscopy showed that the optical bandgap (Eg) decreased from 1.2 eV at 50°C and 1.15 eV at 100°C to approximately 0.95–0.94 eV at 200°C and 400°C. Our results provide valuable insights into the effect of substrate temperature on CuInSe2 thin films, contributing to the ongoing efforts to optimize their properties for photovoltaic and optoelectronic applications.",
+   "id": "A316",
+   "slug": "A316-2025-study-of-the-structural-and-optical-properties-of-cuinse2-th"
+  },
+  {
+   "src": "orcid:0000-0003-0569-0605",
+   "kind": "Publicado en revista especializada",
+   "title": "Nitrogen-mediated phase transformation in RF-sputtered CuInSe2",
+   "authors": [
+    "JORGE MONTES-MONSALVE",
+    "ARTURO MORALES-ACEVEDO",
+    "ROBERTO BERNAL-CORREA",
+    "A. PULZARA-MORA"
+   ],
+   "journal": "APPLIED SURFACE SCIENCE",
+   "year": "2026",
+   "doi": "10.1016/j.apsusc.2025.165075",
+   "abstract": "• RF-Sputtered CuInSe 2 thin films were prepared in the presence of nitrogen. • At low nitrogen flows the CuInSe 2 chalcopyrite structure is slightly disrupted. • At low nitrogen flows the thin filmś bandgap can be tuned from 0.96 eV to 1.3 eV. • Large nitrogen flows facilitate the dissociation of CuInSe 2 into CuSe and InSe. • CuInSe 2 :N with a 1.3 eV bandgap may be used for substituting CuInGaSe 2 in solar cells. Pure and nitrogen‐incorporated CuInSe 2 (CIS) thin films were fabricated by a reactive sputtering technique under controlled nitrogen flow rates ranging from 0 to 1.5 sccm. Systematic investigation using X-ray diffraction (XRD) confirmed that deposited films retained a chalcopyrite‐type structure, dominated by the (112) plane, with secondary phases (e.g., CuSe, InSe) emerging at high nitrogen flows. Topographical analyses through scanning electron microscopy (SEM) and atomic force microscopy (AFM) revealed that moderate nitrogen incorporation yielded dense, smooth, and compact CIS thin films, while higher flows (>0.3 sccm) led to an increasingly rough surface and the formation of additional binary compounds. Compositional studies by energy-dispersive X-ray spectroscopy (EDS) and X-ray photoelectron spectroscopy (XPS) verified the incorporation of nitrogen into the CIS lattice and identified concomitant changes in stoichiometry. Optical measurements demonstrated a noticeable bandgap shift from approximately 0.96 eV for pristine CIS to 1.3 eV assisted with 0.1 sccm nitrogen, highlighting the potential for bandgap engineering. However, an excess of nitrogen flow (>0.1 sccm) facilitated the partial decomposition of CIS, raising the effective bandgap above 1.6 eV and underscoring the delicate balance required to maintain chalcopyrite integrity. These findings confirm that appropriate nitrogen doping conditions can enhance both the optical and structural properties of CIS films, offering new avenues for optimizing photovoltaic performance in solar cell applications. The study provides insight into how controlled nitrogen doping can potentially fine-tune the bandgap, while highlighting that excessive nitrogen promotes detrimental phase separation.",
+   "id": "A317",
+   "slug": "A317-2026-nitrogen-mediated-phase-transformation-in-rf-sputtered-cuins"
   }
  ],
  "projects": [

@@ -45,7 +45,7 @@ El aprendizaje automático puede reducir el ensayo y error en la programación D
 Validar con pacientes reales comparando la respuesta clínica entre parámetros sugeridos y ajuste manual.
 
 ## Relacionados (similitud semántica)
-- Ninguno sobre el umbral
+- extiende: [[A086-2019-automatic-identification-of-dbs-parameters-from-the-volume-o]] — Automatic Identification of DBS Parameters from the Volume of Tissue Activated (VTA) Using Support Vector Machines
 
 <details><summary>Abstract</summary>
 

@@ -46,6 +46,7 @@ Integrar incertidumbre del VTA en el estimador de parámetros para recomendacion
 
 ## Relacionados (similitud semántica)
 - derivado del proyecto: [[P023-2019-caracterizacion-morfologica-de-estructuras-cerebrales-por-te]] — CARACTERIZACIÓN MORFOLÓGICA DE ESTRUCTURAS CEREBRALES POR TÉCNICAS DE IMAGEN PARA EL TRATAMIENTO MEDIANTE IMPLANTACIÓN QUIRÚRGICA DE NEUROESTIMULADORES EN LA ENFERMEDAD DE PARKINSON
+- extendido por: [[A077-2020-a-machine-learning-approach-to-support-deep-brain-stimulatio]] — A machine learning approach to support deep brain stimulation programming
 
 <details><summary>Abstract</summary>
 

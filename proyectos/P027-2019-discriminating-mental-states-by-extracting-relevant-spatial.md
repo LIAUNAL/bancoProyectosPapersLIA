@@ -52,10 +52,10 @@ No reportada en CvLAC
 Evaluar el enfoque en una ICC en línea con usuarios nuevos sin calibración previa.
 
 ## Relacionados (similitud semántica)
-- produjo: [[A110-2019-subject-oriented-dynamic-characterization-of-motor-imagery-t]] — Subject-Oriented Dynamic Characterization of Motor Imagery Tasks Using Complexity Analysis
 - produjo: [[A105-2019-relevance-of-common-spatial-patterns-ranked-by-kernel-pca-in]] — Relevance of common spatial patterns ranked by kernel PCA in motor imagery classification
+- produjo: [[A110-2019-subject-oriented-dynamic-characterization-of-motor-imagery-t]] — Subject-Oriented Dynamic Characterization of Motor Imagery Tasks Using Complexity Analysis
 - produjo: [[A081-2020-entropy-based-estimation-of-event-related-de-synchronization]] — Entropy-based Estimation of Event-Related De/Synchronization in Motor Imagery Using Vector-Quantized Patterns
-- produjo: [[A058-2022-subject-dependent-artifact-removal-for-enhancing-motor-image]] — Subject-dependent artifact removal for enhancing motor imagery classifier performance under poor skills
+- produjo: [[A075-2020-cnn-based-framework-using-spatial-dropping-for-enhanced-inte]] — CNN-based framework using spatial dropping for enhanced interpretation of neural activity in motor imagery classification
 
 <details><summary>Resumen original (CvLAC)</summary>
 

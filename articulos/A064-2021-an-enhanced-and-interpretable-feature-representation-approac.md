@@ -45,7 +45,7 @@ EIFR ofrece un espacio de rasgos más compacto e interpretable.
 Evaluar EIFR en formas 3D o imágenes con ruido fuerte para probar su robustez a oclusión.
 
 ## Relacionados (similitud semántica)
-- extiende: [[A078-2020-video-based-social-behavior-recognition-based-on-kernel-rele]] — Video-based social behavior recognition based on kernel relevance analysis
+- Ninguno sobre el umbral
 
 <details><summary>Abstract</summary>
 

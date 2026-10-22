@@ -44,7 +44,7 @@ KRAV permite reconocimiento de comportamiento con menos rasgos y robustez al des
 Probar KRAV con rasgos aprendidos profundamente en lugar de manuales en video.
 
 ## Relacionados (similitud semántica)
-- extendido por: [[A064-2021-an-enhanced-and-interpretable-feature-representation-approac]] — An enhanced and interpretable feature representation approach to support shape classification from binary images
+- Ninguno sobre el umbral
 
 <details><summary>Abstract</summary>
 

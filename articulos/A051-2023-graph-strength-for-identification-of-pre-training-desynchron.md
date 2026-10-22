@@ -45,4 +45,4 @@ Se vincula la conectividad funcional con la dinámica ERD/ERS en MI.
 Evaluar si la fortaleza de grafo previa a la tarea predice el desempeño posterior del usuario en BCI.
 
 ## Relacionados (similitud semántica)
-- extiende: [[A112-2019-group-differences-in-time-frequency-relevant-patterns-for-us]] — Group Differences in Time-Frequency Relevant Patterns for User-Independent BCI Applications
+- Ninguno sobre el umbral

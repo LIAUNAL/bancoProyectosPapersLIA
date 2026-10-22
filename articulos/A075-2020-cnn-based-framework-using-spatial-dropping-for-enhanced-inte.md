@@ -46,6 +46,7 @@ El descarte espacial mejora la lectura de las áreas cerebrales relevantes.
 Extender el descarte espacial a arquitecturas con atención para interpretar dinámica temporal además de espacial.
 
 ## Relacionados (similitud semántica)
+- derivado del proyecto: [[P027-2019-discriminating-mental-states-by-extracting-relevant-spatial]] — DISCRIMINATING MENTAL STATES BY EXTRACTING RELEVANT SPATIAL PATTERNS UNDER NON-STATIONARY AND SUBJECT-INDEPENDENT CONSTRAINTS
 - extendido por: [[A068-2021-spatial-interpretability-of-time-frequency-relevance-optimiz]] — Spatial interpretability of time-frequency relevance optimized in motor imagery discrimination using Deep&Wide networks
 
 <details><summary>Abstract</summary>

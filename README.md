@@ -8,12 +8,12 @@ Banco de ideas, novedades y base de redacción con los artículos en revistas y 
 
 | Ruta | Qué contiene |
 |------|--------------|
-| `articulos/` | Una ficha `.md` por artículo (122): aplicación, problema, propuesta o novedad, resultados, conclusiones, métodos, idea futura y relacionados |
+| `articulos/` | Una ficha `.md` por artículo (125): aplicación, problema, propuesta o novedad, resultados, conclusiones, métodos, idea futura y relacionados |
 | `proyectos/` | Una ficha `.md` por proyecto (105: 33 de CvLAC con código Hermes `P###` y 72 tomados directamente de Hermes `H<código>` de las cuentas de Álvarez Meza y Castellanos, con su estado): lo anterior más productos tecnológicos, apropiación social, aliados y código Hermes |
 | `docs/` | Sitio estático publicado en GitHub Pages: `index.html` con sistema temático, constelación 3D, clústeres e ideas, buscador y línea de tiempo; `constelacion.html` con el visor SOTA de papersmith-ai; `data/bank.json` |
 | `data/bank.json` | Todos los registros con temas, clúster y relaciones |
 | `data/taxonomy.md` | Taxonomía de 16 temas (T01–T16; T15 espectro/SDR y T16 agentes de IA se añadieron con los proyectos de Hermes) |
-| `data/cluster_names.json` | Nombres de los 12 clústeres (los 16 del corpus completo están en `cluster_names_1996-2026.json`) |
+| `data/cluster_names.json` | Nombres de los 12 clústeres. Al regenerar, cada registro conserva su clúster de `data/bank.json` y los nuevos van al centroide más cercano (o al que fije el campo `cluster` de su resumen); `build_bank.py --recluster` reagrupa desde cero y obliga a revisar los nombres (los 16 del corpus completo están en `cluster_names_1996-2026.json`) |
 | `data/hermes.json` | Mapeo proyecto → código Hermes, QUIPU y convocatoria (80 proyectos; cuentas de Álvarez Meza y Castellanos) |
 | `data/raw/hermes_extra.json`, `data/raw/hermes_details.json` | Proyectos de Hermes incorporados (2025–2026, en evaluación y financiados desde 2018) y el texto de su ficha |
 | `data/hermes_sin_cvlac.json` | 204 proyectos de Hermes (ambas cuentas) que no aparecen en CvLAC |
@@ -24,6 +24,7 @@ Banco de ideas, novedades y base de redacción con los artículos en revistas y 
 
 - CvLAC Andrés Marino Álvarez Meza (`cod_rh=0001330950`) y César Germán Castellanos Domínguez (`cod_rh=0000043222`).
 - Google Scholar `user=4aUwQtAAAAAJ` (solo se añadieron artículos de revista ausentes en CvLAC).
+- ORCID de Jorge Iván Montes Monsalve [`0000-0003-0569-0605`](https://orcid.org/0000-0003-0569-0605), con OpenAlex: artículos de revista desde 2018 ausentes en el banco (A315–A317; sus artículos con el laboratorio ya estaban). Se omitieron las ponencias de congreso.
 - Abstracts: OpenAlex, Crossref y Semantic Scholar (286 de 313 artículos). Las fichas sin abstract están marcadas `fuente_resumen: titulo` y se redactaron de forma conservadora, sin cifras.
 
 ## Deduplicación

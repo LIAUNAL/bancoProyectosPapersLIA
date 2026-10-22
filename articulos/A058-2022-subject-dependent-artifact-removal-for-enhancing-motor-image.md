@@ -46,7 +46,6 @@ Automatizar la selección de componentes ICA a eliminar mediante un criterio de 
 
 ## Relacionados (similitud semántica)
 - derivado del proyecto: [[P012-2021-procesamiento-de-senales-de-eeg-en-bci-orientado-a-la-detecc]] — Procesamiento de señales de EEG en BCI orientado a la detección de IM utilizando modelos de aprendizaje profundo y medidas de conectividad
-- derivado del proyecto: [[P027-2019-discriminating-mental-states-by-extracting-relevant-spatial]] — DISCRIMINATING MENTAL STATES BY EXTRACTING RELEVANT SPATIAL PATTERNS UNDER NON-STATIONARY AND SUBJECT-INDEPENDENT CONSTRAINTS
 
 <details><summary>Abstract</summary>
 

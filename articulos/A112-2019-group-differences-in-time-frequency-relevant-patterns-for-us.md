@@ -45,7 +45,7 @@ Ambos enfoques aportan información complementaria sobre diferencias de grupo en
 Usar las diferencias de grupo identificadas como características para un clasificador entre sujetos y medir la transferencia a usuarios nuevos.
 
 ## Relacionados (similitud semántica)
-- extendido por: [[A051-2023-graph-strength-for-identification-of-pre-training-desynchron]] — Graph Strength for Identification of Pre-training Desynchronization
+- Ninguno sobre el umbral
 
 <details><summary>Abstract</summary>
 
