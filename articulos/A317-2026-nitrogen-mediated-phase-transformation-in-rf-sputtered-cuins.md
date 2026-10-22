@@ -2,7 +2,7 @@
 id: A317
 titulo: "Nitrogen-mediated phase transformation in RF-sputtered CuInSe2"
 tipo: articulo
-temas: [T09]
+temas: [T17, T09]
 cluster: "C06 Diagnóstico de fallas y sistemas de energía"
 palabras_clave: [CuInSe2, dopaje con nitrógeno, pulverización reactiva, ingeniería de banda prohibida, separación de fases, celdas solares]
 fuente_resumen: abstract
@@ -18,7 +18,7 @@ fuentes: [orcid:0000-0003-0569-0605]
 **Autores:** JORGE MONTES-MONSALVE, ARTURO MORALES-ACEVEDO, ROBERTO BERNAL-CORREA, A. PULZARA-MORA  
 **Revista:** APPLIED SURFACE SCIENCE (2026)  
 **DOI:** https://doi.org/10.1016/j.apsusc.2025.165075  
-**Temas:** T09 Monitoreo industrial y sistemas de energía  
+**Temas:** T17 Materiales y celdas solares; T09 Monitoreo industrial y sistemas de energía  
 **Clúster:** C06 Diagnóstico de fallas y sistemas de energía
 
 ## Aplicación

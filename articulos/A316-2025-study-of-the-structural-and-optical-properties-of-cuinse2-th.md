@@ -2,7 +2,7 @@
 id: A316
 titulo: "Study of the structural and optical properties of CuInSe₂ thin films obtained by RF sputtering as a function of the deposition temperature"
 tipo: articulo
-temas: [T09]
+temas: [T17, T09]
 cluster: "C06 Diagnóstico de fallas y sistemas de energía"
 palabras_clave: [CuInSe2, películas delgadas, pulverización catódica RF, temperatura de sustrato, banda prohibida, calcopirita]
 fuente_resumen: abstract
@@ -18,7 +18,7 @@ fuentes: [orcid:0000-0003-0569-0605]
 **Autores:** JORGE MONTES-MONSALVE, ROBERTO BERNAL-CORREA, ARTURO MORALES-ACEVEDO, A. PULZARA-MORA  
 **Revista:** REVISTA DE LA ACADEMIA COLOMBIANA DE CIENCIAS EXACTAS, FISICAS Y NATURALES (2025)  
 **DOI:** https://doi.org/10.18257/raccefyn.3225  
-**Temas:** T09 Monitoreo industrial y sistemas de energía  
+**Temas:** T17 Materiales y celdas solares; T09 Monitoreo industrial y sistemas de energía  
 **Clúster:** C06 Diagnóstico de fallas y sistemas de energía
 
 ## Aplicación
