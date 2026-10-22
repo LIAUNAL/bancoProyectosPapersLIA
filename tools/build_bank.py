@@ -1,8 +1,10 @@
 """Build the LIA knowledge bank: one .md per article/project, clusters, links and the constellation.
 
-Run: uv run --with scikit-learn --with numpy python tools/build_bank.py
+Run: uv run --with scikit-learn --with numpy python tools/build_bank.py [--recluster]
 Inputs: data/raw/sources.json, data/summaries/*.jsonl, data/taxonomy.md, data/hermes.json (optional),
-        data/cluster_names.json (optional, overrides automatic cluster labels).
+        data/cluster_names.json (optional, overrides automatic cluster labels),
+        data/bank.json (previous build: records keep their cluster, new ones join the nearest centroid;
+        --recluster runs k-means from scratch, after which data/cluster_names.json must be reviewed).
 Outputs: articulos/, proyectos/, data/bank.json, dashboard/constelacion.html.
 """
 from __future__ import annotations
@@ -12,6 +14,7 @@ import importlib.util
 import json
 import re
 import shutil
+import sys
 import unicodedata
 from pathlib import Path
 
@@ -83,12 +86,36 @@ def text_of(it):
     return " ".join(parts)
 
 
+def previous_labels(items, Z):
+    """Keep each record's cluster from the previous build and give new records the nearest cluster centroid.
+
+    Re-running k-means after adding a few records reshuffles the partition, so data/cluster_names.json
+    would name the wrong groups. Returns None (full k-means) with --recluster or without a previous build.
+    """
+    prev_path = ROOT / "data/bank.json"
+    if "--recluster" in sys.argv or not prev_path.exists():
+        return None
+    prev = {m: int(c["id"][1:]) - 1 for c in json.loads(prev_path.read_text(encoding="utf-8"))["clusters"]
+            for m in c["members"]}
+    # a summary may pin a record's cluster ("cluster": "C06") when the nearest centroid is misleading
+    labels = np.array([int(it["cluster"][1:]) - 1 if it.get("cluster") else prev.get(it["id"], -1) for it in items])
+    if not (labels >= 0).any():
+        return None
+    centroids = normalize(np.array([Z[labels == c].mean(axis=0) if (labels == c).any() else np.zeros(Z.shape[1])
+                                    for c in range(N_CLUSTERS)]))
+    new = labels < 0
+    labels[new] = (Z[new] @ centroids.T).argmax(axis=1)
+    return labels
+
+
 def cluster(items):
     vec = TfidfVectorizer(stop_words=STOP, min_df=2, max_df=0.5, ngram_range=(1, 2), sublinear_tf=True,
                           strip_accents="unicode")
     X = vec.fit_transform([text_of(i) for i in items])
     Z = normalize(TruncatedSVD(n_components=80, random_state=SEED).fit_transform(X))
-    labels = KMeans(n_clusters=N_CLUSTERS, n_init=20, random_state=SEED).fit_predict(Z)
+    labels = previous_labels(items, Z)
+    if labels is None:
+        labels = KMeans(n_clusters=N_CLUSTERS, n_init=20, random_state=SEED).fit_predict(Z)
     terms = np.array(vec.get_feature_names_out())
     names_path = ROOT / "data/cluster_names.json"
     names = json.loads(names_path.read_text(encoding="utf-8")) if names_path.exists() else {}
