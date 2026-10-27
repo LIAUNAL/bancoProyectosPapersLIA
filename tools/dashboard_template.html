@@ -135,9 +135,9 @@ footer.lab span { font-size: 12px; color: var(--muted); }
       <div class="stats" id="stats"></div>
     </div>
     <nav role="tablist" aria-label="Vistas">
-      <button role="tab" data-view="sistema" aria-selected="true">Sistema temático</button>
-      <button role="tab" data-view="constelacion" aria-selected="false">Constelación 3D</button>
+      <button role="tab" data-view="constelacion" aria-selected="true">Constelación 3D</button>
       <button role="tab" data-view="ideas" aria-selected="false">Clústeres e ideas</button>
+      <button role="tab" data-view="sistema" aria-selected="false">Sistema temático</button>
       <button role="tab" data-view="explorar" aria-selected="false">Explorar</button>
       <button role="tab" data-view="tiempo" aria-selected="false">Línea de tiempo</button>
     </nav>
@@ -145,7 +145,17 @@ footer.lab span { font-size: 12px; color: var(--muted); }
 </header>
 
 <main class="wrap">
-  <section class="view" id="v-sistema">
+  <section class="view" id="v-constelacion">
+    <p class="lede">Visor 3D de <b>papersmith-ai</b>: cada sistema es un artículo (sol dorado) o un proyecto (sol verde) con sus planetas temáticos. <a class="link" href="constelacion.html" target="_blank" rel="noopener">Abrir en pantalla completa</a></p>
+    <iframe class="frame3d" id="frame3d" title="Constelación 3D" src="constelacion.html" loading="lazy"></iframe>
+  </section>
+
+  <section class="view" id="v-ideas" hidden>
+    <p class="lede">Los clústeres salen de TF‑IDF + SVD + k‑means sobre aplicación, problema, propuesta, palabras clave y métodos. Cada tarjeta reúne las <b>novedades recientes</b> y las <b>ideas de trabajo futuro</b> de sus miembros. «Copiar base de redacción» copia un resumen en Markdown listo para una introducción o un estado del arte.</p>
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section class="view" id="v-sistema" hidden>
     <p class="lede">Cada <b>planeta</b> es un tema de la taxonomía (T01–T17), con tamaño proporcional a su producción. A su alrededor orbitan los <b>artículos</b> (círculos) y <b>proyectos</b> (rombos), coloreados por el clúster semántico que les asignó el agrupamiento. Cambie a «Agrupar por clúster» para ver cada grupo como un sistema propio. Arrastre para mover, use la rueda (dos dedos en pantallas táctiles) para acercar y haga clic en un punto para leer su ficha.</p>
     <div class="toolbar">
       <span>Agrupar por</span>
@@ -156,16 +166,6 @@ footer.lab span { font-size: 12px; color: var(--muted); }
     </div>
     <div class="stage"><svg id="orrery" role="img" aria-label="Sistema de temas con artículos y proyectos"></svg><div id="tip"></div></div>
     <div class="chips" id="clusterchips" aria-label="Filtrar por clúster"></div>
-  </section>
-
-  <section class="view" id="v-constelacion" hidden>
-    <p class="lede">Visor 3D de <b>papersmith-ai</b>: cada sistema es un artículo (sol dorado) o un proyecto (sol verde) con sus planetas temáticos. <a class="link" href="constelacion.html" target="_blank" rel="noopener">Abrir en pantalla completa</a></p>
-    <iframe class="frame3d" id="frame3d" title="Constelación 3D" loading="lazy"></iframe>
-  </section>
-
-  <section class="view" id="v-ideas" hidden>
-    <p class="lede">Los clústeres salen de TF‑IDF + SVD + k‑means sobre aplicación, problema, propuesta, palabras clave y métodos. Cada tarjeta reúne las <b>novedades recientes</b> y las <b>ideas de trabajo futuro</b> de sus miembros. «Copiar base de redacción» copia un resumen en Markdown listo para una introducción o un estado del arte.</p>
-    <div class="grid" id="cards"></div>
   </section>
 
   <section class="view" id="v-explorar" hidden>
@@ -233,7 +233,7 @@ frame3d.addEventListener('load', () => notifyConstellation(!document.getElementB
 // Tabs with bookmarkable hash tokens
 const views = [...document.querySelectorAll('nav button')];
 function show(name) {
-  if (!views.some(b => b.dataset.view === name)) name = 'sistema';
+  if (!views.some(b => b.dataset.view === name)) name = 'constelacion';
   views.forEach(b => b.setAttribute('aria-selected', String(b.dataset.view === name)));
   document.querySelectorAll('.view').forEach(v => v.hidden = v.id !== 'v-' + name);
   if (name === 'constelacion') { const f = document.getElementById('frame3d'); if (f && !f.src) f.src = 'constelacion.html'; }
@@ -465,7 +465,7 @@ function drawTimeline() {
 }
 
 drawOrrery();
-show(location.hash.slice(1) || 'sistema');
+show(location.hash.slice(1) || 'constelacion');
 // Phones fire resize when the address bar slides; only a width change needs a redraw.
 let rt, lastW = innerWidth;
 window.addEventListener('resize', () => {

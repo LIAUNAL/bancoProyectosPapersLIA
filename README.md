@@ -10,7 +10,7 @@ Banco de ideas, novedades y base de redacción con los artículos en revistas y 
 |------|--------------|
 | `articulos/` | Una ficha `.md` por artículo (125): aplicación, problema, propuesta o novedad, resultados, conclusiones, métodos, idea futura y relacionados |
 | `proyectos/` | Una ficha `.md` por proyecto (105: 33 de CvLAC con código Hermes `P###` y 72 tomados directamente de Hermes `H<código>` de las cuentas de Álvarez Meza y Castellanos, con su estado): lo anterior más productos tecnológicos, apropiación social, aliados y código Hermes |
-| `docs/` | Sitio estático publicado en GitHub Pages: `index.html` con sistema temático, constelación 3D, clústeres e ideas, buscador y línea de tiempo; `constelacion.html` con el visor SOTA de papersmith-ai; `data/bank.json` |
+| `docs/` | Sitio estático publicado en GitHub Pages: `index.html` con constelación 3D (pestaña inicial), clústeres e ideas, sistema temático, buscador y línea de tiempo; `constelacion.html` con el visor SOTA de papersmith-ai; `data/bank.json` |
 | `data/bank.json` | Todos los registros con temas, clúster y relaciones |
 | `data/taxonomy.md` | Taxonomía de 17 temas (T01–T17; T15 espectro/SDR y T16 agentes de IA se añadieron con los proyectos de Hermes, T17 materiales y celdas solares con los artículos de Montes Monsalve) |
 | `data/cluster_names.json` | Nombres de los 13 clústeres (C13 materiales y celdas solares, con los artículos de Montes Monsalve). Al regenerar, cada registro conserva su clúster de `data/bank.json` y los nuevos van al centroide más cercano (o al que fije el campo `cluster` de su resumen); `build_bank.py --recluster` reagrupa desde cero y obliga a revisar los nombres (los 16 del corpus completo están en `cluster_names_1996-2026.json`) |
